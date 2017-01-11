@@ -14,42 +14,46 @@ end
 -- Begin program
 emu.message("Script Started")
 
-portName = '/dev/ttyACM0'
-port = io.open(portName, 'wb')
+local portName = '/dev/ttyACM0'
+local port = io.open(portName, 'wb')
 os.execute('stty -F'..portName..' 1000000')
 
-frame = 0
+local frame = 0
 
 -- Main loop begin
 while true do
--- Roughly 20 frames per second refresh rate for the LED display
--- Code on arduino could be optimized so 30 frames per second
--- can be achieved. For now this will suffice.
+	local nextID = memory.readbyte(0x00BF)
+	local level = memory.readbyte(0x0044)
+	local score = memoryBcd(0x0053,3)
+	-- TODO Hi-score
+	local mouse = input.get()
+	local topx = 99
+	local topy = 51
 	frame = (frame + 1) % 3
 
-	nextID = memory.readbyte(0x00BF)
-	level = memory.readbyte(0x0044)
-	score = memoryBcd(0x0053,3)
-	-- TODO Hi-score
-	mouse = input.get()
-
-	i = 0
-	topx = 99
-	topy = 51
-	if frame == 0 then
+	-- Refresh the LED display at 60FPS
+	if frame == 0 and port ~= nil then
 		for row = 19, 0, -1 do
 			for col = 0, 9, 1 do
-				tile = memory.readbyte(i)
-				i = i + 1
 				x = topx + col * 8
 				y = topy + row * 8
-				gui.pixel(x, y, {r=255,g=255,b=255,a=100})
-				r,g,b = emu.getscreenpixel(x, y, true)
-				port:write(string.char(r,g,b))
+				r,g,b,palette = emu.getscreenpixel(x, y, true)
+				port:write(string.char(palette))
+				gui.text(x, y, palette)
 			end
 		end
 		port:flush()
 	end
+
+	-- Screen overlay for showing which pixels are sampled
+	for row = 19, 0, -1 do
+		for col = 0, 9, 1 do
+			x = topx + col * 8
+			y = topy + row * 8
+			gui.pixel(x, y, {r=255,g=255,b=255,a=100})
+		end
+	end
+
 	yy = 10
 	gui.text(1,yy*2,"nextID="..nextID)
 	gui.text(1,yy*3,"level="..level)

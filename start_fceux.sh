@@ -1,3 +1,3 @@
 #!/bin/bash
 
-fceux --xscale 2 --yscale 2 --sound 1 $1 $2 $3
+fceux --xscale 2 --yscale 2 --loadlua $1 $2 $3
