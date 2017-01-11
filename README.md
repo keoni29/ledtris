@@ -6,6 +6,7 @@ Not to be confused with this repository https://github.com/encukou/ledtris
 
 # Contents
 This repository contains everything you need to play tetris for NES on a WS2812b LED display. This includes:
+
 - Arduino/AVR sourcecode for driving the LED display and optional seven segment display
 - Startup script for FCEUX (not strictly required)
 - Lua script for streaming gameplay data from FCEUX to LED matrix display.
