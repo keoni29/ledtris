@@ -38,8 +38,8 @@ while true do
 				x = topx + col * 8
 				y = topy + row * 8
 				r,g,b,palette = emu.getscreenpixel(x, y, true)
-				port:write(string.char(palette))
-				gui.text(x, y, palette)
+				port:write(string.char(r,g,b))
+				--gui.text(x, y, palette)
 			end
 		end
 		port:flush()
