@@ -16,11 +16,17 @@ emu.message("Script Started")
 
 local portName = '/dev/ttyACM0'
 local port = io.open(portName, 'wb')
-os.execute('stty -F'..portName..' 1000000')
+
+if port ~= nil then
+	os.execute('stty -F'..portName..' 1000000')
+else
+	port = io.open('fifo', 'wb')
+end
 
 local frame = 0
 
 -- Main loop begin
+local stop = false
 while true do
 	local nextID = memory.readbyte(0x00BF)
 	local level = memory.readbyte(0x0044)
@@ -29,16 +35,17 @@ while true do
 	local mouse = input.get()
 	local topx = 99
 	local topy = 51
-	frame = (frame + 1) % 3
+	--frame = (frame + 1) % 4
 
 	-- Refresh the LED display at 60FPS
 	if frame == 0 and port ~= nil then
-		for row = 19, 0, -1 do
+		for row = 0, 19, 1 do
 			for col = 0, 9, 1 do
 				x = topx + col * 8
 				y = topy + row * 8
 				r,g,b,palette = emu.getscreenpixel(x, y, true)
-				port:write(string.char(r,g,b))
+				--port:write(string.char(r,g,b))
+				port:write(string.char(palette))
 				--gui.text(x, y, palette)
 			end
 		end
