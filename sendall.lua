@@ -43,7 +43,12 @@ while true do
 		for col = 0, 9, 1 do
 			for row = 0, 19, 1 do
 				x = topx + col * 8
-				y = topy + row * 8
+
+				if col %2 then
+					y = topy + (19 - row) * 8
+				else
+					y = topy + row * 8
+				end
 				r,g,b,palette = emu.getscreenpixel(x, y, true)
 				port:write(string.char(r,g,b))
 				--gui.text(x, y, palette)
