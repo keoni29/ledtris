@@ -44,7 +44,7 @@ while true do
 			for row = 0, 19, 1 do
 				x = topx + col * 8
 
-				if col %2 then
+				if col%2 == 0 then
 					y = topy + (19 - row) * 8
 				else
 					y = topy + row * 8
