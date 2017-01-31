@@ -21,9 +21,10 @@ Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ80
 void setup()
 {
   pixels.begin(); // This initializes the NeoPixel library.
+  pixels.show();
   
   /* Begin serial with maximum baudrate for uno. */
-  Serial.begin(1000000);
+  Serial.begin(500000);
   
   /* Flush input */
   while(Serial.available())
@@ -46,9 +47,8 @@ void loop()
     while(!Serial.available());
     b = Serial.read();
     
-    pixels.setPixelColor(i, pixels.Color(r, g, b));
-  }
-  
+    pixels.setPixelColor(i, pixels.Color(r >> 2, g >> 2, b >> 2));
+  }  
   pixels.show();
   
 }
