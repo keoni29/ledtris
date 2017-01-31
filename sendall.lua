@@ -35,7 +35,7 @@ while true do
 	local mouse = input.get()
 	local topx = 99
 	local topy = 51
-	frame = (frame + 1) % 4
+	frame = (frame + 1) % 3
 
 	local flag = 0 -- go up
 	-- Refresh the LED display at 60FPS
@@ -50,6 +50,13 @@ while true do
 					y = topy + row * 8
 				end
 				r,g,b,palette = emu.getscreenpixel(x, y, true)
+
+				if b == 0 then
+					b = 20
+				end
+				r = r/5
+				g = g/5
+				b = b/5
 				port:write(string.char(r,g,b))
 				--gui.text(x, y, palette)
 			end
