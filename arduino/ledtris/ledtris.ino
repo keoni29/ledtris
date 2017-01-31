@@ -24,7 +24,7 @@ void setup()
   pixels.show();
   
   /* Begin serial with maximum baudrate for uno. */
-  Serial.begin(500000);
+  Serial.begin(1000000);
   
   /* Flush input */
   while(Serial.available())
@@ -38,6 +38,13 @@ void loop()
   uint8_t r, g, b;
   uint16_t i;
   
+  /* Frame synchronization */
+  do{
+  while(!Serial.available());
+    r = Serial.read();
+  } while (r != 0xFF);
+  
+  /* Receive a frame */
   for(i = 0; i<NUMPIXELS; i++)
   {
     while(!Serial.available());
@@ -47,7 +54,7 @@ void loop()
     while(!Serial.available());
     b = Serial.read();
     
-    pixels.setPixelColor(i, pixels.Color(r >> 2, g >> 2, b >> 2));
+    pixels.setPixelColor(i, pixels.Color(r, g, b));
   }  
   pixels.show();
   
