@@ -16,7 +16,13 @@ emu.message("Script Started")
 
 local portName = '/dev/ttyACM0'
 local port = io.open(portName, 'wb')
+
 os.execute('stty -F'..portName..' 1000000')
+
+-- Skip 50 frames
+for i=1,50 do
+	emu.frameadvance()
+end
 
 local frame = 0
 
@@ -29,25 +35,39 @@ while true do
 	local mouse = input.get()
 	local topx = 99
 	local topy = 51
-	frame = (frame + 1) % 3
+	frame = (frame + 1) % 2
 
+	local flag = 0 -- go up
 	-- Refresh the LED display at 60FPS
 	if frame == 0 and port ~= nil then
-		for row = 19, 0, -1 do
-			for col = 0, 9, 1 do
+		port:write(string.char(255))
+		for col = 0, 9, 1 do
+			for row = 0, 19, 1 do
 				x = topx + col * 8
-				y = topy + row * 8
+
+				if col%2 == 0 then
+					y = topy + (19 - row) * 8
+				else
+					y = topy + row * 8
+				end
 				r,g,b,palette = emu.getscreenpixel(x, y, true)
+
+				if b == 0 then
+					b = 20
+				end
+				r = r/5
+				g = g/5
+				b = b/5
 				port:write(string.char(r,g,b))
 				--gui.text(x, y, palette)
 			end
+			port:flush()
 		end
-		port:flush()
 	end
 
 	-- Screen overlay for showing which pixels are sampled
-	for row = 19, 0, -1 do
-		for col = 0, 9, 1 do
+	for col = 0, 9, 1 do
+		for row = 19, 0, -1 do
 			x = topx + col * 8
 			y = topy + row * 8
 			gui.pixel(x, y, {r=255,g=255,b=255,a=100})
