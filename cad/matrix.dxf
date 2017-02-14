@@ -23,7 +23,7 @@ $INSBASE
   9
 $EXTMIN
  10
--53.125
+-15.00000000000003
  20
 -203
  30
@@ -33,7 +33,7 @@ $EXTMAX
  10
 423
  20
-123.125
+75
  30
 0
   9
@@ -91,7 +91,7 @@ STANDARD
   9
 $CLAYER
   8
-Measurements
+Light Barrier2
   9
 $CELTYPE
   6
@@ -1121,9 +1121,9 @@ AcDbViewportTableRecord
  21
 1
  12
-81.89767706002395
+236.5096083898191
  22
-50.61731429404259
+71.73970508888839
  13
 0
  23
@@ -1149,7 +1149,7 @@ AcDbViewportTableRecord
  37
 0
  40
-137.4440182141606
+335.5566850931876
  41
 1.893793103448276
  42
@@ -2261,7 +2261,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Aluminium Plate
+Acrylic front
  70
     0
  62
@@ -2283,9 +2283,31 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
+Aluminium plate
+ 70
+    0
+ 62
+    8
+  6
+CONTINUOUS
+370
+    0
+390
+F
+  0
+LAYER
+  5
+4C
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
 Hardware
  70
-    1
+    0
  62
     7
   6
@@ -2297,7 +2319,7 @@ F
   0
 LAYER
   5
-4C
+4D
 330
 2
 100
@@ -2319,7 +2341,7 @@ F
   0
 LAYER
   5
-4D
+4E
 330
 2
 100
@@ -2343,7 +2365,7 @@ F
   0
 LAYER
   5
-4E
+4F
 330
 2
 100
@@ -2353,7 +2375,7 @@ AcDbLayerTableRecord
   2
 Light Barrier
  70
-    1
+    0
  62
     2
   6
@@ -2365,7 +2387,7 @@ F
   0
 LAYER
   5
-4F
+50
 330
 2
 100
@@ -2375,7 +2397,7 @@ AcDbLayerTableRecord
   2
 Light Barrier2
  70
-    1
+    0
  62
    56
 420
@@ -2389,7 +2411,7 @@ F
   0
 LAYER
   5
-50
+51
 330
 2
 100
@@ -2411,7 +2433,7 @@ F
   0
 LAYER
   5
-51
+52
 330
 2
 100
@@ -2421,7 +2443,7 @@ AcDbLayerTableRecord
   2
 Stock outline
  70
-    1
+    0
  62
     7
   6
@@ -2433,7 +2455,7 @@ F
   0
 LAYER
   5
-52
+53
 330
 2
 100
@@ -2443,7 +2465,7 @@ AcDbLayerTableRecord
   2
 Text
  70
-    1
+    0
  62
     7
   6
@@ -2469,7 +2491,7 @@ AcDbSymbolTable
   0
 STYLE
   5
-53
+54
 330
 2
 100
@@ -2553,7 +2575,7 @@ ACAD
   0
 APPID
   5
-54
+55
 330
 9
 100
@@ -2585,7 +2607,7 @@ AcDbDimStyleTable
   0
 DIMSTYLE
 105
-55
+56
 330
 A
 100
@@ -2769,25 +2791,7 @@ AcDbBlockTableRecord
   0
 BLOCK_RECORD
   5
-56
-330
-1
-100
-AcDbSymbolTableRecord
-100
-AcDbBlockTableRecord
-  2
-*D14
- 70
-    0
-280
-    1
-281
-    0
-  0
-BLOCK_RECORD
-  5
-59
+57
 330
 1
 100
@@ -2805,25 +2809,7 @@ AcDbBlockTableRecord
   0
 BLOCK_RECORD
   5
-5C
-330
-1
-100
-AcDbSymbolTableRecord
-100
-AcDbBlockTableRecord
-  2
-*D7
- 70
-    0
-280
-    1
-281
-    0
-  0
-BLOCK_RECORD
-  5
-5F
+5A
 330
 1
 100
@@ -2841,205 +2827,7 @@ AcDbBlockTableRecord
   0
 BLOCK_RECORD
   5
-62
-330
-1
-100
-AcDbSymbolTableRecord
-100
-AcDbBlockTableRecord
-  2
-*D8
- 70
-    0
-280
-    1
-281
-    0
-  0
-BLOCK_RECORD
-  5
-65
-330
-1
-100
-AcDbSymbolTableRecord
-100
-AcDbBlockTableRecord
-  2
-*D17
- 70
-    0
-280
-    1
-281
-    0
-  0
-BLOCK_RECORD
-  5
-68
-330
-1
-100
-AcDbSymbolTableRecord
-100
-AcDbBlockTableRecord
-  2
-*D13
- 70
-    0
-280
-    1
-281
-    0
-  0
-BLOCK_RECORD
-  5
-6B
-330
-1
-100
-AcDbSymbolTableRecord
-100
-AcDbBlockTableRecord
-  2
-*D1
- 70
-    0
-280
-    1
-281
-    0
-  0
-BLOCK_RECORD
-  5
-6E
-330
-1
-100
-AcDbSymbolTableRecord
-100
-AcDbBlockTableRecord
-  2
-*D2
- 70
-    0
-280
-    1
-281
-    0
-  0
-BLOCK_RECORD
-  5
-71
-330
-1
-100
-AcDbSymbolTableRecord
-100
-AcDbBlockTableRecord
-  2
-*D11
- 70
-    0
-280
-    1
-281
-    0
-  0
-BLOCK_RECORD
-  5
-74
-330
-1
-100
-AcDbSymbolTableRecord
-100
-AcDbBlockTableRecord
-  2
-*D4
- 70
-    0
-280
-    1
-281
-    0
-  0
-BLOCK_RECORD
-  5
-77
-330
-1
-100
-AcDbSymbolTableRecord
-100
-AcDbBlockTableRecord
-  2
-*D9
- 70
-    0
-280
-    1
-281
-    0
-  0
-BLOCK_RECORD
-  5
-7A
-330
-1
-100
-AcDbSymbolTableRecord
-100
-AcDbBlockTableRecord
-  2
-*D10
- 70
-    0
-280
-    1
-281
-    0
-  0
-BLOCK_RECORD
-  5
-7D
-330
-1
-100
-AcDbSymbolTableRecord
-100
-AcDbBlockTableRecord
-  2
-*D3
- 70
-    0
-280
-    1
-281
-    0
-  0
-BLOCK_RECORD
-  5
-80
-330
-1
-100
-AcDbSymbolTableRecord
-100
-AcDbBlockTableRecord
-  2
-*D12
- 70
-    0
-280
-    1
-281
-    0
-  0
-BLOCK_RECORD
-  5
-83
+5D
 330
 1
 100
@@ -3057,7 +2845,7 @@ AcDbBlockTableRecord
   0
 BLOCK_RECORD
   5
-86
+60
 330
 1
 100
@@ -3065,7 +2853,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D5
+*D2
  70
     0
 280
@@ -3075,7 +2863,43 @@ AcDbBlockTableRecord
   0
 BLOCK_RECORD
   5
-89
+63
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D12
+ 70
+    0
+280
+    1
+281
+    0
+  0
+BLOCK_RECORD
+  5
+66
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D8
+ 70
+    0
+280
+    1
+281
+    0
+  0
+BLOCK_RECORD
+  5
+69
 330
 1
 100
@@ -3093,7 +2917,205 @@ AcDbBlockTableRecord
   0
 BLOCK_RECORD
   5
-8C
+6C
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D4
+ 70
+    0
+280
+    1
+281
+    0
+  0
+BLOCK_RECORD
+  5
+6F
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D14
+ 70
+    0
+280
+    1
+281
+    0
+  0
+BLOCK_RECORD
+  5
+72
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D1
+ 70
+    0
+280
+    1
+281
+    0
+  0
+BLOCK_RECORD
+  5
+75
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D17
+ 70
+    0
+280
+    1
+281
+    0
+  0
+BLOCK_RECORD
+  5
+78
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D13
+ 70
+    0
+280
+    1
+281
+    0
+  0
+BLOCK_RECORD
+  5
+7B
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D7
+ 70
+    0
+280
+    1
+281
+    0
+  0
+BLOCK_RECORD
+  5
+7E
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D9
+ 70
+    0
+280
+    1
+281
+    0
+  0
+BLOCK_RECORD
+  5
+81
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D11
+ 70
+    0
+280
+    1
+281
+    0
+  0
+BLOCK_RECORD
+  5
+84
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D3
+ 70
+    0
+280
+    1
+281
+    0
+  0
+BLOCK_RECORD
+  5
+87
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D5
+ 70
+    0
+280
+    1
+281
+    0
+  0
+BLOCK_RECORD
+  5
+8A
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D10
+ 70
+    0
+280
+    1
+281
+    0
+  0
+BLOCK_RECORD
+  5
+8D
 330
 1
 100
@@ -3111,7 +3133,7 @@ Barrier Cell
   0
 BLOCK_RECORD
   5
-8F
+90
 330
 1
 100
@@ -3129,7 +3151,7 @@ barrier
   0
 BLOCK_RECORD
   5
-92
+93
 330
 1
 100
@@ -3147,7 +3169,7 @@ Led
   0
 BLOCK_RECORD
   5
-95
+96
 330
 1
 100
@@ -3165,7 +3187,7 @@ ledstrip
   0
 BLOCK_RECORD
   5
-98
+99
 330
 1
 100
@@ -3183,7 +3205,7 @@ Barrier Cell2
   0
 BLOCK_RECORD
   5
-9B
+9C
 330
 1
 100
@@ -3285,243 +3307,9 @@ AcDbBlockEnd
   0
 BLOCK
   5
-57
-330
-56
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockBegin
-  2
-*D14
- 70
-    1
- 10
-0
- 20
-0
-  3
-*D14
-  1
-
-  0
-LINE
-  5
-9E
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
--6.000000000000002
- 20
-94
- 11
-8
- 21
-94
-  0
-SOLID
-  5
-9F
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
--1.000000000000001
- 20
-94
- 30
-0
- 11
--3.500000000000001
- 21
-93.58371534222717
- 31
-0
- 12
--3.500000000000001
- 22
-94.41628465777283
- 32
-0
- 13
--3.500000000000001
- 23
-94.41628465777283
- 33
-0
-  0
-SOLID
-  5
-A0
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
-3
- 20
-94
- 30
-0
- 11
-5.5
- 21
-94.41628465777283
- 31
-0
- 12
-5.5
- 22
-93.58371534222717
- 32
-0
- 13
-5.5
- 23
-93.58371534222717
- 33
-0
-  0
-MTEXT
-  5
-A1
-100
-AcDbEntity
-  8
-Measurements
-  6
-CONTINUOUS
- 62
-    0
-370
-   -2
-100
-AcDbMText
- 10
-0.9999999999999992
- 20
-95.875
- 30
-0
- 40
-2.5
- 41
-1.388888888888889
- 71
-    5
- 72
-    1
-  1
-4
-  7
-standard
-210
-0
-220
-0
-230
-1
- 50
-0
- 73
-    2
- 44
-1
-  0
-LINE
-  5
-A2
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
--1.000000000000001
- 20
-61.625
- 11
--1.000000000000001
- 21
-95.25
-  0
-LINE
-  5
-A3
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
-3
- 20
-61.625
- 11
-3
- 21
-95.25
-  0
-ENDBLK
-  5
 58
 330
-56
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockEnd
-  0
-BLOCK
-  5
-5A
-330
-59
+57
 100
 AcDbEntity
   8
@@ -3543,7 +3331,7 @@ AcDbBlockBegin
   0
 LINE
   5
-A4
+9F
 100
 AcDbEntity
   8
@@ -3567,7 +3355,7 @@ AcDbLine
   0
 SOLID
   5
-A5
+A0
 100
 AcDbEntity
   8
@@ -3607,7 +3395,7 @@ AcDbTrace
   0
 SOLID
   5
-A6
+A1
 100
 AcDbEntity
   8
@@ -3647,7 +3435,7 @@ AcDbTrace
   0
 MTEXT
   5
-A7
+A2
 100
 AcDbEntity
   8
@@ -3693,21 +3481,21 @@ standard
   0
 ENDBLK
   5
+59
+330
+57
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
 5B
 330
-59
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockEnd
-  0
-BLOCK
-  5
-5D
-330
-5C
+5A
 100
 AcDbEntity
   8
@@ -3715,7 +3503,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D7
+*D6
  70
     1
  10
@@ -3723,399 +3511,165 @@ AcDbBlockBegin
  20
 0
   3
-*D7
+*D6
   1
 
   0
 LINE
+  5
+A3
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-13.625
+ 20
+-121
+ 11
+-41.25
+ 21
+-121
+  0
+LINE
+  5
+A4
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-13.625
+ 20
+73
+ 11
+-41.25
+ 21
+73
+  0
+LINE
+  5
+A5
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-40
+ 20
+-121
+ 11
+-40
+ 21
+73
+  0
+SOLID
+  5
+A6
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+-40
+ 20
+-121
+ 30
+0
+ 11
+-40.41628465777284
+ 21
+-118.5
+ 31
+0
+ 12
+-39.58371534222716
+ 22
+-118.5
+ 32
+0
+ 13
+-39.58371534222716
+ 23
+-118.5
+ 33
+0
+  0
+SOLID
+  5
+A7
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+-40
+ 20
+73
+ 30
+0
+ 11
+-39.58371534222716
+ 21
+70.5
+ 31
+0
+ 12
+-40.41628465777284
+ 22
+70.5
+ 32
+0
+ 13
+-40.41628465777284
+ 23
+70.5
+ 33
+0
+  0
+MTEXT
   5
 A8
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
--1.625000000000032
- 20
--109
- 11
--31.25000000000003
- 21
--109
-  0
-LINE
-  5
-A9
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
--1.625000000000001
- 20
-61
- 11
--31.25
- 21
-61
-  0
-LINE
-  5
-AA
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
--30.00000000000003
- 20
--109
- 11
--30
- 21
-61
-  0
-SOLID
-  5
-AB
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
--30.00000000000003
- 20
--109
- 30
-0
- 11
--30.41628465777287
- 21
--106.5
- 31
-0
- 12
--29.58371534222719
- 22
--106.5
- 32
-0
- 13
--29.58371534222719
- 23
--106.5
- 33
-0
-  0
-SOLID
-  5
-AC
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
--30
- 20
-61
- 30
-0
- 11
--29.58371534222716
- 21
-58.5
- 31
-0
- 12
--30.41628465777284
- 22
-58.5
- 32
-0
- 13
--30.41628465777284
- 23
-58.5
- 33
-0
-  0
-MTEXT
-  5
-AD
-100
-AcDbEntity
-  8
-Measurements
-  6
-CONTINUOUS
- 62
-    0
-370
-   -2
-100
-AcDbMText
- 10
--31.87500000000001
- 20
--24
- 30
-0
- 40
-2.5
- 41
-4.444444444444445
- 71
-    5
- 72
-    1
-  1
-170
-  7
-standard
-210
-0
-220
-0
-230
-1
- 50
-89.99999999999999
- 73
-    2
- 44
-1
-  0
-ENDBLK
-  5
-5E
-330
-5C
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockEnd
-  0
-BLOCK
-  5
-60
-330
-5F
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockBegin
-  2
-*D6
- 70
-    1
- 10
-0
- 20
-0
-  3
-*D6
-  1
-
-  0
-LINE
-  5
-AE
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
--13.625
- 20
--121
- 11
--41.25
- 21
--121
-  0
-LINE
-  5
-AF
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
--13.625
- 20
-73
- 11
--41.25
- 21
-73
-  0
-LINE
-  5
-B0
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
--40
- 20
--121
- 11
--40
- 21
-73
-  0
-SOLID
-  5
-B1
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
--40
- 20
--121
- 30
-0
- 11
--40.41628465777284
- 21
--118.5
- 31
-0
- 12
--39.58371534222716
- 22
--118.5
- 32
-0
- 13
--39.58371534222716
- 23
--118.5
- 33
-0
-  0
-SOLID
-  5
-B2
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
--40
- 20
-73
- 30
-0
- 11
--39.58371534222716
- 21
-70.5
- 31
-0
- 12
--40.41628465777284
- 22
-70.5
- 32
-0
- 13
--40.41628465777284
- 23
-70.5
- 33
-0
-  0
-MTEXT
-  5
-B3
 100
 AcDbEntity
   8
@@ -4161,9 +3715,9 @@ standard
   0
 ENDBLK
   5
-61
+5C
 330
-5F
+5A
 100
 AcDbEntity
   8
@@ -4173,2583 +3727,9 @@ AcDbBlockEnd
   0
 BLOCK
   5
-63
+5E
 330
-62
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockBegin
-  2
-*D8
- 70
-    1
- 10
-0
- 20
-0
-  3
-*D8
-  1
-
-  0
-LINE
-  5
-B4
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
--1
- 20
-90
- 11
-334
- 21
-90
-  0
-SOLID
-  5
-B5
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
--1
- 20
-90
- 30
-0
- 11
-1.5
- 21
-90.41628465777283
- 31
-0
- 12
-1.5
- 22
-89.58371534222717
- 32
-0
- 13
-1.5
- 23
-89.58371534222717
- 33
-0
-  0
-SOLID
-  5
-B6
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
-334
- 20
-90
- 30
-0
- 11
-331.5
- 21
-89.58371534222717
- 31
-0
- 12
-331.5
- 22
-90.41628465777283
- 32
-0
- 13
-331.5
- 23
-90.41628465777283
- 33
-0
-  0
-MTEXT
-  5
-B7
-100
-AcDbEntity
-  8
-Measurements
-  6
-CONTINUOUS
- 62
-    0
-370
-   -2
-100
-AcDbMText
- 10
-166.5
- 20
-91.875
- 30
-0
- 40
-2.5
- 41
-5.000000000000466
- 71
-    5
- 72
-    1
-  1
-335
-  7
-standard
-210
-0
-220
-0
-230
-1
- 50
-0
- 73
-    2
- 44
-1
-  0
-LINE
-  5
-B8
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
--1.000000000000001
- 20
-61.625
- 11
--0.9999999999999999
- 21
-91.25
-  0
-LINE
-  5
-B9
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
-334
- 20
-61.62499999999994
- 11
-334
- 21
-91.25
-  0
-ENDBLK
-  5
-64
-330
-62
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockEnd
-  0
-BLOCK
-  5
-66
-330
-65
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockBegin
-  2
-*D17
- 70
-    1
- 10
-0
- 20
-0
-  3
-*D17
-  1
-
-  0
-LINE
-  5
-BA
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
-20.625
- 20
-55
- 11
-31.25
- 21
-55
-  0
-LINE
-  5
-BB
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
-20.625
- 20
-73
- 11
-31.25
- 21
-73
-  0
-LINE
-  5
-BC
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
-30
- 20
-55
- 11
-30
- 21
-73
-  0
-SOLID
-  5
-BD
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
-30
- 20
-55
- 30
-0
- 11
-29.58371534222716
- 21
-57.5
- 31
-0
- 12
-30.41628465777284
- 22
-57.5
- 32
-0
- 13
-30.41628465777284
- 23
-57.5
- 33
-0
-  0
-SOLID
-  5
-BE
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
-30
- 20
-73
- 30
-0
- 11
-30.41628465777284
- 21
-70.5
- 31
-0
- 12
-29.58371534222716
- 22
-70.5
- 32
-0
- 13
-29.58371534222716
- 23
-70.5
- 33
-0
-  0
-MTEXT
-  5
-BF
-100
-AcDbEntity
-  8
-Measurements
-  6
-CONTINUOUS
- 62
-    0
-370
-   -2
-100
-AcDbMText
- 10
-28.125
- 20
-64
- 30
-0
- 40
-2.5
- 41
-2.5
- 71
-    5
- 72
-    1
-  1
-18
-  7
-standard
-210
-0
-220
-0
-230
-1
- 50
-90
- 73
-    2
- 44
-1
-  0
-ENDBLK
-  5
-67
-330
-65
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockEnd
-  0
-BLOCK
-  5
-69
-330
-68
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockBegin
-  2
-*D13
- 70
-    1
- 10
-0
- 20
-0
-  3
-*D13
-  1
-
-  0
-LINE
-  5
-C0
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
--1
- 20
-90
- 11
--15
- 21
-90
-  0
-SOLID
-  5
-C1
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
--1
- 20
-90
- 30
-0
- 11
--3.5
- 21
-89.58371534222717
- 31
-0
- 12
--3.5
- 22
-90.41628465777283
- 32
-0
- 13
--3.5
- 23
-90.41628465777283
- 33
-0
-  0
-SOLID
-  5
-C2
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
--15
- 20
-90
- 30
-0
- 11
--12.5
- 21
-90.41628465777283
- 31
-0
- 12
--12.5
- 22
-89.58371534222717
- 32
-0
- 13
--12.5
- 23
-89.58371534222717
- 33
-0
-  0
-MTEXT
-  5
-C3
-100
-AcDbEntity
-  8
-Measurements
-  6
-CONTINUOUS
- 62
-    0
-370
-   -2
-100
-AcDbMText
- 10
--8
- 20
-91.875
- 30
-0
- 40
-2.5
- 41
-2.777777777777778
- 71
-    5
- 72
-    1
-  1
-14
-  7
-standard
-210
-0
-220
-0
-230
-1
- 50
-360
- 73
-    2
- 44
-1
-  0
-LINE
-  5
-C4
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
--1
- 20
-61.625
- 11
--0.9999999999999999
- 21
-91.25
-  0
-LINE
-  5
-C5
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
--15
- 20
-61.625
- 11
--15
- 21
-91.25
-  0
-ENDBLK
-  5
-6A
-330
-68
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockEnd
-  0
-BLOCK
-  5
-6C
-330
-6B
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockBegin
-  2
-*D1
- 70
-    1
- 10
-0
- 20
-0
-  3
-*D1
-  1
-
-  0
-LINE
-  5
-C6
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
--5
- 20
--115.625
- 11
--5.000000000000004
- 21
--141.25
-  0
-LINE
-  5
-C7
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
-166.5
- 20
--115.625
- 11
-166.5
- 21
--141.25
-  0
-LINE
-  5
-C8
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
--5.000000000000004
- 20
--140
- 11
-166.5
- 21
--140
-  0
-SOLID
-  5
-C9
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
--5.000000000000004
- 20
--140
- 30
-0
- 11
--2.500000000000004
- 21
--139.5837153422272
- 31
-0
- 12
--2.500000000000004
- 22
--140.4162846577728
- 32
-0
- 13
--2.500000000000004
- 23
--140.4162846577728
- 33
-0
-  0
-SOLID
-  5
-CA
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
-166.5
- 20
--140
- 30
-0
- 11
-164
- 21
--140.4162846577728
- 31
-0
- 12
-164
- 22
--139.5837153422272
- 32
-0
- 13
-164
- 23
--139.5837153422272
- 33
-0
-  0
-MTEXT
-  5
-CB
-100
-AcDbEntity
-  8
-Measurements
-  6
-CONTINUOUS
- 62
-    0
-370
-   -2
-100
-AcDbMText
- 10
-80.75
- 20
--138.125
- 30
-0
- 40
-2.5
- 41
-6.80555555555571
- 71
-    5
- 72
-    1
-  1
-171,5
-  7
-standard
-210
-0
-220
-0
-230
-1
- 50
-0
- 73
-    2
- 44
-1
-  0
-ENDBLK
-  5
-6D
-330
-6B
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockEnd
-  0
-BLOCK
-  5
-6F
-330
-6E
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockBegin
-  2
-*D2
- 70
-    1
- 10
-0
- 20
-0
-  3
-*D2
-  1
-
-  0
-LINE
-  5
-CC
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
-355.625
- 20
-80
- 11
-391.25
- 21
-80
-  0
-LINE
-  5
-CD
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
-355.625
- 20
--130
- 11
-391.25
- 21
--130
-  0
-LINE
-  5
-CE
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
-390
- 20
-80
- 11
-390
- 21
--130
-  0
-SOLID
-  5
-CF
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
-390
- 20
-80
- 30
-0
- 11
-390.4162846577728
- 21
-77.5
- 31
-0
- 12
-389.5837153422272
- 22
-77.5
- 32
-0
- 13
-389.5837153422272
- 23
-77.5
- 33
-0
-  0
-SOLID
-  5
-D0
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
-390
- 20
--130
- 30
-0
- 11
-389.5837153422272
- 21
--127.5
- 31
-0
- 12
-390.4162846577728
- 22
--127.5
- 32
-0
- 13
-390.4162846577728
- 23
--127.5
- 33
-0
-  0
-MTEXT
-  5
-D1
-100
-AcDbEntity
-  8
-Measurements
-  6
-CONTINUOUS
- 62
-    0
-370
-   -2
-100
-AcDbMText
- 10
-388.125
- 20
--25
- 30
-0
- 40
-2.5
- 41
-4.444444444444445
- 71
-    5
- 72
-    1
-  1
-210
-  7
-standard
-210
-0
-220
-0
-230
-1
- 50
-90
- 73
-    2
- 44
-1
-  0
-ENDBLK
-  5
-70
-330
-6E
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockEnd
-  0
-BLOCK
-  5
-72
-330
-71
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockBegin
-  2
-*D11
- 70
-    1
- 10
-0
- 20
-0
-  3
-*D11
-  1
-
-  0
-LINE
-  5
-D2
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
-355
- 20
-120
- 11
--20
- 21
-120
-  0
-SOLID
-  5
-D3
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
-355
- 20
-120
- 30
-0
- 11
-352.5
- 21
-119.5837153422272
- 31
-0
- 12
-352.5
- 22
-120.4162846577728
- 32
-0
- 13
-352.5
- 23
-120.4162846577728
- 33
-0
-  0
-SOLID
-  5
-D4
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
--20
- 20
-120
- 30
-0
- 11
--17.5
- 21
-120.4162846577728
- 31
-0
- 12
--17.5
- 22
-119.5837153422272
- 32
-0
- 13
--17.5
- 23
-119.5837153422272
- 33
-0
-  0
-MTEXT
-  5
-D5
-100
-AcDbEntity
-  8
-Measurements
-  6
-CONTINUOUS
- 62
-    0
-370
-   -2
-100
-AcDbMText
- 10
-167.5
- 20
-121.875
- 30
-0
- 40
-2.5
- 41
-5.000000000000311
- 71
-    5
- 72
-    1
-  1
-375
-  7
-standard
-210
-0
-220
-0
-230
-1
- 50
-360
- 73
-    2
- 44
-1
-  0
-LINE
-  5
-D6
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
-355
- 20
-80.625
- 11
-355
- 21
-121.25
-  0
-LINE
-  5
-D7
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
--20
- 20
-80.625
- 11
--20
- 21
-121.25
-  0
-ENDBLK
-  5
-73
-330
-71
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockEnd
-  0
-BLOCK
-  5
-75
-330
-74
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockBegin
-  2
-*D4
- 70
-    1
- 10
-0
- 20
-0
-  3
-*D4
-  1
-
-  0
-LINE
-  5
-D8
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
--5.625
- 20
--115
- 11
--31.25
- 21
--115
-  0
-LINE
-  5
-D9
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
--5.625
- 20
--123
- 11
--31.25
- 21
--123
-  0
-LINE
-  5
-DA
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
--30
- 20
--115
- 11
--30
- 21
--123
-  0
-SOLID
-  5
-DB
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
--30
- 20
--115
- 30
-0
- 11
--29.58371534222716
- 21
--117.5
- 31
-0
- 12
--30.41628465777284
- 22
--117.5
- 32
-0
- 13
--30.41628465777284
- 23
--117.5
- 33
-0
-  0
-SOLID
-  5
-DC
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
--30
- 20
--123
- 30
-0
- 11
--30.41628465777284
- 21
--120.5
- 31
-0
- 12
--29.58371534222716
- 22
--120.5
- 32
-0
- 13
--29.58371534222716
- 23
--120.5
- 33
-0
-  0
-MTEXT
-  5
-DD
-100
-AcDbEntity
-  8
-Measurements
-  6
-CONTINUOUS
- 62
-    0
-370
-   -2
-100
-AcDbMText
- 10
--31.875
- 20
--119
- 30
-0
- 40
-2.5
- 41
-1.111111111111111
- 71
-    5
- 72
-    1
-  1
-8
-  7
-standard
-210
-0
-220
-0
-230
-1
- 50
-90
- 73
-    2
- 44
-1
-  0
-ENDBLK
-  5
-76
-330
-74
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockEnd
-  0
-BLOCK
-  5
-78
-330
-77
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockBegin
-  2
-*D9
- 70
-    1
- 10
-0
- 20
-0
-  3
-*D9
-  1
-
-  0
-LINE
-  5
-DE
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
-346
- 20
-100
- 11
--13
- 21
-100
-  0
-SOLID
-  5
-DF
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
-346
- 20
-100
- 30
-0
- 11
-343.5
- 21
-99.58371534222717
- 31
-0
- 12
-343.5
- 22
-100.4162846577728
- 32
-0
- 13
-343.5
- 23
-100.4162846577728
- 33
-0
-  0
-SOLID
-  5
-E0
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
--13
- 20
-100
- 30
-0
- 11
--10.5
- 21
-100.4162846577728
- 31
-0
- 12
--10.5
- 22
-99.58371534222717
- 32
-0
- 13
--10.5
- 23
-99.58371534222717
- 33
-0
-  0
-MTEXT
-  5
-E1
-100
-AcDbEntity
-  8
-Measurements
-  6
-CONTINUOUS
- 62
-    0
-370
-   -2
-100
-AcDbMText
- 10
-166.5
- 20
-101.875
- 30
-0
- 40
-2.5
- 41
-5.000000000000311
- 71
-    5
- 72
-    1
-  1
-359
-  7
-standard
-210
-0
-220
-0
-230
-1
- 50
-360
- 73
-    2
- 44
-1
-  0
-LINE
-  5
-E2
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
-346
- 20
-73.625
- 11
-346
- 21
-101.25
-  0
-LINE
-  5
-E3
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
--13
- 20
-73.625
- 11
--13
- 21
-101.25
-  0
-ENDBLK
-  5
-79
-330
-77
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockEnd
-  0
-BLOCK
-  5
-7B
-330
-7A
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockBegin
-  2
-*D10
- 70
-    1
- 10
-0
- 20
-0
-  3
-*D10
-  1
-
-  0
-LINE
-  5
-E4
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
--15
- 20
-110
- 11
-348
- 21
-110
-  0
-SOLID
-  5
-E5
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
--15
- 20
-110
- 30
-0
- 11
--12.5
- 21
-110.4162846577728
- 31
-0
- 12
--12.5
- 22
-109.5837153422272
- 32
-0
- 13
--12.5
- 23
-109.5837153422272
- 33
-0
-  0
-SOLID
-  5
-E6
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
-348
- 20
-110
- 30
-0
- 11
-345.5
- 21
-109.5837153422272
- 31
-0
- 12
-345.5
- 22
-110.4162846577728
- 32
-0
- 13
-345.5
- 23
-110.4162846577728
- 33
-0
-  0
-MTEXT
-  5
-E7
-100
-AcDbEntity
-  8
-Measurements
-  6
-CONTINUOUS
- 62
-    0
-370
-   -2
-100
-AcDbMText
- 10
-166.5
- 20
-111.875
- 30
-0
- 40
-2.5
- 41
-5.000000000000466
- 71
-    5
- 72
-    1
-  1
-363
-  7
-standard
-210
-0
-220
-0
-230
-1
- 50
-0
- 73
-    2
- 44
-1
-  0
-LINE
-  5
-E8
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
--15
- 20
-75.625
- 11
--15
- 21
-111.25
-  0
-LINE
-  5
-E9
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
-348
- 20
-75.62499999999993
- 11
-348
- 21
-111.25
-  0
-ENDBLK
-  5
-7C
-330
-7A
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockEnd
-  0
-BLOCK
-  5
-7E
-330
-7D
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockBegin
-  2
-*D3
- 70
-    1
- 10
-0
- 20
-0
-  3
-*D3
-  1
-
-  0
-LINE
-  5
-EA
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
--5
- 20
--115.625
- 11
--5.000000000000004
- 21
--141.25
-  0
-LINE
-  5
-EB
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
--15
- 20
--115.625
- 11
--15.00000000000001
- 21
--141.25
-  0
-LINE
-  5
-EC
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
--5.000000000000004
- 20
--140
- 11
--15.00000000000001
- 21
--140
-  0
-SOLID
-  5
-ED
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
--5.000000000000004
- 20
--140
- 30
-0
- 11
--7.500000000000004
- 21
--140.4162846577728
- 31
-0
- 12
--7.500000000000004
- 22
--139.5837153422272
- 32
-0
- 13
--7.500000000000004
- 23
--139.5837153422272
- 33
-0
-  0
-SOLID
-  5
-EE
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
--15.00000000000001
- 20
--140
- 30
-0
- 11
--12.50000000000001
- 21
--139.5837153422272
- 31
-0
- 12
--12.50000000000001
- 22
--140.4162846577728
- 32
-0
- 13
--12.50000000000001
- 23
--140.4162846577728
- 33
-0
-  0
-MTEXT
-  5
-EF
-100
-AcDbEntity
-  8
-Measurements
-  6
-CONTINUOUS
- 62
-    0
-370
-   -2
-100
-AcDbMText
- 10
--10.00000000000001
- 20
--138.125
- 30
-0
- 40
-2.5
- 41
-2.5
- 71
-    5
- 72
-    1
-  1
-10
-  7
-standard
-210
-0
-220
-0
-230
-1
- 50
-360
- 73
-    2
- 44
-1
-  0
-ENDBLK
-  5
-7F
-330
-7D
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockEnd
-  0
-BLOCK
-  5
-81
-330
-80
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockBegin
-  2
-*D12
- 70
-    1
- 10
-0
- 20
-0
-  3
-*D12
-  1
-
-  0
-LINE
-  5
-F0
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
-334
- 20
-90
- 11
-348
- 21
-90
-  0
-SOLID
-  5
-F1
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
-334
- 20
-90
- 30
-0
- 11
-336.5
- 21
-90.41628465777283
- 31
-0
- 12
-336.5
- 22
-89.58371534222717
- 32
-0
- 13
-336.5
- 23
-89.58371534222717
- 33
-0
-  0
-SOLID
-  5
-F2
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbTrace
- 10
-348
- 20
-90
- 30
-0
- 11
-345.5
- 21
-89.58371534222717
- 31
-0
- 12
-345.5
- 22
-90.41628465777283
- 32
-0
- 13
-345.5
- 23
-90.41628465777283
- 33
-0
-  0
-MTEXT
-  5
-F3
-100
-AcDbEntity
-  8
-Measurements
-  6
-CONTINUOUS
- 62
-    0
-370
-   -2
-100
-AcDbMText
- 10
-341
- 20
-91.875
- 30
-0
- 40
-2.5
- 41
-2.777777777777778
- 71
-    5
- 72
-    1
-  1
-14
-  7
-standard
-210
-0
-220
-0
-230
-1
- 50
-0
- 73
-    2
- 44
-1
-  0
-LINE
-  5
-F4
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
-334
- 20
-61.625
- 11
-334
- 21
-91.25
-  0
-LINE
-  5
-F5
-100
-AcDbEntity
-  8
-Measurements
-  6
-ByBlock
- 62
-    0
-370
-   -2
-100
-AcDbLine
- 10
-348
- 20
-61.625
- 11
-348
- 21
-91.25
-  0
-ENDBLK
-  5
-82
-330
-80
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockEnd
-  0
-BLOCK
-  5
-84
-330
-83
+5D
 100
 AcDbEntity
   8
@@ -6771,7 +3751,7 @@ AcDbBlockBegin
   0
 LINE
   5
-F6
+A9
 100
 AcDbEntity
   8
@@ -6795,7 +3775,7 @@ AcDbLine
   0
 SOLID
   5
-F7
+AA
 100
 AcDbEntity
   8
@@ -6835,7 +3815,7 @@ AcDbTrace
   0
 SOLID
   5
-F8
+AB
 100
 AcDbEntity
   8
@@ -6875,7 +3855,7 @@ AcDbTrace
   0
 MTEXT
   5
-F9
+AC
 100
 AcDbEntity
   8
@@ -6921,7 +3901,7 @@ standard
   0
 LINE
   5
-FA
+AD
 100
 AcDbEntity
   8
@@ -6945,7 +3925,7 @@ AcDbLine
   0
 LINE
   5
-FB
+AE
 100
 AcDbEntity
   8
@@ -6969,9 +3949,9 @@ AcDbLine
   0
 ENDBLK
   5
-85
+5F
 330
-83
+5D
 100
 AcDbEntity
   8
@@ -6981,9 +3961,9 @@ AcDbBlockEnd
   0
 BLOCK
   5
-87
+61
 330
-86
+60
 100
 AcDbEntity
   8
@@ -6991,7 +3971,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D5
+*D2
  70
     1
  10
@@ -6999,13 +3979,13 @@ AcDbBlockBegin
  20
 0
   3
-*D5
+*D2
   1
 
   0
 LINE
   5
-FC
+AF
 100
 AcDbEntity
   8
@@ -7019,17 +3999,17 @@ ByBlock
 100
 AcDbLine
  10
--15.625
+355.625
  20
-75
+80
  11
--51.24999999999997
+391.25
  21
-75
+80
   0
 LINE
   5
-FD
+B0
 100
 AcDbEntity
   8
@@ -7043,17 +4023,17 @@ ByBlock
 100
 AcDbLine
  10
--15.62500000000003
+355.625
  20
--123
+-130
  11
--51.25
+391.25
  21
--123
+-130
   0
 LINE
   5
-FE
+B1
 100
 AcDbEntity
   8
@@ -7067,17 +4047,17 @@ ByBlock
 100
 AcDbLine
  10
--49.99999999999997
+390
  20
-75
+80
  11
--50
+390
  21
--123
+-130
   0
 SOLID
   5
-FF
+B2
 100
 AcDbEntity
   8
@@ -7091,33 +4071,33 @@ ByBlock
 100
 AcDbTrace
  10
--49.99999999999997
+390
  20
-75
+80
  30
 0
  11
--49.58371534222713
+390.4162846577728
  21
-72.5
+77.5
  31
 0
  12
--50.41628465777281
+389.5837153422272
  22
-72.5
+77.5
  32
 0
  13
--50.41628465777281
+389.5837153422272
  23
-72.5
+77.5
  33
 0
   0
 SOLID
   5
-100
+B3
 100
 AcDbEntity
   8
@@ -7131,33 +4111,33 @@ ByBlock
 100
 AcDbTrace
  10
--50
+390
  20
--123
+-130
  30
 0
  11
--50.41628465777284
+389.5837153422272
  21
--120.5
+-127.5
  31
 0
  12
--49.58371534222716
+390.4162846577728
  22
--120.5
+-127.5
  32
 0
  13
--49.58371534222716
+390.4162846577728
  23
--120.5
+-127.5
  33
 0
   0
 MTEXT
   5
-101
+B4
 100
 AcDbEntity
   8
@@ -7171,9 +4151,9 @@ CONTINUOUS
 100
 AcDbMText
  10
--51.87499999999999
+388.125
  20
--24
+-25
  30
 0
  40
@@ -7185,7 +4165,7 @@ AcDbMText
  72
     1
   1
-198
+210
   7
 standard
 210
@@ -7203,9 +4183,9 @@ standard
   0
 ENDBLK
   5
-88
+62
 330
-86
+60
 100
 AcDbEntity
   8
@@ -7215,9 +4195,477 @@ AcDbBlockEnd
   0
 BLOCK
   5
-8A
+64
 330
-89
+63
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D12
+ 70
+    1
+ 10
+0
+ 20
+0
+  3
+*D12
+  1
+
+  0
+LINE
+  5
+B5
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+334
+ 20
+90
+ 11
+348
+ 21
+90
+  0
+SOLID
+  5
+B6
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+334
+ 20
+90
+ 30
+0
+ 11
+336.5
+ 21
+90.41628465777283
+ 31
+0
+ 12
+336.5
+ 22
+89.58371534222717
+ 32
+0
+ 13
+336.5
+ 23
+89.58371534222717
+ 33
+0
+  0
+SOLID
+  5
+B7
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+348
+ 20
+90
+ 30
+0
+ 11
+345.5
+ 21
+89.58371534222717
+ 31
+0
+ 12
+345.5
+ 22
+90.41628465777283
+ 32
+0
+ 13
+345.5
+ 23
+90.41628465777283
+ 33
+0
+  0
+MTEXT
+  5
+B8
+100
+AcDbEntity
+  8
+Measurements
+  6
+CONTINUOUS
+ 62
+    0
+370
+   -2
+100
+AcDbMText
+ 10
+341
+ 20
+91.875
+ 30
+0
+ 40
+2.5
+ 41
+2.777777777777778
+ 71
+    5
+ 72
+    1
+  1
+14
+  7
+standard
+210
+0
+220
+0
+230
+1
+ 50
+0
+ 73
+    2
+ 44
+1
+  0
+LINE
+  5
+B9
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+334
+ 20
+61.625
+ 11
+334
+ 21
+91.25
+  0
+LINE
+  5
+BA
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+348
+ 20
+61.625
+ 11
+348
+ 21
+91.25
+  0
+ENDBLK
+  5
+65
+330
+63
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+67
+330
+66
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D8
+ 70
+    1
+ 10
+0
+ 20
+0
+  3
+*D8
+  1
+
+  0
+LINE
+  5
+BB
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-1
+ 20
+90
+ 11
+334
+ 21
+90
+  0
+SOLID
+  5
+BC
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+-1
+ 20
+90
+ 30
+0
+ 11
+1.5
+ 21
+90.41628465777283
+ 31
+0
+ 12
+1.5
+ 22
+89.58371534222717
+ 32
+0
+ 13
+1.5
+ 23
+89.58371534222717
+ 33
+0
+  0
+SOLID
+  5
+BD
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+334
+ 20
+90
+ 30
+0
+ 11
+331.5
+ 21
+89.58371534222717
+ 31
+0
+ 12
+331.5
+ 22
+90.41628465777283
+ 32
+0
+ 13
+331.5
+ 23
+90.41628465777283
+ 33
+0
+  0
+MTEXT
+  5
+BE
+100
+AcDbEntity
+  8
+Measurements
+  6
+CONTINUOUS
+ 62
+    0
+370
+   -2
+100
+AcDbMText
+ 10
+166.5
+ 20
+91.875
+ 30
+0
+ 40
+2.5
+ 41
+5.000000000000466
+ 71
+    5
+ 72
+    1
+  1
+335
+  7
+standard
+210
+0
+220
+0
+230
+1
+ 50
+0
+ 73
+    2
+ 44
+1
+  0
+LINE
+  5
+BF
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-1.000000000000001
+ 20
+61.625
+ 11
+-0.9999999999999999
+ 21
+91.25
+  0
+LINE
+  5
+C0
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+334
+ 20
+61.62499999999994
+ 11
+334
+ 21
+91.25
+  0
+ENDBLK
+  5
+68
+330
+66
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+6A
+330
+69
 100
 AcDbEntity
   8
@@ -7239,7 +4687,7 @@ AcDbBlockBegin
   0
 LINE
   5
-102
+C1
 100
 AcDbEntity
   8
@@ -7263,7 +4711,7 @@ AcDbLine
   0
 LINE
   5
-103
+C2
 100
 AcDbEntity
   8
@@ -7287,7 +4735,7 @@ AcDbLine
   0
 LINE
   5
-104
+C3
 100
 AcDbEntity
   8
@@ -7311,7 +4759,7 @@ AcDbLine
   0
 SOLID
   5
-105
+C4
 100
 AcDbEntity
   8
@@ -7351,7 +4799,7 @@ AcDbTrace
   0
 SOLID
   5
-106
+C5
 100
 AcDbEntity
   8
@@ -7391,7 +4839,7 @@ AcDbTrace
   0
 MTEXT
   5
-107
+C6
 100
 AcDbEntity
   8
@@ -7437,9 +4885,9 @@ standard
   0
 ENDBLK
   5
-8B
+6B
 330
-89
+69
 100
 AcDbEntity
   8
@@ -7449,9 +4897,2583 @@ AcDbBlockEnd
   0
 BLOCK
   5
-8D
+6D
 330
+6C
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D4
+ 70
+    1
+ 10
+0
+ 20
+0
+  3
+*D4
+  1
+
+  0
+LINE
+  5
+C7
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-5.625
+ 20
+-115
+ 11
+-31.25
+ 21
+-115
+  0
+LINE
+  5
+C8
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-5.625
+ 20
+-123
+ 11
+-31.25
+ 21
+-123
+  0
+LINE
+  5
+C9
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-30
+ 20
+-115
+ 11
+-30
+ 21
+-123
+  0
+SOLID
+  5
+CA
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+-30
+ 20
+-115
+ 30
+0
+ 11
+-29.58371534222716
+ 21
+-117.5
+ 31
+0
+ 12
+-30.41628465777284
+ 22
+-117.5
+ 32
+0
+ 13
+-30.41628465777284
+ 23
+-117.5
+ 33
+0
+  0
+SOLID
+  5
+CB
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+-30
+ 20
+-123
+ 30
+0
+ 11
+-30.41628465777284
+ 21
+-120.5
+ 31
+0
+ 12
+-29.58371534222716
+ 22
+-120.5
+ 32
+0
+ 13
+-29.58371534222716
+ 23
+-120.5
+ 33
+0
+  0
+MTEXT
+  5
+CC
+100
+AcDbEntity
+  8
+Measurements
+  6
+CONTINUOUS
+ 62
+    0
+370
+   -2
+100
+AcDbMText
+ 10
+-31.875
+ 20
+-119
+ 30
+0
+ 40
+2.5
+ 41
+1.111111111111111
+ 71
+    5
+ 72
+    1
+  1
+8
+  7
+standard
+210
+0
+220
+0
+230
+1
+ 50
+90
+ 73
+    2
+ 44
+1
+  0
+ENDBLK
+  5
+6E
+330
+6C
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+70
+330
+6F
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D14
+ 70
+    1
+ 10
+0
+ 20
+0
+  3
+*D14
+  1
+
+  0
+LINE
+  5
+CD
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-6.000000000000002
+ 20
+94
+ 11
+8
+ 21
+94
+  0
+SOLID
+  5
+CE
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+-1.000000000000001
+ 20
+94
+ 30
+0
+ 11
+-3.500000000000001
+ 21
+93.58371534222717
+ 31
+0
+ 12
+-3.500000000000001
+ 22
+94.41628465777283
+ 32
+0
+ 13
+-3.500000000000001
+ 23
+94.41628465777283
+ 33
+0
+  0
+SOLID
+  5
+CF
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+3
+ 20
+94
+ 30
+0
+ 11
+5.5
+ 21
+94.41628465777283
+ 31
+0
+ 12
+5.5
+ 22
+93.58371534222717
+ 32
+0
+ 13
+5.5
+ 23
+93.58371534222717
+ 33
+0
+  0
+MTEXT
+  5
+D0
+100
+AcDbEntity
+  8
+Measurements
+  6
+CONTINUOUS
+ 62
+    0
+370
+   -2
+100
+AcDbMText
+ 10
+0.9999999999999992
+ 20
+95.875
+ 30
+0
+ 40
+2.5
+ 41
+1.388888888888889
+ 71
+    5
+ 72
+    1
+  1
+4
+  7
+standard
+210
+0
+220
+0
+230
+1
+ 50
+0
+ 73
+    2
+ 44
+1
+  0
+LINE
+  5
+D1
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-1.000000000000001
+ 20
+61.625
+ 11
+-1.000000000000001
+ 21
+95.25
+  0
+LINE
+  5
+D2
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+3
+ 20
+61.625
+ 11
+3
+ 21
+95.25
+  0
+ENDBLK
+  5
+71
+330
+6F
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+73
+330
+72
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D1
+ 70
+    1
+ 10
+0
+ 20
+0
+  3
+*D1
+  1
+
+  0
+LINE
+  5
+D3
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-5
+ 20
+-115.625
+ 11
+-5.000000000000004
+ 21
+-141.25
+  0
+LINE
+  5
+D4
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+166.5
+ 20
+-115.625
+ 11
+166.5
+ 21
+-141.25
+  0
+LINE
+  5
+D5
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-5.000000000000004
+ 20
+-140
+ 11
+166.5
+ 21
+-140
+  0
+SOLID
+  5
+D6
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+-5.000000000000004
+ 20
+-140
+ 30
+0
+ 11
+-2.500000000000004
+ 21
+-139.5837153422272
+ 31
+0
+ 12
+-2.500000000000004
+ 22
+-140.4162846577728
+ 32
+0
+ 13
+-2.500000000000004
+ 23
+-140.4162846577728
+ 33
+0
+  0
+SOLID
+  5
+D7
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+166.5
+ 20
+-140
+ 30
+0
+ 11
+164
+ 21
+-140.4162846577728
+ 31
+0
+ 12
+164
+ 22
+-139.5837153422272
+ 32
+0
+ 13
+164
+ 23
+-139.5837153422272
+ 33
+0
+  0
+MTEXT
+  5
+D8
+100
+AcDbEntity
+  8
+Measurements
+  6
+CONTINUOUS
+ 62
+    0
+370
+   -2
+100
+AcDbMText
+ 10
+80.75
+ 20
+-138.125
+ 30
+0
+ 40
+2.5
+ 41
+6.80555555555571
+ 71
+    5
+ 72
+    1
+  1
+171,5
+  7
+standard
+210
+0
+220
+0
+230
+1
+ 50
+0
+ 73
+    2
+ 44
+1
+  0
+ENDBLK
+  5
+74
+330
+72
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+76
+330
+75
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D17
+ 70
+    1
+ 10
+0
+ 20
+0
+  3
+*D17
+  1
+
+  0
+LINE
+  5
+D9
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+20.625
+ 20
+55
+ 11
+31.25
+ 21
+55
+  0
+LINE
+  5
+DA
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+20.625
+ 20
+73
+ 11
+31.25
+ 21
+73
+  0
+LINE
+  5
+DB
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+30
+ 20
+55
+ 11
+30
+ 21
+73
+  0
+SOLID
+  5
+DC
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+30
+ 20
+55
+ 30
+0
+ 11
+29.58371534222716
+ 21
+57.5
+ 31
+0
+ 12
+30.41628465777284
+ 22
+57.5
+ 32
+0
+ 13
+30.41628465777284
+ 23
+57.5
+ 33
+0
+  0
+SOLID
+  5
+DD
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+30
+ 20
+73
+ 30
+0
+ 11
+30.41628465777284
+ 21
+70.5
+ 31
+0
+ 12
+29.58371534222716
+ 22
+70.5
+ 32
+0
+ 13
+29.58371534222716
+ 23
+70.5
+ 33
+0
+  0
+MTEXT
+  5
+DE
+100
+AcDbEntity
+  8
+Measurements
+  6
+CONTINUOUS
+ 62
+    0
+370
+   -2
+100
+AcDbMText
+ 10
+28.125
+ 20
+64
+ 30
+0
+ 40
+2.5
+ 41
+2.5
+ 71
+    5
+ 72
+    1
+  1
+18
+  7
+standard
+210
+0
+220
+0
+230
+1
+ 50
+90
+ 73
+    2
+ 44
+1
+  0
+ENDBLK
+  5
+77
+330
+75
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+79
+330
+78
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D13
+ 70
+    1
+ 10
+0
+ 20
+0
+  3
+*D13
+  1
+
+  0
+LINE
+  5
+DF
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-1
+ 20
+90
+ 11
+-15
+ 21
+90
+  0
+SOLID
+  5
+E0
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+-1
+ 20
+90
+ 30
+0
+ 11
+-3.5
+ 21
+89.58371534222717
+ 31
+0
+ 12
+-3.5
+ 22
+90.41628465777283
+ 32
+0
+ 13
+-3.5
+ 23
+90.41628465777283
+ 33
+0
+  0
+SOLID
+  5
+E1
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+-15
+ 20
+90
+ 30
+0
+ 11
+-12.5
+ 21
+90.41628465777283
+ 31
+0
+ 12
+-12.5
+ 22
+89.58371534222717
+ 32
+0
+ 13
+-12.5
+ 23
+89.58371534222717
+ 33
+0
+  0
+MTEXT
+  5
+E2
+100
+AcDbEntity
+  8
+Measurements
+  6
+CONTINUOUS
+ 62
+    0
+370
+   -2
+100
+AcDbMText
+ 10
+-8
+ 20
+91.875
+ 30
+0
+ 40
+2.5
+ 41
+2.777777777777778
+ 71
+    5
+ 72
+    1
+  1
+14
+  7
+standard
+210
+0
+220
+0
+230
+1
+ 50
+360
+ 73
+    2
+ 44
+1
+  0
+LINE
+  5
+E3
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-1
+ 20
+61.625
+ 11
+-0.9999999999999999
+ 21
+91.25
+  0
+LINE
+  5
+E4
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-15
+ 20
+61.625
+ 11
+-15
+ 21
+91.25
+  0
+ENDBLK
+  5
+7A
+330
+78
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+7C
+330
+7B
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D7
+ 70
+    1
+ 10
+0
+ 20
+0
+  3
+*D7
+  1
+
+  0
+LINE
+  5
+E5
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-1.625000000000032
+ 20
+-109
+ 11
+-31.25000000000003
+ 21
+-109
+  0
+LINE
+  5
+E6
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-1.625000000000001
+ 20
+61
+ 11
+-31.25
+ 21
+61
+  0
+LINE
+  5
+E7
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-30.00000000000003
+ 20
+-109
+ 11
+-30
+ 21
+61
+  0
+SOLID
+  5
+E8
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+-30.00000000000003
+ 20
+-109
+ 30
+0
+ 11
+-30.41628465777287
+ 21
+-106.5
+ 31
+0
+ 12
+-29.58371534222719
+ 22
+-106.5
+ 32
+0
+ 13
+-29.58371534222719
+ 23
+-106.5
+ 33
+0
+  0
+SOLID
+  5
+E9
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+-30
+ 20
+61
+ 30
+0
+ 11
+-29.58371534222716
+ 21
+58.5
+ 31
+0
+ 12
+-30.41628465777284
+ 22
+58.5
+ 32
+0
+ 13
+-30.41628465777284
+ 23
+58.5
+ 33
+0
+  0
+MTEXT
+  5
+EA
+100
+AcDbEntity
+  8
+Measurements
+  6
+CONTINUOUS
+ 62
+    0
+370
+   -2
+100
+AcDbMText
+ 10
+-31.87500000000001
+ 20
+-24
+ 30
+0
+ 40
+2.5
+ 41
+4.444444444444445
+ 71
+    5
+ 72
+    1
+  1
+170
+  7
+standard
+210
+0
+220
+0
+230
+1
+ 50
+89.99999999999999
+ 73
+    2
+ 44
+1
+  0
+ENDBLK
+  5
+7D
+330
+7B
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+7F
+330
+7E
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D9
+ 70
+    1
+ 10
+0
+ 20
+0
+  3
+*D9
+  1
+
+  0
+LINE
+  5
+EB
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+346
+ 20
+100
+ 11
+-13
+ 21
+100
+  0
+SOLID
+  5
+EC
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+346
+ 20
+100
+ 30
+0
+ 11
+343.5
+ 21
+99.58371534222717
+ 31
+0
+ 12
+343.5
+ 22
+100.4162846577728
+ 32
+0
+ 13
+343.5
+ 23
+100.4162846577728
+ 33
+0
+  0
+SOLID
+  5
+ED
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+-13
+ 20
+100
+ 30
+0
+ 11
+-10.5
+ 21
+100.4162846577728
+ 31
+0
+ 12
+-10.5
+ 22
+99.58371534222717
+ 32
+0
+ 13
+-10.5
+ 23
+99.58371534222717
+ 33
+0
+  0
+MTEXT
+  5
+EE
+100
+AcDbEntity
+  8
+Measurements
+  6
+CONTINUOUS
+ 62
+    0
+370
+   -2
+100
+AcDbMText
+ 10
+166.5
+ 20
+101.875
+ 30
+0
+ 40
+2.5
+ 41
+5.000000000000311
+ 71
+    5
+ 72
+    1
+  1
+359
+  7
+standard
+210
+0
+220
+0
+230
+1
+ 50
+360
+ 73
+    2
+ 44
+1
+  0
+LINE
+  5
+EF
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+346
+ 20
+73.625
+ 11
+346
+ 21
+101.25
+  0
+LINE
+  5
+F0
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-13
+ 20
+73.625
+ 11
+-13
+ 21
+101.25
+  0
+ENDBLK
+  5
+80
+330
+7E
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+82
+330
+81
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D11
+ 70
+    1
+ 10
+0
+ 20
+0
+  3
+*D11
+  1
+
+  0
+LINE
+  5
+F1
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+355
+ 20
+120
+ 11
+-20
+ 21
+120
+  0
+SOLID
+  5
+F2
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+355
+ 20
+120
+ 30
+0
+ 11
+352.5
+ 21
+119.5837153422272
+ 31
+0
+ 12
+352.5
+ 22
+120.4162846577728
+ 32
+0
+ 13
+352.5
+ 23
+120.4162846577728
+ 33
+0
+  0
+SOLID
+  5
+F3
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+-20
+ 20
+120
+ 30
+0
+ 11
+-17.5
+ 21
+120.4162846577728
+ 31
+0
+ 12
+-17.5
+ 22
+119.5837153422272
+ 32
+0
+ 13
+-17.5
+ 23
+119.5837153422272
+ 33
+0
+  0
+MTEXT
+  5
+F4
+100
+AcDbEntity
+  8
+Measurements
+  6
+CONTINUOUS
+ 62
+    0
+370
+   -2
+100
+AcDbMText
+ 10
+167.5
+ 20
+121.875
+ 30
+0
+ 40
+2.5
+ 41
+5.000000000000311
+ 71
+    5
+ 72
+    1
+  1
+375
+  7
+standard
+210
+0
+220
+0
+230
+1
+ 50
+360
+ 73
+    2
+ 44
+1
+  0
+LINE
+  5
+F5
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+355
+ 20
+80.625
+ 11
+355
+ 21
+121.25
+  0
+LINE
+  5
+F6
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-20
+ 20
+80.625
+ 11
+-20
+ 21
+121.25
+  0
+ENDBLK
+  5
+83
+330
+81
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+85
+330
+84
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D3
+ 70
+    1
+ 10
+0
+ 20
+0
+  3
+*D3
+  1
+
+  0
+LINE
+  5
+F7
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-5
+ 20
+-115.625
+ 11
+-5.000000000000004
+ 21
+-141.25
+  0
+LINE
+  5
+F8
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-15
+ 20
+-115.625
+ 11
+-15.00000000000001
+ 21
+-141.25
+  0
+LINE
+  5
+F9
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-5.000000000000004
+ 20
+-140
+ 11
+-15.00000000000001
+ 21
+-140
+  0
+SOLID
+  5
+FA
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+-5.000000000000004
+ 20
+-140
+ 30
+0
+ 11
+-7.500000000000004
+ 21
+-140.4162846577728
+ 31
+0
+ 12
+-7.500000000000004
+ 22
+-139.5837153422272
+ 32
+0
+ 13
+-7.500000000000004
+ 23
+-139.5837153422272
+ 33
+0
+  0
+SOLID
+  5
+FB
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+-15.00000000000001
+ 20
+-140
+ 30
+0
+ 11
+-12.50000000000001
+ 21
+-139.5837153422272
+ 31
+0
+ 12
+-12.50000000000001
+ 22
+-140.4162846577728
+ 32
+0
+ 13
+-12.50000000000001
+ 23
+-140.4162846577728
+ 33
+0
+  0
+MTEXT
+  5
+FC
+100
+AcDbEntity
+  8
+Measurements
+  6
+CONTINUOUS
+ 62
+    0
+370
+   -2
+100
+AcDbMText
+ 10
+-10.00000000000001
+ 20
+-138.125
+ 30
+0
+ 40
+2.5
+ 41
+2.5
+ 71
+    5
+ 72
+    1
+  1
+10
+  7
+standard
+210
+0
+220
+0
+230
+1
+ 50
+360
+ 73
+    2
+ 44
+1
+  0
+ENDBLK
+  5
+86
+330
+84
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+88
+330
+87
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D5
+ 70
+    1
+ 10
+0
+ 20
+0
+  3
+*D5
+  1
+
+  0
+LINE
+  5
+FD
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-15.625
+ 20
+75
+ 11
+-51.24999999999997
+ 21
+75
+  0
+LINE
+  5
+FE
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-15.62500000000003
+ 20
+-123
+ 11
+-51.25
+ 21
+-123
+  0
+LINE
+  5
+FF
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-49.99999999999997
+ 20
+75
+ 11
+-50
+ 21
+-123
+  0
+SOLID
+  5
+100
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+-49.99999999999997
+ 20
+75
+ 30
+0
+ 11
+-49.58371534222713
+ 21
+72.5
+ 31
+0
+ 12
+-50.41628465777281
+ 22
+72.5
+ 32
+0
+ 13
+-50.41628465777281
+ 23
+72.5
+ 33
+0
+  0
+SOLID
+  5
+101
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+-50
+ 20
+-123
+ 30
+0
+ 11
+-50.41628465777284
+ 21
+-120.5
+ 31
+0
+ 12
+-49.58371534222716
+ 22
+-120.5
+ 32
+0
+ 13
+-49.58371534222716
+ 23
+-120.5
+ 33
+0
+  0
+MTEXT
+  5
+102
+100
+AcDbEntity
+  8
+Measurements
+  6
+CONTINUOUS
+ 62
+    0
+370
+   -2
+100
+AcDbMText
+ 10
+-51.87499999999999
+ 20
+-24
+ 30
+0
+ 40
+2.5
+ 41
+4.444444444444445
+ 71
+    5
+ 72
+    1
+  1
+198
+  7
+standard
+210
+0
+220
+0
+230
+1
+ 50
+90
+ 73
+    2
+ 44
+1
+  0
+ENDBLK
+  5
+89
+330
+87
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+8B
+330
+8A
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D10
+ 70
+    1
+ 10
+0
+ 20
+0
+  3
+*D10
+  1
+
+  0
+LINE
+  5
+103
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-15
+ 20
+110
+ 11
+348
+ 21
+110
+  0
+SOLID
+  5
+104
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+-15
+ 20
+110
+ 30
+0
+ 11
+-12.5
+ 21
+110.4162846577728
+ 31
+0
+ 12
+-12.5
+ 22
+109.5837153422272
+ 32
+0
+ 13
+-12.5
+ 23
+109.5837153422272
+ 33
+0
+  0
+SOLID
+  5
+105
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbTrace
+ 10
+348
+ 20
+110
+ 30
+0
+ 11
+345.5
+ 21
+109.5837153422272
+ 31
+0
+ 12
+345.5
+ 22
+110.4162846577728
+ 32
+0
+ 13
+345.5
+ 23
+110.4162846577728
+ 33
+0
+  0
+MTEXT
+  5
+106
+100
+AcDbEntity
+  8
+Measurements
+  6
+CONTINUOUS
+ 62
+    0
+370
+   -2
+100
+AcDbMText
+ 10
+166.5
+ 20
+111.875
+ 30
+0
+ 40
+2.5
+ 41
+5.000000000000466
+ 71
+    5
+ 72
+    1
+  1
+363
+  7
+standard
+210
+0
+220
+0
+230
+1
+ 50
+0
+ 73
+    2
+ 44
+1
+  0
+LINE
+  5
+107
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+-15
+ 20
+75.625
+ 11
+-15
+ 21
+111.25
+  0
+LINE
+  5
+108
+100
+AcDbEntity
+  8
+Measurements
+  6
+ByBlock
+ 62
+    0
+370
+   -2
+100
+AcDbLine
+ 10
+348
+ 20
+75.62499999999993
+ 11
+348
+ 21
+111.25
+  0
+ENDBLK
+  5
 8C
+330
+8A
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+8E
+330
+8D
 100
 AcDbEntity
   8
@@ -7473,7 +7495,7 @@ Barrier Cell
   0
 ARC
   5
-108
+109
 100
 AcDbEntity
   8
@@ -7498,34 +7520,6 @@ AcDbArc
 90
  51
 180
-  0
-ARC
-  5
-109
-100
-AcDbEntity
-  8
-Light Barrier
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
--6
- 20
--5.999999999999999
- 40
-1.5
-100
-AcDbArc
- 50
-180
- 51
-270
   0
 ARC
   5
@@ -7543,6 +7537,34 @@ ByLayer
 100
 AcDbCircle
  10
+-6
+ 20
+-5.999999999999999
+ 40
+1.5
+100
+AcDbArc
+ 50
+180
+ 51
+270
+  0
+ARC
+  5
+10B
+100
+AcDbEntity
+  8
+Light Barrier
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
 6
  20
 -6
@@ -7557,7 +7579,7 @@ AcDbArc
   0
 ARC
   5
-10B
+10C
 100
 AcDbEntity
   8
@@ -7585,7 +7607,7 @@ AcDbArc
   0
 LINE
   5
-10C
+10D
 100
 AcDbEntity
   8
@@ -7609,30 +7631,6 @@ AcDbLine
   0
 LINE
   5
-10D
-100
-AcDbEntity
-  8
-Light Barrier
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
--6
- 20
-7.5
- 11
-6.000000000000001
- 21
-7.500000000000001
-  0
-LINE
-  5
 10E
 100
 AcDbEntity
@@ -7647,6 +7645,30 @@ ByLayer
 100
 AcDbLine
  10
+-6
+ 20
+7.5
+ 11
+6.000000000000001
+ 21
+7.500000000000001
+  0
+LINE
+  5
+10F
+100
+AcDbEntity
+  8
+Light Barrier
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
 7.500000000000001
  20
 6.000000000000001
@@ -7657,7 +7679,7 @@ AcDbLine
   0
 LINE
   5
-10F
+110
 100
 AcDbEntity
   8
@@ -7679,35 +7701,7 @@ AcDbLine
  21
 -7.499999999999999
   0
-ARC
-  5
-110
-100
-AcDbEntity
-  8
-Light Barrier2
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
--6
- 20
-6.000000000000001
- 40
-1
-100
-AcDbArc
- 50
-90
- 51
-180
-  0
-ARC
+LINE
   5
 111
 100
@@ -7721,21 +7715,17 @@ ByLayer
 370
    -1
 100
-AcDbCircle
+AcDbLine
  10
--5.999999999999999
+-6.499999999999999
  20
--6
- 40
-1.000000000000001
-100
-AcDbArc
- 50
-180
- 51
-270
+6.000000000000001
+ 11
+-6.499999999999999
+ 21
+-6.000000000000001
   0
-ARC
+LINE
   5
 112
 100
@@ -7749,21 +7739,17 @@ ByLayer
 370
    -1
 100
-AcDbCircle
+AcDbLine
  10
-6
+-5.999999999999999
  20
--6
- 40
-1
-100
-AcDbArc
- 50
-270
- 51
-0
+-6.500000000000001
+ 11
+6
+ 21
+-6.5
   0
-ARC
+LINE
   5
 113
 100
@@ -7777,19 +7763,15 @@ ByLayer
 370
    -1
 100
-AcDbCircle
+AcDbLine
  10
-6
+6.5
  20
+-6
+ 11
+6.5
+ 21
 6
- 40
-1
-100
-AcDbArc
- 50
-0
- 51
-90
   0
 LINE
   5
@@ -7809,13 +7791,13 @@ AcDbLine
  10
 6
  20
-7
+6.499999999999999
  11
 -6
  21
-7.000000000000001
+6.5
   0
-LINE
+ARC
   5
 115
 100
@@ -7829,17 +7811,21 @@ ByLayer
 370
    -1
 100
-AcDbLine
+AcDbCircle
  10
--6.999999999999999
+-5.999999999999999
  20
 6.000000000000001
- 11
--6.999999999999999
- 21
--6.000000000000001
+ 40
+0.4999999999999991
+100
+AcDbArc
+ 50
+90
+ 51
+180
   0
-LINE
+ARC
   5
 116
 100
@@ -7853,17 +7839,21 @@ ByLayer
 370
    -1
 100
-AcDbLine
+AcDbCircle
  10
--5.999999999999999
+-6
  20
--7.000000000000001
- 11
-6
- 21
--7
+-6
+ 40
+0.5
+100
+AcDbArc
+ 50
+180
+ 51
+270
   0
-LINE
+ARC
   5
 117
 100
@@ -7877,21 +7867,109 @@ ByLayer
 370
    -1
 100
-AcDbLine
+AcDbCircle
  10
-7
+6.000000000000001
  20
 -6
- 11
-7
- 21
+ 40
+0
+100
+AcDbArc
+ 50
+269.9999999999999
+ 51
+0
+  0
+ARC
+  5
+118
+100
+AcDbEntity
+  8
+Light Barrier2
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
 6
+ 20
+-6.5
+ 40
+0
+100
+AcDbArc
+ 50
+45
+ 51
+89.9999999999999
+  0
+ARC
+  5
+119
+100
+AcDbEntity
+  8
+Light Barrier2
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+6.000000000000001
+ 20
+-6
+ 40
+0.5
+100
+AcDbArc
+ 50
+270
+ 51
+0
+  0
+ARC
+  5
+11A
+100
+AcDbEntity
+  8
+Light Barrier2
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+6
+ 20
+6.000000000000001
+ 40
+0.5
+100
+AcDbArc
+ 50
+359.9999999999999
+ 51
+90
   0
 ENDBLK
   5
-8E
+8F
 330
-8C
+8D
 100
 AcDbEntity
   8
@@ -7901,9 +7979,9 @@ AcDbBlockEnd
   0
 BLOCK
   5
-90
+91
 330
-8F
+90
 100
 AcDbEntity
   8
@@ -7925,7 +8003,7 @@ barrier
   0
 LINE
   5
-118
+11B
 100
 AcDbEntity
   8
@@ -7949,126 +8027,6 @@ AcDbLine
   0
 INSERT
   5
-119
-100
-AcDbEntity
-  8
-Light Barrier
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-Barrier Cell
- 10
-10
- 20
-77
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-0
- 70
-    1
- 71
-    1
- 44
-1
- 45
-1
-  0
-INSERT
-  5
-11A
-100
-AcDbEntity
-  8
-Light Barrier
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-Barrier Cell
- 10
-26.7
- 20
-77
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-0
- 70
-    1
- 71
-    1
- 44
-1
- 45
-1
-  0
-INSERT
-  5
-11B
-100
-AcDbEntity
-  8
-Light Barrier
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-Barrier Cell
- 10
-43.33
- 20
-77
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-0
- 70
-    1
- 71
-    1
- 44
-1
- 45
-1
-  0
-INSERT
-  5
 11C
 100
 AcDbEntity
@@ -8085,7 +8043,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-60.03
+10
  20
 77
  30
@@ -8125,7 +8083,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-76.7
+26.7
  20
 77
  30
@@ -8165,7 +8123,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-93.40000000000001
+43.33
  20
 77
  30
@@ -8205,7 +8163,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-110.03
+60.03
  20
 77
  30
@@ -8245,7 +8203,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-126.73
+76.7
  20
 77
  30
@@ -8285,7 +8243,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-143.3
+93.40000000000001
  20
 77
  30
@@ -8325,7 +8283,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-160
+110.03
  20
 77
  30
@@ -8365,9 +8323,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-10
+126.73
  20
-93.7
+77
  30
 0
  41
@@ -8405,9 +8363,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-26.7
+143.3
  20
-93.7
+77
  30
 0
  41
@@ -8445,9 +8403,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-43.33
+160
  20
-93.7
+77
  30
 0
  41
@@ -8485,7 +8443,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-60.03
+10
  20
 93.7
  30
@@ -8525,7 +8483,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-76.7
+26.7
  20
 93.7
  30
@@ -8565,7 +8523,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-93.40000000000001
+43.33
  20
 93.7
  30
@@ -8605,7 +8563,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-110.03
+60.03
  20
 93.7
  30
@@ -8645,7 +8603,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-126.73
+76.7
  20
 93.7
  30
@@ -8685,7 +8643,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-143.3
+93.40000000000001
  20
 93.7
  30
@@ -8725,7 +8683,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-160
+110.03
  20
 93.7
  30
@@ -8765,9 +8723,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-10
+126.73
  20
-110.3
+93.7
  30
 0
  41
@@ -8805,9 +8763,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-26.7
+143.3
  20
-110.3
+93.7
  30
 0
  41
@@ -8845,9 +8803,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-43.33
+160
  20
-110.3
+93.7
  30
 0
  41
@@ -8885,7 +8843,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-60.03
+10
  20
 110.3
  30
@@ -8925,7 +8883,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-76.7
+26.7
  20
 110.3
  30
@@ -8965,7 +8923,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-93.40000000000001
+43.33
  20
 110.3
  30
@@ -9005,7 +8963,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-110.03
+60.03
  20
 110.3
  30
@@ -9045,7 +9003,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-126.73
+76.7
  20
 110.3
  30
@@ -9085,7 +9043,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-143.3
+93.40000000000001
  20
 110.3
  30
@@ -9125,7 +9083,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-160
+110.03
  20
 110.3
  30
@@ -9165,9 +9123,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-10
+126.73
  20
-127
+110.3
  30
 0
  41
@@ -9205,9 +9163,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-26.7
+143.3
  20
-127
+110.3
  30
 0
  41
@@ -9245,9 +9203,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-43.33
+160
  20
-127
+110.3
  30
 0
  41
@@ -9285,7 +9243,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-60.03
+10
  20
 127
  30
@@ -9325,7 +9283,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-76.7
+26.7
  20
 127
  30
@@ -9365,7 +9323,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-93.40000000000001
+43.33
  20
 127
  30
@@ -9405,7 +9363,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-110.03
+60.03
  20
 127
  30
@@ -9445,7 +9403,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-126.73
+76.7
  20
 127
  30
@@ -9485,7 +9443,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-143.3
+93.40000000000001
  20
 127
  30
@@ -9525,7 +9483,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-160
+110.03
  20
 127
  30
@@ -9565,9 +9523,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-10
+126.73
  20
-143.7
+127
  30
 0
  41
@@ -9605,9 +9563,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-26.7
+143.3
  20
-143.7
+127
  30
 0
  41
@@ -9645,9 +9603,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-43.33
+160
  20
-143.7
+127
  30
 0
  41
@@ -9685,7 +9643,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-60.03
+10
  20
 143.7
  30
@@ -9725,7 +9683,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-76.7
+26.7
  20
 143.7
  30
@@ -9765,7 +9723,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-93.40000000000001
+43.33
  20
 143.7
  30
@@ -9805,7 +9763,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-110.03
+60.03
  20
 143.7
  30
@@ -9845,7 +9803,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-126.73
+76.7
  20
 143.7
  30
@@ -9885,7 +9843,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-143.3
+93.40000000000001
  20
 143.7
  30
@@ -9925,7 +9883,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-160
+110.03
  20
 143.7
  30
@@ -9965,9 +9923,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-10
+126.73
  20
-160.4
+143.7
  30
 0
  41
@@ -10005,9 +9963,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-26.7
+143.3
  20
-160.4
+143.7
  30
 0
  41
@@ -10045,9 +10003,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-43.33
+160
  20
-160.4
+143.7
  30
 0
  41
@@ -10085,7 +10043,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-60.03
+10
  20
 160.4
  30
@@ -10125,7 +10083,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-76.7
+26.7
  20
 160.4
  30
@@ -10165,7 +10123,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-93.40000000000001
+43.33
  20
 160.4
  30
@@ -10205,7 +10163,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-110.03
+60.03
  20
 160.4
  30
@@ -10245,7 +10203,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-126.73
+76.7
  20
 160.4
  30
@@ -10285,7 +10243,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-143.3
+93.40000000000001
  20
 160.4
  30
@@ -10325,7 +10283,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-160
+110.03
  20
 160.4
  30
@@ -10365,9 +10323,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-10
+126.73
  20
-177
+160.4
  30
 0
  41
@@ -10405,9 +10363,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-26.7
+143.3
  20
-177
+160.4
  30
 0
  41
@@ -10445,9 +10403,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-43.33
+160
  20
-177
+160.4
  30
 0
  41
@@ -10485,7 +10443,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-60.03
+10
  20
 177
  30
@@ -10525,7 +10483,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-76.7
+26.7
  20
 177
  30
@@ -10565,7 +10523,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-93.40000000000001
+43.33
  20
 177
  30
@@ -10605,7 +10563,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-110.03
+60.03
  20
 177
  30
@@ -10645,7 +10603,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-126.73
+76.7
  20
 177
  30
@@ -10685,7 +10643,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-143.3
+93.40000000000001
  20
 177
  30
@@ -10725,7 +10683,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-160
+110.03
  20
 177
  30
@@ -10765,9 +10723,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-10
+126.73
  20
-193.7
+177
  30
 0
  41
@@ -10805,9 +10763,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-26.7
+143.3
  20
-193.7
+177
  30
 0
  41
@@ -10845,9 +10803,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-43.33
+160
  20
-193.7
+177
  30
 0
  41
@@ -10885,7 +10843,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-60.03
+10
  20
 193.7
  30
@@ -10925,7 +10883,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-76.7
+26.7
  20
 193.7
  30
@@ -10965,7 +10923,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-93.40000000000001
+43.33
  20
 193.7
  30
@@ -11005,7 +10963,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-110.03
+60.03
  20
 193.7
  30
@@ -11045,7 +11003,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-126.73
+76.7
  20
 193.7
  30
@@ -11085,7 +11043,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-143.3
+93.40000000000001
  20
 193.7
  30
@@ -11125,7 +11083,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-160
+110.03
  20
 193.7
  30
@@ -11165,9 +11123,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-10
+126.73
  20
-210.3
+193.7
  30
 0
  41
@@ -11205,9 +11163,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-26.7
+143.3
  20
-210.3
+193.7
  30
 0
  41
@@ -11245,9 +11203,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-43.33
+160
  20
-210.3
+193.7
  30
 0
  41
@@ -11285,7 +11243,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-60.03
+10
  20
 210.3
  30
@@ -11325,7 +11283,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-76.7
+26.7
  20
 210.3
  30
@@ -11365,7 +11323,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-93.40000000000001
+43.33
  20
 210.3
  30
@@ -11405,7 +11363,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-110.03
+60.03
  20
 210.3
  30
@@ -11445,7 +11403,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-126.73
+76.7
  20
 210.3
  30
@@ -11485,7 +11443,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-143.3
+93.40000000000001
  20
 210.3
  30
@@ -11525,7 +11483,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-160
+110.03
  20
 210.3
  30
@@ -11565,9 +11523,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-10
+126.73
  20
-227
+210.3
  30
 0
  41
@@ -11605,9 +11563,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-26.7
+143.3
  20
-227
+210.3
  30
 0
  41
@@ -11645,9 +11603,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-43.33
+160
  20
-227
+210.3
  30
 0
  41
@@ -11685,7 +11643,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-60.03
+10
  20
 227
  30
@@ -11725,7 +11683,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-76.7
+26.7
  20
 227
  30
@@ -11765,7 +11723,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-93.40000000000001
+43.33
  20
 227
  30
@@ -11805,7 +11763,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-110.03
+60.03
  20
 227
  30
@@ -11845,7 +11803,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-126.73
+76.7
  20
 227
  30
@@ -11885,7 +11843,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-143.3
+93.40000000000001
  20
 227
  30
@@ -11925,7 +11883,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-160
+110.03
  20
 227
  30
@@ -11965,9 +11923,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-10
+126.73
  20
-243.6
+227
  30
 0
  41
@@ -12005,9 +11963,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-26.7
+143.3
  20
-243.6
+227
  30
 0
  41
@@ -12045,9 +12003,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-43.33
+160
  20
-243.6
+227
  30
 0
  41
@@ -12085,7 +12043,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-60.03
+10
  20
 243.6
  30
@@ -12125,7 +12083,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-76.7
+26.7
  20
 243.6
  30
@@ -12165,7 +12123,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-93.40000000000001
+43.33
  20
 243.6
  30
@@ -12205,7 +12163,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-110.03
+60.03
  20
 243.6
  30
@@ -12245,7 +12203,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-126.73
+76.7
  20
 243.6
  30
@@ -12285,7 +12243,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-143.3
+93.40000000000001
  20
 243.6
  30
@@ -12325,7 +12283,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-160
+110.03
  20
 243.6
  30
@@ -12365,9 +12323,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-10
+126.73
  20
-260.3
+243.6
  30
 0
  41
@@ -12405,9 +12363,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-26.7
+143.3
  20
-260.3
+243.6
  30
 0
  41
@@ -12445,9 +12403,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-43.33
+160
  20
-260.3
+243.6
  30
 0
  41
@@ -12485,7 +12443,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-60.03
+10
  20
 260.3
  30
@@ -12525,7 +12483,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-76.7
+26.7
  20
 260.3
  30
@@ -12565,7 +12523,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-93.40000000000001
+43.33
  20
 260.3
  30
@@ -12605,7 +12563,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-110.03
+60.03
  20
 260.3
  30
@@ -12645,7 +12603,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-126.73
+76.7
  20
 260.3
  30
@@ -12685,7 +12643,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-143.3
+93.40000000000001
  20
 260.3
  30
@@ -12725,7 +12683,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-160
+110.03
  20
 260.3
  30
@@ -12765,9 +12723,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-10
+126.73
  20
-277
+260.3
  30
 0
  41
@@ -12805,9 +12763,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-26.7
+143.3
  20
-277
+260.3
  30
 0
  41
@@ -12845,9 +12803,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-43.33
+160
  20
-277
+260.3
  30
 0
  41
@@ -12885,7 +12843,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-60.03
+10
  20
 277
  30
@@ -12925,7 +12883,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-76.7
+26.7
  20
 277
  30
@@ -12965,7 +12923,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-93.40000000000001
+43.33
  20
 277
  30
@@ -13005,7 +12963,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-110.03
+60.03
  20
 277
  30
@@ -13045,7 +13003,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-126.73
+76.7
  20
 277
  30
@@ -13085,7 +13043,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-143.3
+93.40000000000001
  20
 277
  30
@@ -13125,7 +13083,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-160
+110.03
  20
 277
  30
@@ -13165,9 +13123,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-10
+126.73
  20
-293.7
+277
  30
 0
  41
@@ -13205,9 +13163,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-26.7
+143.3
  20
-293.7
+277
  30
 0
  41
@@ -13245,9 +13203,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-43.33
+160
  20
-293.7
+277
  30
 0
  41
@@ -13285,7 +13243,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-60.03
+10
  20
 293.7
  30
@@ -13325,7 +13283,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-76.7
+26.7
  20
 293.7
  30
@@ -13365,7 +13323,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-93.40000000000001
+43.33
  20
 293.7
  30
@@ -13405,7 +13363,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-110.03
+60.03
  20
 293.7
  30
@@ -13445,7 +13403,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-126.73
+76.7
  20
 293.7
  30
@@ -13485,7 +13443,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-143.3
+93.40000000000001
  20
 293.7
  30
@@ -13525,7 +13483,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-160
+110.03
  20
 293.7
  30
@@ -13565,9 +13523,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-10
+126.73
  20
-310.3
+293.7
  30
 0
  41
@@ -13605,9 +13563,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-26.7
+143.3
  20
-310.3
+293.7
  30
 0
  41
@@ -13645,9 +13603,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-43.33
+160
  20
-310.3
+293.7
  30
 0
  41
@@ -13685,7 +13643,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-60.03
+10
  20
 310.3
  30
@@ -13725,7 +13683,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-76.7
+26.7
  20
 310.3
  30
@@ -13765,7 +13723,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-93.40000000000001
+43.33
  20
 310.3
  30
@@ -13805,7 +13763,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-110.03
+60.03
  20
 310.3
  30
@@ -13845,7 +13803,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-126.73
+76.7
  20
 310.3
  30
@@ -13885,7 +13843,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-143.3
+93.40000000000001
  20
 310.3
  30
@@ -13925,7 +13883,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-160
+110.03
  20
 310.3
  30
@@ -13965,9 +13923,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-10
+126.73
  20
-327
+310.3
  30
 0
  41
@@ -14005,9 +13963,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-26.7
+143.3
  20
-327
+310.3
  30
 0
  41
@@ -14045,9 +14003,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-43.33
+160
  20
-327
+310.3
  30
 0
  41
@@ -14085,7 +14043,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-60.03
+10
  20
 327
  30
@@ -14125,7 +14083,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-76.7
+26.7
  20
 327
  30
@@ -14165,7 +14123,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-93.40000000000001
+43.33
  20
 327
  30
@@ -14205,7 +14163,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-110.03
+60.03
  20
 327
  30
@@ -14245,7 +14203,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-126.73
+76.7
  20
 327
  30
@@ -14285,7 +14243,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-143.3
+93.40000000000001
  20
 327
  30
@@ -14325,7 +14283,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-160
+110.03
  20
 327
  30
@@ -14365,9 +14323,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-10
+126.73
  20
-343.7
+327
  30
 0
  41
@@ -14405,9 +14363,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-26.7
+143.3
  20
-343.7
+327
  30
 0
  41
@@ -14445,9 +14403,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-43.33
+160
  20
-343.7
+327
  30
 0
  41
@@ -14485,7 +14443,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-60.03
+10
  20
 343.7
  30
@@ -14525,7 +14483,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-76.7
+26.7
  20
 343.7
  30
@@ -14565,7 +14523,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-93.40000000000001
+43.33
  20
 343.7
  30
@@ -14605,7 +14563,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-110.03
+60.03
  20
 343.7
  30
@@ -14645,7 +14603,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-126.73
+76.7
  20
 343.7
  30
@@ -14685,7 +14643,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-143.3
+93.40000000000001
  20
 343.7
  30
@@ -14725,7 +14683,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-160
+110.03
  20
 343.7
  30
@@ -14765,9 +14723,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-10
+126.73
  20
-360.4
+343.7
  30
 0
  41
@@ -14805,9 +14763,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-26.7
+143.3
  20
-360.4
+343.7
  30
 0
  41
@@ -14845,9 +14803,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-43.33
+160
  20
-360.4
+343.7
  30
 0
  41
@@ -14885,7 +14843,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-60.03
+10
  20
 360.4
  30
@@ -14925,7 +14883,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-76.7
+26.7
  20
 360.4
  30
@@ -14965,7 +14923,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-93.40000000000001
+43.33
  20
 360.4
  30
@@ -15005,7 +14963,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-110.03
+60.03
  20
 360.4
  30
@@ -15045,7 +15003,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-126.73
+76.7
  20
 360.4
  30
@@ -15085,7 +15043,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-143.3
+93.40000000000001
  20
 360.4
  30
@@ -15125,7 +15083,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-160
+110.03
  20
 360.4
  30
@@ -15165,9 +15123,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-10
+126.73
  20
-377
+360.4
  30
 0
  41
@@ -15205,9 +15163,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-26.7
+143.3
  20
-377
+360.4
  30
 0
  41
@@ -15245,9 +15203,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-43.33
+160
  20
-377
+360.4
  30
 0
  41
@@ -15285,7 +15243,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-60.03
+10
  20
 377
  30
@@ -15325,7 +15283,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-76.7
+26.7
  20
 377
  30
@@ -15365,7 +15323,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-93.40000000000001
+43.33
  20
 377
  30
@@ -15405,7 +15363,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-110.03
+60.03
  20
 377
  30
@@ -15445,7 +15403,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-126.73
+76.7
  20
 377
  30
@@ -15485,7 +15443,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-143.3
+93.40000000000001
  20
 377
  30
@@ -15525,7 +15483,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-160
+110.03
  20
 377
  30
@@ -15565,9 +15523,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-10
+126.73
  20
-393.7
+377
  30
 0
  41
@@ -15605,9 +15563,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-26.7
+143.3
  20
-393.7
+377
  30
 0
  41
@@ -15645,9 +15603,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-43.33
+160
  20
-393.7
+377
  30
 0
  41
@@ -15685,7 +15643,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-60.03
+10
  20
 393.7
  30
@@ -15725,7 +15683,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-76.7
+26.7
  20
 393.7
  30
@@ -15765,7 +15723,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-93.40000000000001
+43.33
  20
 393.7
  30
@@ -15805,7 +15763,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-110.03
+60.03
  20
 393.7
  30
@@ -15845,7 +15803,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-126.73
+76.7
  20
 393.7
  30
@@ -15885,7 +15843,7 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-143.3
+93.40000000000001
  20
 393.7
  30
@@ -15925,6 +15883,126 @@ AcDbBlockReference
   2
 Barrier Cell
  10
+110.03
+ 20
+393.7
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+0
+ 70
+    1
+ 71
+    1
+ 44
+1
+ 45
+1
+  0
+INSERT
+  5
+1E1
+100
+AcDbEntity
+  8
+Light Barrier
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+Barrier Cell
+ 10
+126.73
+ 20
+393.7
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+0
+ 70
+    1
+ 71
+    1
+ 44
+1
+ 45
+1
+  0
+INSERT
+  5
+1E2
+100
+AcDbEntity
+  8
+Light Barrier
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+Barrier Cell
+ 10
+143.3
+ 20
+393.7
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+0
+ 70
+    1
+ 71
+    1
+ 44
+1
+ 45
+1
+  0
+INSERT
+  5
+1E3
+100
+AcDbEntity
+  8
+Light Barrier
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+Barrier Cell
+ 10
 160
  20
 393.7
@@ -15949,7 +16027,7 @@ Barrier Cell
   0
 LINE
   5
-1E1
+1E4
 100
 AcDbEntity
   8
@@ -15973,7 +16051,7 @@ AcDbLine
   0
 DIMENSION
   5
-1E2
+1E5
 100
 AcDbEntity
   8
@@ -16033,7 +16111,7 @@ AcDbRotatedDimension
   0
 LWPOLYLINE
   5
-1E3
+1E6
 100
 AcDbEntity
   8
@@ -16071,7 +16149,7 @@ AcDbPolyline
   0
 LINE
   5
-1E4
+1E7
 100
 AcDbEntity
   8
@@ -16095,7 +16173,7 @@ AcDbLine
   0
 LINE
   5
-1E5
+1E8
 100
 AcDbEntity
   8
@@ -16119,7 +16197,7 @@ AcDbLine
   0
 DIMENSION
   5
-1E6
+1E9
 100
 AcDbEntity
   8
@@ -16177,9 +16255,9 @@ AcDbAlignedDimension
   0
 ENDBLK
   5
-91
+92
 330
-8F
+90
 100
 AcDbEntity
   8
@@ -16189,9 +16267,9 @@ AcDbBlockEnd
   0
 BLOCK
   5
-93
+94
 330
-92
+93
 100
 AcDbEntity
   8
@@ -16213,7 +16291,7 @@ Led
   0
 LWPOLYLINE
   5
-1E7
+1EA
 100
 AcDbEntity
   8
@@ -16251,7 +16329,7 @@ AcDbPolyline
   0
 CIRCLE
   5
-1E8
+1EB
 100
 AcDbEntity
   8
@@ -16273,7 +16351,7 @@ AcDbCircle
   0
 LINE
   5
-1E9
+1EC
 100
 AcDbEntity
   8
@@ -16294,78 +16372,6 @@ AcDbLine
 -0.9999999999999997
  21
 1.5
-  0
-LINE
-  5
-1EA
-100
-AcDbEntity
-  8
-Leds
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
--0.9999999999999997
- 20
-1.5
- 11
--1.3
- 21
-1.4
-  0
-LINE
-  5
-1EB
-100
-AcDbEntity
-  8
-Leds
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
--1.3
- 20
-1.4
- 11
--1.6
- 21
-1
-  0
-LINE
-  5
-1EC
-100
-AcDbEntity
-  8
-Leds
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
--1.6
- 20
-1
- 11
--1.8
- 21
-0.6000000000000003
   0
 LINE
   5
@@ -16383,6 +16389,78 @@ ByLayer
 100
 AcDbLine
  10
+-0.9999999999999997
+ 20
+1.5
+ 11
+-1.3
+ 21
+1.4
+  0
+LINE
+  5
+1EE
+100
+AcDbEntity
+  8
+Leds
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+-1.3
+ 20
+1.4
+ 11
+-1.6
+ 21
+1
+  0
+LINE
+  5
+1EF
+100
+AcDbEntity
+  8
+Leds
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+-1.6
+ 20
+1
+ 11
+-1.8
+ 21
+0.6000000000000003
+  0
+LINE
+  5
+1F0
+100
+AcDbEntity
+  8
+Leds
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
 -1.8
  20
 0.6000000000000003
@@ -16393,7 +16471,7 @@ AcDbLine
   0
 LINE
   5
-1EE
+1F1
 100
 AcDbEntity
   8
@@ -16417,7 +16495,7 @@ AcDbLine
   0
 LINE
   5
-1EF
+1F2
 100
 AcDbEntity
   8
@@ -16438,78 +16516,6 @@ AcDbLine
 0.5000000000000002
  21
 0.3
-  0
-LINE
-  5
-1F0
-100
-AcDbEntity
-  8
-Leds
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
-0.5000000000000002
- 20
-0.3
- 11
-0.2000000000000001
- 21
-3.101821524831074e-17
-  0
-LINE
-  5
-1F1
-100
-AcDbEntity
-  8
-Leds
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
-0.2000000000000001
- 20
-3.101821524831074e-17
- 11
--0.2999999999999999
- 21
-9.225055520567842e-17
-  0
-LINE
-  5
-1F2
-100
-AcDbEntity
-  8
-Leds
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
--0.2999999999999999
- 20
-9.225055520567842e-17
- 11
--0.5999999999999999
- 21
-0.3000000000000001
   0
 LINE
   5
@@ -16527,6 +16533,78 @@ ByLayer
 100
 AcDbLine
  10
+0.5000000000000002
+ 20
+0.3
+ 11
+0.2000000000000001
+ 21
+3.101821524831074e-17
+  0
+LINE
+  5
+1F4
+100
+AcDbEntity
+  8
+Leds
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+0.2000000000000001
+ 20
+3.101821524831074e-17
+ 11
+-0.2999999999999999
+ 21
+9.225055520567842e-17
+  0
+LINE
+  5
+1F5
+100
+AcDbEntity
+  8
+Leds
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+-0.2999999999999999
+ 20
+9.225055520567842e-17
+ 11
+-0.5999999999999999
+ 21
+0.3000000000000001
+  0
+LINE
+  5
+1F6
+100
+AcDbEntity
+  8
+Leds
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
 -0.5999999999999999
  20
 0.3000000000000001
@@ -16537,7 +16615,7 @@ AcDbLine
   0
 LINE
   5
-1F4
+1F7
 100
 AcDbEntity
   8
@@ -16561,7 +16639,7 @@ AcDbLine
   0
 LINE
   5
-1F5
+1F8
 100
 AcDbEntity
   8
@@ -16585,7 +16663,7 @@ AcDbLine
   0
 LINE
   5
-1F6
+1F9
 100
 AcDbEntity
   8
@@ -16609,7 +16687,7 @@ AcDbLine
   0
 LINE
   5
-1F7
+1FA
 100
 AcDbEntity
   8
@@ -16633,7 +16711,7 @@ AcDbLine
   0
 LINE
   5
-1F8
+1FB
 100
 AcDbEntity
   8
@@ -16657,7 +16735,7 @@ AcDbLine
   0
 LINE
   5
-1F9
+1FC
 100
 AcDbEntity
   8
@@ -16681,7 +16759,7 @@ AcDbLine
   0
 LINE
   5
-1FA
+1FD
 100
 AcDbEntity
   8
@@ -16705,7 +16783,7 @@ AcDbLine
   0
 LINE
   5
-1FB
+1FE
 100
 AcDbEntity
   8
@@ -16729,7 +16807,7 @@ AcDbLine
   0
 LINE
   5
-1FC
+1FF
 100
 AcDbEntity
   8
@@ -16750,78 +16828,6 @@ AcDbLine
 0.4000000000000001
  21
 -0.1
-  0
-LINE
-  5
-1FD
-100
-AcDbEntity
-  8
-Leds
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
-0.4000000000000001
- 20
--0.1
- 11
-0.7000000000000002
- 21
-0.2
-  0
-LINE
-  5
-1FE
-100
-AcDbEntity
-  8
-Leds
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
-0.7000000000000002
- 20
-0.2
- 11
-1.8
- 21
-0.1999999999999998
-  0
-LINE
-  5
-1FF
-100
-AcDbEntity
-  8
-Leds
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
-1.8
- 20
-0.1999999999999998
- 11
-1.8
- 21
--0.4000000000000002
   0
 LINE
   5
@@ -16839,6 +16845,78 @@ ByLayer
 100
 AcDbLine
  10
+0.4000000000000001
+ 20
+-0.1
+ 11
+0.7000000000000002
+ 21
+0.2
+  0
+LINE
+  5
+201
+100
+AcDbEntity
+  8
+Leds
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+0.7000000000000002
+ 20
+0.2
+ 11
+1.8
+ 21
+0.1999999999999998
+  0
+LINE
+  5
+202
+100
+AcDbEntity
+  8
+Leds
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+1.8
+ 20
+0.1999999999999998
+ 11
+1.8
+ 21
+-0.4000000000000002
+  0
+LINE
+  5
+203
+100
+AcDbEntity
+  8
+Leds
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
 1.8
  20
 -0.4000000000000002
@@ -16849,7 +16927,7 @@ AcDbLine
   0
 LINE
   5
-201
+204
 100
 AcDbEntity
   8
@@ -16873,7 +16951,7 @@ AcDbLine
   0
 LINE
   5
-202
+205
 100
 AcDbEntity
   8
@@ -16897,7 +16975,7 @@ AcDbLine
   0
 LINE
   5
-203
+206
 100
 AcDbEntity
   8
@@ -16921,7 +16999,7 @@ AcDbLine
   0
 LINE
   5
-204
+207
 100
 AcDbEntity
   8
@@ -16945,7 +17023,7 @@ AcDbLine
   0
 LINE
   5
-205
+208
 100
 AcDbEntity
   8
@@ -16966,78 +17044,6 @@ AcDbLine
 0.09999999999999991
  21
 -1.9
-  0
-LINE
-  5
-206
-100
-AcDbEntity
-  8
-Leds
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
-0.09999999999999991
- 20
--1.9
- 11
--0.2000000000000001
- 21
--1.9
-  0
-LINE
-  5
-207
-100
-AcDbEntity
-  8
-Leds
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
--0.2000000000000001
- 20
--1.9
- 11
--0.9000000000000001
- 21
--1.6
-  0
-LINE
-  5
-208
-100
-AcDbEntity
-  8
-Leds
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
--0.9000000000000001
- 20
--1.6
- 11
--1.4
- 21
--1.3
   0
 LINE
   5
@@ -17055,6 +17061,78 @@ ByLayer
 100
 AcDbLine
  10
+0.09999999999999991
+ 20
+-1.9
+ 11
+-0.2000000000000001
+ 21
+-1.9
+  0
+LINE
+  5
+20A
+100
+AcDbEntity
+  8
+Leds
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+-0.2000000000000001
+ 20
+-1.9
+ 11
+-0.9000000000000001
+ 21
+-1.6
+  0
+LINE
+  5
+20B
+100
+AcDbEntity
+  8
+Leds
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+-0.9000000000000001
+ 20
+-1.6
+ 11
+-1.4
+ 21
+-1.3
+  0
+LINE
+  5
+20C
+100
+AcDbEntity
+  8
+Leds
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
 -1.4
  20
 -1.3
@@ -17065,7 +17143,7 @@ AcDbLine
   0
 LINE
   5
-20A
+20D
 100
 AcDbEntity
   8
@@ -17089,7 +17167,7 @@ AcDbLine
   0
 LINE
   5
-20B
+20E
 100
 AcDbEntity
   8
@@ -17113,7 +17191,7 @@ AcDbLine
   0
 LINE
   5
-20C
+20F
 100
 AcDbEntity
   8
@@ -17137,7 +17215,7 @@ AcDbLine
   0
 LINE
   5
-20D
+210
 100
 AcDbEntity
   8
@@ -17161,7 +17239,7 @@ AcDbLine
   0
 LINE
   5
-20E
+211
 100
 AcDbEntity
   8
@@ -17185,7 +17263,7 @@ AcDbLine
   0
 LINE
   5
-20F
+212
 100
 AcDbEntity
   8
@@ -17209,7 +17287,7 @@ AcDbLine
   0
 LINE
   5
-210
+213
 100
 AcDbEntity
   8
@@ -17233,7 +17311,7 @@ AcDbLine
   0
 LINE
   5
-211
+214
 100
 AcDbEntity
   8
@@ -17257,7 +17335,7 @@ AcDbLine
   0
 LINE
   5
-212
+215
 100
 AcDbEntity
   8
@@ -17281,7 +17359,7 @@ AcDbLine
   0
 LINE
   5
-213
+216
 100
 AcDbEntity
   8
@@ -17305,7 +17383,7 @@ AcDbLine
   0
 LINE
   5
-214
+217
 100
 AcDbEntity
   8
@@ -17329,7 +17407,7 @@ AcDbLine
   0
 LINE
   5
-215
+218
 100
 AcDbEntity
   8
@@ -17353,9 +17431,9 @@ AcDbLine
   0
 ENDBLK
   5
-94
+95
 330
-92
+93
 100
 AcDbEntity
   8
@@ -17365,9 +17443,9 @@ AcDbBlockEnd
   0
 BLOCK
   5
-96
+97
 330
-95
+96
 100
 AcDbEntity
   8
@@ -17389,7 +17467,7 @@ ledstrip
   0
 LINE
   5
-216
+219
 100
 AcDbEntity
   8
@@ -17413,7 +17491,7 @@ AcDbLine
   0
 INSERT
   5
-217
+21A
 100
 AcDbEntity
   8
@@ -17453,7 +17531,7 @@ Led
   0
 INSERT
   5
-218
+21B
 100
 AcDbEntity
   8
@@ -17493,7 +17571,7 @@ Led
   0
 INSERT
   5
-219
+21C
 100
 AcDbEntity
   8
@@ -17533,7 +17611,7 @@ Led
   0
 INSERT
   5
-21A
+21D
 100
 AcDbEntity
   8
@@ -17573,7 +17651,7 @@ Led
   0
 LINE
   5
-21B
+21E
 100
 AcDbEntity
   8
@@ -17597,7 +17675,7 @@ AcDbLine
   0
 INSERT
   5
-21C
+21F
 100
 AcDbEntity
   8
@@ -17637,7 +17715,7 @@ Led
   0
 INSERT
   5
-21D
+220
 100
 AcDbEntity
   8
@@ -17677,7 +17755,7 @@ Led
   0
 INSERT
   5
-21E
+221
 100
 AcDbEntity
   8
@@ -17717,7 +17795,7 @@ Led
   0
 INSERT
   5
-21F
+222
 100
 AcDbEntity
   8
@@ -17757,7 +17835,7 @@ Led
   0
 INSERT
   5
-220
+223
 100
 AcDbEntity
   8
@@ -17797,7 +17875,7 @@ Led
   0
 INSERT
   5
-221
+224
 100
 AcDbEntity
   8
@@ -17837,7 +17915,7 @@ Led
   0
 LINE
   5
-222
+225
 100
 AcDbEntity
   8
@@ -17861,7 +17939,7 @@ AcDbLine
   0
 INSERT
   5
-223
+226
 100
 AcDbEntity
   8
@@ -17901,7 +17979,7 @@ Led
   0
 INSERT
   5
-224
+227
 100
 AcDbEntity
   8
@@ -17941,7 +18019,7 @@ Led
   0
 INSERT
   5
-225
+228
 100
 AcDbEntity
   8
@@ -17981,7 +18059,7 @@ Led
   0
 INSERT
   5
-226
+229
 100
 AcDbEntity
   8
@@ -18021,7 +18099,7 @@ Led
   0
 LINE
   5
-227
+22A
 100
 AcDbEntity
   8
@@ -18045,7 +18123,7 @@ AcDbLine
   0
 INSERT
   5
-228
+22B
 100
 AcDbEntity
   8
@@ -18085,7 +18163,7 @@ Led
   0
 INSERT
   5
-229
+22C
 100
 AcDbEntity
   8
@@ -18125,7 +18203,7 @@ Led
   0
 INSERT
   5
-22A
+22D
 100
 AcDbEntity
   8
@@ -18165,7 +18243,7 @@ Led
   0
 INSERT
   5
-22B
+22E
 100
 AcDbEntity
   8
@@ -18205,7 +18283,7 @@ Led
   0
 INSERT
   5
-22C
+22F
 100
 AcDbEntity
   8
@@ -18245,7 +18323,7 @@ Led
   0
 INSERT
   5
-22D
+230
 100
 AcDbEntity
   8
@@ -18285,79 +18363,79 @@ Led
   0
 LINE
   5
-22E
-100
-AcDbEntity
-  8
-Ledstrips
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
--5.75
- 20
--2.5
- 11
-324.25
- 21
--2.5
-  0
-LINE
-  5
-22F
-100
-AcDbEntity
-  8
-Ledstrips
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
-324.25
- 20
--2.5
- 11
-324.25
- 21
-7.5
-  0
-LINE
-  5
-230
-100
-AcDbEntity
-  8
-Ledstrips
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
-324.25
- 20
-7.5
- 11
--5.75
- 21
-7.5
-  0
-LINE
-  5
 231
+100
+AcDbEntity
+  8
+Ledstrips
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+-5.75
+ 20
+-2.5
+ 11
+324.25
+ 21
+-2.5
+  0
+LINE
+  5
+232
+100
+AcDbEntity
+  8
+Ledstrips
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+324.25
+ 20
+-2.5
+ 11
+324.25
+ 21
+7.5
+  0
+LINE
+  5
+233
+100
+AcDbEntity
+  8
+Ledstrips
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+324.25
+ 20
+7.5
+ 11
+-5.75
+ 21
+7.5
+  0
+LINE
+  5
+234
 100
 AcDbEntity
   8
@@ -18381,9 +18459,9 @@ AcDbLine
   0
 ENDBLK
   5
-97
+98
 330
-95
+96
 100
 AcDbEntity
   8
@@ -18393,9 +18471,9 @@ AcDbBlockEnd
   0
 BLOCK
   5
-99
+9A
 330
-98
+99
 100
 AcDbEntity
   8
@@ -18417,7 +18495,7 @@ Barrier Cell2
   0
 ARC
   5
-232
+235
 100
 AcDbEntity
   8
@@ -18445,7 +18523,7 @@ AcDbArc
   0
 ARC
   5
-233
+236
 100
 AcDbEntity
   8
@@ -18473,7 +18551,7 @@ AcDbArc
   0
 ARC
   5
-234
+237
 100
 AcDbEntity
   8
@@ -18501,7 +18579,7 @@ AcDbArc
   0
 ARC
   5
-235
+238
 100
 AcDbEntity
   8
@@ -18529,7 +18607,7 @@ AcDbArc
   0
 LINE
   5
-236
+239
 100
 AcDbEntity
   8
@@ -18553,7 +18631,7 @@ AcDbLine
   0
 LINE
   5
-237
+23A
 100
 AcDbEntity
   8
@@ -18577,7 +18655,7 @@ AcDbLine
   0
 LINE
   5
-238
+23B
 100
 AcDbEntity
   8
@@ -18601,7 +18679,7 @@ AcDbLine
   0
 LINE
   5
-239
+23C
 100
 AcDbEntity
   8
@@ -18625,7 +18703,7 @@ AcDbLine
   0
 CIRCLE
   5
-23A
+23D
 100
 AcDbEntity
   8
@@ -18647,9 +18725,9 @@ AcDbCircle
   0
 ENDBLK
   5
-9A
+9B
 330
-98
+99
 100
 AcDbEntity
   8
@@ -18659,9 +18737,9 @@ AcDbBlockEnd
   0
 BLOCK
   5
-9C
+9D
 330
-9B
+9C
 100
 AcDbEntity
   8
@@ -18683,7 +18761,7 @@ M3-Screw
   0
 CIRCLE
   5
-23B
+23E
 100
 AcDbEntity
   8
@@ -18705,9 +18783,9 @@ AcDbCircle
   0
 ENDBLK
   5
-9D
+9E
 330
-9B
+9C
 100
 AcDbEntity
   8
@@ -18723,7 +18801,7 @@ ENTITIES
   0
 INSERT
   5
-23C
+23F
 100
 AcDbEntity
   8
@@ -18763,7 +18841,7 @@ ledstrip
   0
 INSERT
   5
-23D
+240
 100
 AcDbEntity
   8
@@ -18803,7 +18881,7 @@ ledstrip
   0
 INSERT
   5
-23E
+241
 100
 AcDbEntity
   8
@@ -18843,7 +18921,7 @@ ledstrip
   0
 INSERT
   5
-23F
+242
 100
 AcDbEntity
   8
@@ -18883,7 +18961,7 @@ ledstrip
   0
 INSERT
   5
-240
+243
 100
 AcDbEntity
   8
@@ -18923,7 +19001,7 @@ ledstrip
   0
 INSERT
   5
-241
+244
 100
 AcDbEntity
   8
@@ -18963,7 +19041,7 @@ ledstrip
   0
 INSERT
   5
-242
+245
 100
 AcDbEntity
   8
@@ -19003,7 +19081,7 @@ ledstrip
   0
 INSERT
   5
-243
+246
 100
 AcDbEntity
   8
@@ -19043,7 +19121,7 @@ ledstrip
   0
 INSERT
   5
-244
+247
 100
 AcDbEntity
   8
@@ -19083,7 +19161,7 @@ ledstrip
   0
 INSERT
   5
-245
+248
 100
 AcDbEntity
   8
@@ -19123,7 +19201,7 @@ ledstrip
   0
 INSERT
   5
-246
+249
 100
 AcDbEntity
   8
@@ -19163,7 +19241,7 @@ Barrier Cell
   0
 INSERT
   5
-247
+24A
 100
 AcDbEntity
   8
@@ -19203,7 +19281,7 @@ Barrier Cell
   0
 INSERT
   5
-248
+24B
 100
 AcDbEntity
   8
@@ -19243,7 +19321,7 @@ Barrier Cell
   0
 INSERT
   5
-249
+24C
 100
 AcDbEntity
   8
@@ -19283,7 +19361,7 @@ Barrier Cell
   0
 INSERT
   5
-24A
+24D
 100
 AcDbEntity
   8
@@ -19323,7 +19401,7 @@ Barrier Cell
   0
 INSERT
   5
-24B
+24E
 100
 AcDbEntity
   8
@@ -19363,7 +19441,7 @@ Barrier Cell
   0
 INSERT
   5
-24C
+24F
 100
 AcDbEntity
   8
@@ -19403,7 +19481,7 @@ Barrier Cell
   0
 INSERT
   5
-24D
+250
 100
 AcDbEntity
   8
@@ -19443,7 +19521,7 @@ Barrier Cell
   0
 INSERT
   5
-24E
+251
 100
 AcDbEntity
   8
@@ -19483,7 +19561,7 @@ Barrier Cell
   0
 INSERT
   5
-24F
+252
 100
 AcDbEntity
   8
@@ -19523,7 +19601,7 @@ Barrier Cell
   0
 INSERT
   5
-250
+253
 100
 AcDbEntity
   8
@@ -19563,7 +19641,7 @@ Barrier Cell
   0
 INSERT
   5
-251
+254
 100
 AcDbEntity
   8
@@ -19603,7 +19681,7 @@ Barrier Cell
   0
 INSERT
   5
-252
+255
 100
 AcDbEntity
   8
@@ -19643,7 +19721,7 @@ Barrier Cell
   0
 INSERT
   5
-253
+256
 100
 AcDbEntity
   8
@@ -19683,7 +19761,7 @@ Barrier Cell
   0
 INSERT
   5
-254
+257
 100
 AcDbEntity
   8
@@ -19723,7 +19801,7 @@ Barrier Cell
   0
 INSERT
   5
-255
+258
 100
 AcDbEntity
   8
@@ -19763,7 +19841,7 @@ Barrier Cell
   0
 INSERT
   5
-256
+259
 100
 AcDbEntity
   8
@@ -19803,7 +19881,7 @@ Barrier Cell
   0
 INSERT
   5
-257
+25A
 100
 AcDbEntity
   8
@@ -19843,7 +19921,7 @@ Barrier Cell
   0
 INSERT
   5
-258
+25B
 100
 AcDbEntity
   8
@@ -19883,7 +19961,7 @@ Barrier Cell
   0
 INSERT
   5
-259
+25C
 100
 AcDbEntity
   8
@@ -19923,7 +20001,7 @@ Barrier Cell
   0
 INSERT
   5
-25A
+25D
 100
 AcDbEntity
   8
@@ -19963,7 +20041,7 @@ Barrier Cell
   0
 INSERT
   5
-25B
+25E
 100
 AcDbEntity
   8
@@ -20003,7 +20081,7 @@ Barrier Cell
   0
 INSERT
   5
-25C
+25F
 100
 AcDbEntity
   8
@@ -20043,7 +20121,7 @@ Barrier Cell
   0
 INSERT
   5
-25D
+260
 100
 AcDbEntity
   8
@@ -20083,7 +20161,7 @@ Barrier Cell
   0
 INSERT
   5
-25E
+261
 100
 AcDbEntity
   8
@@ -20123,7 +20201,7 @@ Barrier Cell
   0
 INSERT
   5
-25F
+262
 100
 AcDbEntity
   8
@@ -20163,7 +20241,7 @@ Barrier Cell
   0
 INSERT
   5
-260
+263
 100
 AcDbEntity
   8
@@ -20203,7 +20281,7 @@ Barrier Cell
   0
 INSERT
   5
-261
+264
 100
 AcDbEntity
   8
@@ -20243,7 +20321,7 @@ Barrier Cell
   0
 INSERT
   5
-262
+265
 100
 AcDbEntity
   8
@@ -20283,7 +20361,7 @@ Barrier Cell
   0
 INSERT
   5
-263
+266
 100
 AcDbEntity
   8
@@ -20323,7 +20401,7 @@ Barrier Cell
   0
 INSERT
   5
-264
+267
 100
 AcDbEntity
   8
@@ -20342,126 +20420,6 @@ Barrier Cell
 59.5
  20
 33.49999999999999
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-270
- 70
-    1
- 71
-    1
- 44
-1
- 45
-1
-  0
-INSERT
-  5
-265
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-Barrier Cell
- 10
-59.49999999999999
- 20
-16.99999999999999
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-270
- 70
-    1
- 71
-    1
- 44
-1
- 45
-1
-  0
-INSERT
-  5
-266
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-Barrier Cell
- 10
-59.49999999999999
- 20
-0.4999999999999858
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-270
- 70
-    1
- 71
-    1
- 44
-1
- 45
-1
-  0
-INSERT
-  5
-267
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-Barrier Cell
- 10
-59.49999999999999
- 20
--16.00000000000001
  30
 0
  41
@@ -20501,7 +20459,7 @@ Barrier Cell
  10
 59.49999999999999
  20
--32.50000000000001
+16.99999999999999
  30
 0
  41
@@ -20541,7 +20499,7 @@ Barrier Cell
  10
 59.49999999999999
  20
--49.00000000000001
+0.4999999999999858
  30
 0
  41
@@ -20564,6 +20522,126 @@ Barrier Cell
 INSERT
   5
 26A
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+Barrier Cell
+ 10
+59.49999999999999
+ 20
+-16.00000000000001
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+270
+ 70
+    1
+ 71
+    1
+ 44
+1
+ 45
+1
+  0
+INSERT
+  5
+26B
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+Barrier Cell
+ 10
+59.49999999999999
+ 20
+-32.50000000000001
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+270
+ 70
+    1
+ 71
+    1
+ 44
+1
+ 45
+1
+  0
+INSERT
+  5
+26C
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+Barrier Cell
+ 10
+59.49999999999999
+ 20
+-49.00000000000001
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+270
+ 70
+    1
+ 71
+    1
+ 44
+1
+ 45
+1
+  0
+INSERT
+  5
+26D
 100
 AcDbEntity
   8
@@ -20603,7 +20681,7 @@ Barrier Cell
   0
 INSERT
   5
-26B
+26E
 100
 AcDbEntity
   8
@@ -20643,7 +20721,7 @@ Barrier Cell
   0
 INSERT
   5
-26C
+26F
 100
 AcDbEntity
   8
@@ -20683,7 +20761,7 @@ Barrier Cell
   0
 INSERT
   5
-26D
+270
 100
 AcDbEntity
   8
@@ -20702,126 +20780,6 @@ Barrier Cell
 76
  20
 33.49999999999999
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-270
- 70
-    1
- 71
-    1
- 44
-1
- 45
-1
-  0
-INSERT
-  5
-26E
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-Barrier Cell
- 10
-75.99999999999999
- 20
-16.99999999999999
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-270
- 70
-    1
- 71
-    1
- 44
-1
- 45
-1
-  0
-INSERT
-  5
-26F
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-Barrier Cell
- 10
-75.99999999999999
- 20
-0.4999999999999858
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-270
- 70
-    1
- 71
-    1
- 44
-1
- 45
-1
-  0
-INSERT
-  5
-270
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-Barrier Cell
- 10
-75.99999999999999
- 20
--16.00000000000001
  30
 0
  41
@@ -20861,7 +20819,7 @@ Barrier Cell
  10
 75.99999999999999
  20
--32.50000000000001
+16.99999999999999
  30
 0
  41
@@ -20901,7 +20859,7 @@ Barrier Cell
  10
 75.99999999999999
  20
--49.00000000000001
+0.4999999999999858
  30
 0
  41
@@ -20924,6 +20882,126 @@ Barrier Cell
 INSERT
   5
 273
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+Barrier Cell
+ 10
+75.99999999999999
+ 20
+-16.00000000000001
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+270
+ 70
+    1
+ 71
+    1
+ 44
+1
+ 45
+1
+  0
+INSERT
+  5
+274
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+Barrier Cell
+ 10
+75.99999999999999
+ 20
+-32.50000000000001
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+270
+ 70
+    1
+ 71
+    1
+ 44
+1
+ 45
+1
+  0
+INSERT
+  5
+275
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+Barrier Cell
+ 10
+75.99999999999999
+ 20
+-49.00000000000001
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+270
+ 70
+    1
+ 71
+    1
+ 44
+1
+ 45
+1
+  0
+INSERT
+  5
+276
 100
 AcDbEntity
   8
@@ -20963,7 +21041,7 @@ Barrier Cell
   0
 INSERT
   5
-274
+277
 100
 AcDbEntity
   8
@@ -21003,7 +21081,7 @@ Barrier Cell
   0
 INSERT
   5
-275
+278
 100
 AcDbEntity
   8
@@ -21043,7 +21121,7 @@ Barrier Cell
   0
 INSERT
   5
-276
+279
 100
 AcDbEntity
   8
@@ -21083,7 +21161,7 @@ Barrier Cell
   0
 INSERT
   5
-277
+27A
 100
 AcDbEntity
   8
@@ -21123,126 +21201,6 @@ Barrier Cell
   0
 INSERT
   5
-278
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-Barrier Cell
- 10
-92.49999999999999
- 20
-16.99999999999998
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-270
- 70
-    1
- 71
-    1
- 44
-1
- 45
-1
-  0
-INSERT
-  5
-279
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-Barrier Cell
- 10
-92.49999999999999
- 20
-0.4999999999999858
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-270
- 70
-    1
- 71
-    1
- 44
-1
- 45
-1
-  0
-INSERT
-  5
-27A
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-Barrier Cell
- 10
-92.49999999999999
- 20
--16.00000000000001
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-270
- 70
-    1
- 71
-    1
- 44
-1
- 45
-1
-  0
-INSERT
-  5
 27B
 100
 AcDbEntity
@@ -21261,7 +21219,7 @@ Barrier Cell
  10
 92.49999999999999
  20
--32.50000000000001
+16.99999999999998
  30
 0
  41
@@ -21301,7 +21259,7 @@ Barrier Cell
  10
 92.49999999999999
  20
--49.00000000000001
+0.4999999999999858
  30
 0
  41
@@ -21324,6 +21282,126 @@ Barrier Cell
 INSERT
   5
 27D
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+Barrier Cell
+ 10
+92.49999999999999
+ 20
+-16.00000000000001
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+270
+ 70
+    1
+ 71
+    1
+ 44
+1
+ 45
+1
+  0
+INSERT
+  5
+27E
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+Barrier Cell
+ 10
+92.49999999999999
+ 20
+-32.50000000000001
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+270
+ 70
+    1
+ 71
+    1
+ 44
+1
+ 45
+1
+  0
+INSERT
+  5
+27F
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+Barrier Cell
+ 10
+92.49999999999999
+ 20
+-49.00000000000001
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+270
+ 70
+    1
+ 71
+    1
+ 44
+1
+ 45
+1
+  0
+INSERT
+  5
+280
 100
 AcDbEntity
   8
@@ -21363,7 +21441,7 @@ Barrier Cell
   0
 INSERT
   5
-27E
+281
 100
 AcDbEntity
   8
@@ -21403,7 +21481,7 @@ Barrier Cell
   0
 INSERT
   5
-27F
+282
 100
 AcDbEntity
   8
@@ -21422,126 +21500,6 @@ Barrier Cell
 92.49999999999997
  20
 -98.50000000000003
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-270
- 70
-    1
- 71
-    1
- 44
-1
- 45
-1
-  0
-INSERT
-  5
-280
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-Barrier Cell
- 10
-109
- 20
-49.99999999999998
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-270
- 70
-    1
- 71
-    1
- 44
-1
- 45
-1
-  0
-INSERT
-  5
-281
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-Barrier Cell
- 10
-109
- 20
-33.49999999999998
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-270
- 70
-    1
- 71
-    1
- 44
-1
- 45
-1
-  0
-INSERT
-  5
-282
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-Barrier Cell
- 10
-109
- 20
-16.99999999999998
  30
 0
  41
@@ -21581,7 +21539,7 @@ Barrier Cell
  10
 109
  20
-0.4999999999999858
+49.99999999999998
  30
 0
  41
@@ -21621,7 +21579,7 @@ Barrier Cell
  10
 109
  20
--16.00000000000001
+33.49999999999998
  30
 0
  41
@@ -21661,7 +21619,7 @@ Barrier Cell
  10
 109
  20
--32.50000000000001
+16.99999999999998
  30
 0
  41
@@ -21701,7 +21659,7 @@ Barrier Cell
  10
 109
  20
--49.00000000000001
+0.4999999999999858
  30
 0
  41
@@ -21741,7 +21699,7 @@ Barrier Cell
  10
 109
  20
--65.50000000000003
+-16.00000000000001
  30
 0
  41
@@ -21781,7 +21739,7 @@ Barrier Cell
  10
 109
  20
--82.00000000000003
+-32.50000000000001
  30
 0
  41
@@ -21821,7 +21779,7 @@ Barrier Cell
  10
 109
  20
--98.50000000000003
+-49.00000000000001
  30
 0
  41
@@ -21859,9 +21817,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-125.5
+109
  20
-49.99999999999998
+-65.50000000000003
  30
 0
  41
@@ -21899,9 +21857,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-125.5
+109
  20
-33.49999999999997
+-82.00000000000003
  30
 0
  41
@@ -21939,9 +21897,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-125.5
+109
  20
-16.99999999999998
+-98.50000000000003
  30
 0
  41
@@ -21981,7 +21939,7 @@ Barrier Cell
  10
 125.5
  20
-0.4999999999999716
+49.99999999999998
  30
 0
  41
@@ -22021,7 +21979,7 @@ Barrier Cell
  10
 125.5
  20
--16.00000000000003
+33.49999999999997
  30
 0
  41
@@ -22061,7 +22019,7 @@ Barrier Cell
  10
 125.5
  20
--32.50000000000003
+16.99999999999998
  30
 0
  41
@@ -22101,7 +22059,7 @@ Barrier Cell
  10
 125.5
  20
--49.00000000000003
+0.4999999999999716
  30
 0
  41
@@ -22141,7 +22099,7 @@ Barrier Cell
  10
 125.5
  20
--65.50000000000003
+-16.00000000000003
  30
 0
  41
@@ -22181,7 +22139,7 @@ Barrier Cell
  10
 125.5
  20
--82.00000000000003
+-32.50000000000003
  30
 0
  41
@@ -22221,7 +22179,7 @@ Barrier Cell
  10
 125.5
  20
--98.50000000000003
+-49.00000000000003
  30
 0
  41
@@ -22259,9 +22217,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-142
+125.5
  20
-49.99999999999997
+-65.50000000000003
  30
 0
  41
@@ -22299,9 +22257,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-142
+125.5
  20
-33.49999999999997
+-82.00000000000003
  30
 0
  41
@@ -22339,9 +22297,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-142
+125.5
  20
-16.99999999999997
+-98.50000000000003
  30
 0
  41
@@ -22381,7 +22339,7 @@ Barrier Cell
  10
 142
  20
-0.4999999999999716
+49.99999999999997
  30
 0
  41
@@ -22421,7 +22379,7 @@ Barrier Cell
  10
 142
  20
--16.00000000000003
+33.49999999999997
  30
 0
  41
@@ -22461,7 +22419,7 @@ Barrier Cell
  10
 142
  20
--32.50000000000003
+16.99999999999997
  30
 0
  41
@@ -22501,7 +22459,7 @@ Barrier Cell
  10
 142
  20
--49.00000000000003
+0.4999999999999716
  30
 0
  41
@@ -22541,7 +22499,7 @@ Barrier Cell
  10
 142
  20
--65.50000000000003
+-16.00000000000003
  30
 0
  41
@@ -22581,7 +22539,7 @@ Barrier Cell
  10
 142
  20
--82.00000000000003
+-32.50000000000003
  30
 0
  41
@@ -22621,7 +22579,7 @@ Barrier Cell
  10
 142
  20
--98.50000000000003
+-49.00000000000003
  30
 0
  41
@@ -22659,9 +22617,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-158.5
+142
  20
-49.99999999999997
+-65.50000000000003
  30
 0
  41
@@ -22699,9 +22657,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-158.5
+142
  20
-33.49999999999997
+-82.00000000000003
  30
 0
  41
@@ -22739,9 +22697,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-158.5
+142
  20
-16.99999999999997
+-98.50000000000003
  30
 0
  41
@@ -22781,7 +22739,7 @@ Barrier Cell
  10
 158.5
  20
-0.4999999999999716
+49.99999999999997
  30
 0
  41
@@ -22821,7 +22779,7 @@ Barrier Cell
  10
 158.5
  20
--16.00000000000003
+33.49999999999997
  30
 0
  41
@@ -22861,7 +22819,7 @@ Barrier Cell
  10
 158.5
  20
--32.50000000000003
+16.99999999999997
  30
 0
  41
@@ -22901,7 +22859,7 @@ Barrier Cell
  10
 158.5
  20
--49.00000000000003
+0.4999999999999716
  30
 0
  41
@@ -22941,7 +22899,7 @@ Barrier Cell
  10
 158.5
  20
--65.50000000000003
+-16.00000000000003
  30
 0
  41
@@ -22981,7 +22939,7 @@ Barrier Cell
  10
 158.5
  20
--82.00000000000003
+-32.50000000000003
  30
 0
  41
@@ -23021,7 +22979,7 @@ Barrier Cell
  10
 158.5
  20
--98.50000000000003
+-49.00000000000003
  30
 0
  41
@@ -23059,9 +23017,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-175
+158.5
  20
-49.99999999999996
+-65.50000000000003
  30
 0
  41
@@ -23099,9 +23057,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-175
+158.5
  20
-33.49999999999997
+-82.00000000000003
  30
 0
  41
@@ -23139,9 +23097,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-175
+158.5
  20
-16.99999999999996
+-98.50000000000003
  30
 0
  41
@@ -23181,7 +23139,7 @@ Barrier Cell
  10
 175
  20
-0.4999999999999716
+49.99999999999996
  30
 0
  41
@@ -23221,7 +23179,7 @@ Barrier Cell
  10
 175
  20
--16.00000000000003
+33.49999999999997
  30
 0
  41
@@ -23261,7 +23219,7 @@ Barrier Cell
  10
 175
  20
--32.50000000000003
+16.99999999999996
  30
 0
  41
@@ -23301,7 +23259,7 @@ Barrier Cell
  10
 175
  20
--49.00000000000003
+0.4999999999999716
  30
 0
  41
@@ -23341,7 +23299,7 @@ Barrier Cell
  10
 175
  20
--65.50000000000003
+-16.00000000000003
  30
 0
  41
@@ -23381,7 +23339,7 @@ Barrier Cell
  10
 175
  20
--82.00000000000003
+-32.50000000000003
  30
 0
  41
@@ -23421,7 +23379,7 @@ Barrier Cell
  10
 175
  20
--98.50000000000003
+-49.00000000000003
  30
 0
  41
@@ -23459,9 +23417,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-191.5
+175
  20
-49.99999999999996
+-65.50000000000003
  30
 0
  41
@@ -23499,9 +23457,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-191.5
+175
  20
-33.49999999999996
+-82.00000000000003
  30
 0
  41
@@ -23539,9 +23497,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-191.5
+175
  20
-16.99999999999996
+-98.50000000000003
  30
 0
  41
@@ -23581,7 +23539,7 @@ Barrier Cell
  10
 191.5
  20
-0.4999999999999574
+49.99999999999996
  30
 0
  41
@@ -23621,7 +23579,7 @@ Barrier Cell
  10
 191.5
  20
--16.00000000000004
+33.49999999999996
  30
 0
  41
@@ -23661,7 +23619,7 @@ Barrier Cell
  10
 191.5
  20
--32.50000000000004
+16.99999999999996
  30
 0
  41
@@ -23701,7 +23659,7 @@ Barrier Cell
  10
 191.5
  20
--49.00000000000004
+0.4999999999999574
  30
 0
  41
@@ -23741,7 +23699,7 @@ Barrier Cell
  10
 191.5
  20
--65.50000000000003
+-16.00000000000004
  30
 0
  41
@@ -23781,7 +23739,7 @@ Barrier Cell
  10
 191.5
  20
--82.00000000000003
+-32.50000000000004
  30
 0
  41
@@ -23821,7 +23779,7 @@ Barrier Cell
  10
 191.5
  20
--98.50000000000003
+-49.00000000000004
  30
 0
  41
@@ -23859,9 +23817,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-208
+191.5
  20
-49.99999999999996
+-65.50000000000003
  30
 0
  41
@@ -23899,9 +23857,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-208
+191.5
  20
-33.49999999999996
+-82.00000000000003
  30
 0
  41
@@ -23939,9 +23897,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-208
+191.5
  20
-16.99999999999996
+-98.50000000000003
  30
 0
  41
@@ -23981,7 +23939,7 @@ Barrier Cell
  10
 208
  20
-0.4999999999999574
+49.99999999999996
  30
 0
  41
@@ -24021,7 +23979,7 @@ Barrier Cell
  10
 208
  20
--16.00000000000004
+33.49999999999996
  30
 0
  41
@@ -24061,7 +24019,7 @@ Barrier Cell
  10
 208
  20
--32.50000000000004
+16.99999999999996
  30
 0
  41
@@ -24101,7 +24059,7 @@ Barrier Cell
  10
 208
  20
--49.00000000000004
+0.4999999999999574
  30
 0
  41
@@ -24141,7 +24099,7 @@ Barrier Cell
  10
 208
  20
--65.50000000000003
+-16.00000000000004
  30
 0
  41
@@ -24181,7 +24139,7 @@ Barrier Cell
  10
 208
  20
--82.00000000000003
+-32.50000000000004
  30
 0
  41
@@ -24221,7 +24179,7 @@ Barrier Cell
  10
 208
  20
--98.50000000000003
+-49.00000000000004
  30
 0
  41
@@ -24259,9 +24217,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-224.5
+208
  20
-49.99999999999996
+-65.50000000000003
  30
 0
  41
@@ -24299,9 +24257,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-224.5
+208
  20
-33.49999999999996
+-82.00000000000003
  30
 0
  41
@@ -24339,9 +24297,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-224.5
+208
  20
-16.99999999999996
+-98.50000000000003
  30
 0
  41
@@ -24381,7 +24339,7 @@ Barrier Cell
  10
 224.5
  20
-0.4999999999999574
+49.99999999999996
  30
 0
  41
@@ -24421,7 +24379,7 @@ Barrier Cell
  10
 224.5
  20
--16.00000000000004
+33.49999999999996
  30
 0
  41
@@ -24461,7 +24419,7 @@ Barrier Cell
  10
 224.5
  20
--32.50000000000004
+16.99999999999996
  30
 0
  41
@@ -24501,7 +24459,7 @@ Barrier Cell
  10
 224.5
  20
--49.00000000000004
+0.4999999999999574
  30
 0
  41
@@ -24541,7 +24499,7 @@ Barrier Cell
  10
 224.5
  20
--65.50000000000003
+-16.00000000000004
  30
 0
  41
@@ -24581,7 +24539,7 @@ Barrier Cell
  10
 224.5
  20
--82.00000000000003
+-32.50000000000004
  30
 0
  41
@@ -24621,7 +24579,7 @@ Barrier Cell
  10
 224.5
  20
--98.50000000000003
+-49.00000000000004
  30
 0
  41
@@ -24659,9 +24617,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-241
+224.5
  20
-49.99999999999996
+-65.50000000000003
  30
 0
  41
@@ -24699,9 +24657,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-241
+224.5
  20
-33.49999999999996
+-82.00000000000003
  30
 0
  41
@@ -24739,9 +24697,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-241
+224.5
  20
-16.99999999999996
+-98.50000000000003
  30
 0
  41
@@ -24781,7 +24739,7 @@ Barrier Cell
  10
 241
  20
-0.4999999999999574
+49.99999999999996
  30
 0
  41
@@ -24821,7 +24779,7 @@ Barrier Cell
  10
 241
  20
--16.00000000000004
+33.49999999999996
  30
 0
  41
@@ -24861,7 +24819,7 @@ Barrier Cell
  10
 241
  20
--32.50000000000004
+16.99999999999996
  30
 0
  41
@@ -24901,7 +24859,7 @@ Barrier Cell
  10
 241
  20
--49.00000000000004
+0.4999999999999574
  30
 0
  41
@@ -24941,7 +24899,7 @@ Barrier Cell
  10
 241
  20
--65.50000000000006
+-16.00000000000004
  30
 0
  41
@@ -24981,7 +24939,7 @@ Barrier Cell
  10
 241
  20
--82.00000000000006
+-32.50000000000004
  30
 0
  41
@@ -25021,7 +24979,7 @@ Barrier Cell
  10
 241
  20
--98.50000000000006
+-49.00000000000004
  30
 0
  41
@@ -25059,9 +25017,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-257.5
+241
  20
-49.99999999999995
+-65.50000000000006
  30
 0
  41
@@ -25099,9 +25057,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-257.5
+241
  20
-33.49999999999995
+-82.00000000000006
  30
 0
  41
@@ -25139,9 +25097,9 @@ AcDbBlockReference
   2
 Barrier Cell
  10
-257.5
+241
  20
-16.99999999999995
+-98.50000000000006
  30
 0
  41
@@ -25181,7 +25139,7 @@ Barrier Cell
  10
 257.5
  20
-0.4999999999999574
+49.99999999999995
  30
 0
  41
@@ -25221,7 +25179,7 @@ Barrier Cell
  10
 257.5
  20
--16.00000000000004
+33.49999999999995
  30
 0
  41
@@ -25261,7 +25219,7 @@ Barrier Cell
  10
 257.5
  20
--32.50000000000004
+16.99999999999995
  30
 0
  41
@@ -25301,7 +25259,7 @@ Barrier Cell
  10
 257.5
  20
--49.00000000000004
+0.4999999999999574
  30
 0
  41
@@ -25341,7 +25299,7 @@ Barrier Cell
  10
 257.5
  20
--65.50000000000006
+-16.00000000000004
  30
 0
  41
@@ -25381,7 +25339,7 @@ Barrier Cell
  10
 257.5
  20
--82.00000000000006
+-32.50000000000004
  30
 0
  41
@@ -25404,6 +25362,126 @@ Barrier Cell
 INSERT
   5
 2E3
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+Barrier Cell
+ 10
+257.5
+ 20
+-49.00000000000004
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+270
+ 70
+    1
+ 71
+    1
+ 44
+1
+ 45
+1
+  0
+INSERT
+  5
+2E4
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+Barrier Cell
+ 10
+257.5
+ 20
+-65.50000000000006
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+270
+ 70
+    1
+ 71
+    1
+ 44
+1
+ 45
+1
+  0
+INSERT
+  5
+2E5
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+Barrier Cell
+ 10
+257.5
+ 20
+-82.00000000000006
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+270
+ 70
+    1
+ 71
+    1
+ 44
+1
+ 45
+1
+  0
+INSERT
+  5
+2E6
 100
 AcDbEntity
   8
@@ -25443,7 +25521,7 @@ Barrier Cell
   0
 INSERT
   5
-2E4
+2E7
 100
 AcDbEntity
   8
@@ -25483,7 +25561,7 @@ Barrier Cell
   0
 INSERT
   5
-2E5
+2E8
 100
 AcDbEntity
   8
@@ -25523,7 +25601,7 @@ Barrier Cell
   0
 INSERT
   5
-2E6
+2E9
 100
 AcDbEntity
   8
@@ -25563,126 +25641,6 @@ Barrier Cell
   0
 INSERT
   5
-2E7
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-Barrier Cell
- 10
-274
- 20
-0.4999999999999432
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-270
- 70
-    1
- 71
-    1
- 44
-1
- 45
-1
-  0
-INSERT
-  5
-2E8
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-Barrier Cell
- 10
-274
- 20
--16.00000000000006
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-270
- 70
-    1
- 71
-    1
- 44
-1
- 45
-1
-  0
-INSERT
-  5
-2E9
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-Barrier Cell
- 10
-274
- 20
--32.50000000000006
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-270
- 70
-    1
- 71
-    1
- 44
-1
- 45
-1
-  0
-INSERT
-  5
 2EA
 100
 AcDbEntity
@@ -25701,7 +25659,7 @@ Barrier Cell
  10
 274
  20
--49.00000000000006
+0.4999999999999432
  30
 0
  41
@@ -25741,7 +25699,7 @@ Barrier Cell
  10
 274
  20
--65.50000000000006
+-16.00000000000006
  30
 0
  41
@@ -25781,7 +25739,7 @@ Barrier Cell
  10
 274
  20
--82.00000000000006
+-32.50000000000006
  30
 0
  41
@@ -25804,6 +25762,126 @@ Barrier Cell
 INSERT
   5
 2ED
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+Barrier Cell
+ 10
+274
+ 20
+-49.00000000000006
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+270
+ 70
+    1
+ 71
+    1
+ 44
+1
+ 45
+1
+  0
+INSERT
+  5
+2EE
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+Barrier Cell
+ 10
+274
+ 20
+-65.50000000000006
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+270
+ 70
+    1
+ 71
+    1
+ 44
+1
+ 45
+1
+  0
+INSERT
+  5
+2EF
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+Barrier Cell
+ 10
+274
+ 20
+-82.00000000000006
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+270
+ 70
+    1
+ 71
+    1
+ 44
+1
+ 45
+1
+  0
+INSERT
+  5
+2F0
 100
 AcDbEntity
   8
@@ -25843,126 +25921,6 @@ Barrier Cell
   0
 INSERT
   5
-2EE
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-Barrier Cell
- 10
-290.5
- 20
-49.99999999999994
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-270
- 70
-    1
- 71
-    1
- 44
-1
- 45
-1
-  0
-INSERT
-  5
-2EF
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-Barrier Cell
- 10
-290.5
- 20
-33.49999999999994
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-270
- 70
-    1
- 71
-    1
- 44
-1
- 45
-1
-  0
-INSERT
-  5
-2F0
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-Barrier Cell
- 10
-290.5
- 20
-16.99999999999994
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-270
- 70
-    1
- 71
-    1
- 44
-1
- 45
-1
-  0
-INSERT
-  5
 2F1
 100
 AcDbEntity
@@ -25981,7 +25939,7 @@ Barrier Cell
  10
 290.5
  20
-0.4999999999999432
+49.99999999999994
  30
 0
  41
@@ -26021,7 +25979,7 @@ Barrier Cell
  10
 290.5
  20
--16.00000000000006
+33.49999999999994
  30
 0
  41
@@ -26061,7 +26019,7 @@ Barrier Cell
  10
 290.5
  20
--32.50000000000006
+16.99999999999994
  30
 0
  41
@@ -26101,7 +26059,7 @@ Barrier Cell
  10
 290.5
  20
--49.00000000000006
+0.4999999999999432
  30
 0
  41
@@ -26141,7 +26099,7 @@ Barrier Cell
  10
 290.5
  20
--65.50000000000006
+-16.00000000000006
  30
 0
  41
@@ -26181,7 +26139,7 @@ Barrier Cell
  10
 290.5
  20
--82.00000000000006
+-32.50000000000006
  30
 0
  41
@@ -26204,6 +26162,126 @@ Barrier Cell
 INSERT
   5
 2F7
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+Barrier Cell
+ 10
+290.5
+ 20
+-49.00000000000006
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+270
+ 70
+    1
+ 71
+    1
+ 44
+1
+ 45
+1
+  0
+INSERT
+  5
+2F8
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+Barrier Cell
+ 10
+290.5
+ 20
+-65.50000000000006
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+270
+ 70
+    1
+ 71
+    1
+ 44
+1
+ 45
+1
+  0
+INSERT
+  5
+2F9
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+Barrier Cell
+ 10
+290.5
+ 20
+-82.00000000000006
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+270
+ 70
+    1
+ 71
+    1
+ 44
+1
+ 45
+1
+  0
+INSERT
+  5
+2FA
 100
 AcDbEntity
   8
@@ -26243,126 +26321,6 @@ Barrier Cell
   0
 INSERT
   5
-2F8
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-Barrier Cell
- 10
-307
- 20
-49.99999999999994
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-270
- 70
-    1
- 71
-    1
- 44
-1
- 45
-1
-  0
-INSERT
-  5
-2F9
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-Barrier Cell
- 10
-307
- 20
-33.49999999999994
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-270
- 70
-    1
- 71
-    1
- 44
-1
- 45
-1
-  0
-INSERT
-  5
-2FA
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-Barrier Cell
- 10
-307
- 20
-16.99999999999994
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-270
- 70
-    1
- 71
-    1
- 44
-1
- 45
-1
-  0
-INSERT
-  5
 2FB
 100
 AcDbEntity
@@ -26381,7 +26339,7 @@ Barrier Cell
  10
 307
  20
-0.4999999999999432
+49.99999999999994
  30
 0
  41
@@ -26421,7 +26379,7 @@ Barrier Cell
  10
 307
  20
--16.00000000000006
+33.49999999999994
  30
 0
  41
@@ -26461,7 +26419,7 @@ Barrier Cell
  10
 307
  20
--32.50000000000006
+16.99999999999994
  30
 0
  41
@@ -26501,7 +26459,7 @@ Barrier Cell
  10
 307
  20
--49.00000000000006
+0.4999999999999432
  30
 0
  41
@@ -26541,7 +26499,7 @@ Barrier Cell
  10
 307
  20
--65.50000000000006
+-16.00000000000006
  30
 0
  41
@@ -26581,7 +26539,7 @@ Barrier Cell
  10
 307
  20
--82.00000000000006
+-32.50000000000006
  30
 0
  41
@@ -26604,6 +26562,126 @@ Barrier Cell
 INSERT
   5
 301
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+Barrier Cell
+ 10
+307
+ 20
+-49.00000000000006
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+270
+ 70
+    1
+ 71
+    1
+ 44
+1
+ 45
+1
+  0
+INSERT
+  5
+302
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+Barrier Cell
+ 10
+307
+ 20
+-65.50000000000006
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+270
+ 70
+    1
+ 71
+    1
+ 44
+1
+ 45
+1
+  0
+INSERT
+  5
+303
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+Barrier Cell
+ 10
+307
+ 20
+-82.00000000000006
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+270
+ 70
+    1
+ 71
+    1
+ 44
+1
+ 45
+1
+  0
+INSERT
+  5
+304
 100
 AcDbEntity
   8
@@ -26643,7 +26721,7 @@ Barrier Cell
   0
 INSERT
   5
-302
+305
 100
 AcDbEntity
   8
@@ -26683,7 +26761,7 @@ Barrier Cell
   0
 INSERT
   5
-303
+306
 100
 AcDbEntity
   8
@@ -26723,7 +26801,7 @@ Barrier Cell
   0
 INSERT
   5
-304
+307
 100
 AcDbEntity
   8
@@ -26763,7 +26841,7 @@ Barrier Cell
   0
 INSERT
   5
-305
+308
 100
 AcDbEntity
   8
@@ -26803,7 +26881,7 @@ Barrier Cell
   0
 INSERT
   5
-306
+309
 100
 AcDbEntity
   8
@@ -26843,7 +26921,7 @@ Barrier Cell
   0
 INSERT
   5
-307
+30A
 100
 AcDbEntity
   8
@@ -26883,7 +26961,7 @@ Barrier Cell
   0
 INSERT
   5
-308
+30B
 100
 AcDbEntity
   8
@@ -26923,7 +27001,7 @@ Barrier Cell
   0
 INSERT
   5
-309
+30C
 100
 AcDbEntity
   8
@@ -26963,7 +27041,7 @@ Barrier Cell
   0
 INSERT
   5
-30A
+30D
 100
 AcDbEntity
   8
@@ -27003,7 +27081,7 @@ Barrier Cell
   0
 INSERT
   5
-30B
+30E
 100
 AcDbEntity
   8
@@ -27043,7 +27121,7 @@ Barrier Cell
   0
 INSERT
   5
-30C
+30F
 100
 AcDbEntity
   8
@@ -27083,7 +27161,7 @@ Barrier Cell
   0
 INSERT
   5
-30D
+310
 100
 AcDbEntity
   8
@@ -27123,11 +27201,11 @@ Barrier Cell
   0
 LWPOLYLINE
   5
-30E
+311
 100
 AcDbEntity
   8
-Aluminium Plate
+Acrylic front
   6
 ByLayer
  62
@@ -27161,113 +27239,11 @@ AcDbPolyline
   0
 INSERT
   5
-30F
-100
-AcDbEntity
-  8
-Hardware
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-M3-Screw
- 10
--5.000000000000032
- 20
--115
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-0
- 70
-    1
- 71
-    1
- 44
-0
- 45
-0
-  0
-CIRCLE
-  5
-310
-100
-AcDbEntity
-  8
-Light Barrier
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
--5.000000000000033
- 20
--115
- 40
-1.6
-  0
-INSERT
-  5
-311
-100
-AcDbEntity
-  8
-Hardware
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-M3-Screw
- 10
-338
- 20
--115.0000000000001
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-0
- 70
-    1
- 71
-    1
- 44
-0
- 45
-0
-  0
-CIRCLE
-  5
 312
 100
 AcDbEntity
   8
-Light Barrier
+Hardware
   6
 ByLayer
  62
@@ -27275,21 +27251,39 @@ ByLayer
 370
    -1
 100
-AcDbCircle
+AcDbBlockReference
+  2
+M3-Screw
  10
-338
+166.5
  20
--115.0000000000001
- 40
-1.6
+-115
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+0
+ 70
+    1
+ 71
+    1
+ 44
+0
+ 45
+0
   0
-INSERT
+CIRCLE
   5
 313
 100
 AcDbEntity
   8
-Hardware
+Light Barrier
   6
 ByLayer
  62
@@ -27297,39 +27291,21 @@ ByLayer
 370
    -1
 100
-AcDbBlockReference
-  2
-M3-Screw
+AcDbCircle
  10
 166.5
  20
 -115
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-0
- 70
-    1
- 71
-    1
- 44
-0
- 45
-0
+ 40
+1.6
   0
-CIRCLE
+INSERT
   5
 314
 100
 AcDbEntity
   8
-Light Barrier
+Hardware
   6
 ByLayer
  62
@@ -27337,181 +27313,35 @@ ByLayer
 370
    -1
 100
-AcDbCircle
+AcDbBlockReference
+  2
+M3-Screw
  10
 166.5
  20
--115
- 40
-1.6
+67
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+0
+ 70
+    1
+ 71
+    1
+ 44
+0
+ 45
+0
   0
-INSERT
+CIRCLE
   5
 315
-100
-AcDbEntity
-  8
-Hardware
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-M3-Screw
- 10
--4.999999999999999
- 20
-67
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-0
- 70
-    1
- 71
-    1
- 44
-0
- 45
-0
-  0
-CIRCLE
-  5
-316
-100
-AcDbEntity
-  8
-Light Barrier
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
--5
- 20
-67
- 40
-1.6
-  0
-INSERT
-  5
-317
-100
-AcDbEntity
-  8
-Hardware
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-M3-Screw
- 10
-338
- 20
-66.99999999999994
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-0
- 70
-    1
- 71
-    1
- 44
-0
- 45
-0
-  0
-CIRCLE
-  5
-318
-100
-AcDbEntity
-  8
-Light Barrier
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
-338
- 20
-66.99999999999994
- 40
-1.6
-  0
-INSERT
-  5
-319
-100
-AcDbEntity
-  8
-Hardware
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbBlockReference
-  2
-M3-Screw
- 10
-166.5
- 20
-67
- 30
-0
- 41
-1
- 42
-1
- 43
-0
- 50
-0
- 70
-    1
- 71
-    1
- 44
-0
- 45
-0
-  0
-CIRCLE
-  5
-31A
 100
 AcDbEntity
   8
@@ -27533,7 +27363,7 @@ AcDbCircle
   0
 LWPOLYLINE
   5
-31B
+316
 100
 AcDbEntity
   8
@@ -27571,7 +27401,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-31C
+317
 100
 AcDbEntity
   8
@@ -27609,7 +27439,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-31D
+318
 100
 AcDbEntity
   8
@@ -27645,95 +27475,13 @@ AcDbPolyline
  20
 75
   0
-LWPOLYLINE
-  5
-31E
-100
-AcDbEntity
-  8
-Light Barrier2
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbPolyline
- 90
-    4
- 70
-    1
- 43
-0
- 10
-334
- 20
-60.99999999999994
- 10
-333.9999999999999
- 20
--109.0000000000001
- 10
--1.000000000000032
- 20
--109
- 10
--1.000000000000001
- 20
-61
-  0
 CIRCLE
   5
-31F
+319
 100
 AcDbEntity
   8
-Aluminium Plate
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
--5.000000000000032
- 20
--115
- 40
-1.6
-  0
-CIRCLE
-  5
-320
-100
-AcDbEntity
-  8
-Aluminium Plate
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
-338
- 20
--115.0000000000001
- 40
-1.6
-  0
-CIRCLE
-  5
-321
-100
-AcDbEntity
-  8
-Aluminium Plate
+Acrylic front
   6
 ByLayer
  62
@@ -27751,55 +27499,11 @@ AcDbCircle
   0
 CIRCLE
   5
-322
+31A
 100
 AcDbEntity
   8
-Aluminium Plate
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
--5
- 20
-67
- 40
-1.6
-  0
-CIRCLE
-  5
-323
-100
-AcDbEntity
-  8
-Aluminium Plate
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
-338
- 20
-66.99999999999994
- 40
-1.6
-  0
-CIRCLE
-  5
-324
-100
-AcDbEntity
-  8
-Aluminium Plate
+Acrylic front
   6
 ByLayer
  62
@@ -27817,7 +27521,7 @@ AcDbCircle
   0
 DIMENSION
   5
-325
+31B
 100
 AcDbEntity
   8
@@ -27877,7 +27581,7 @@ AcDbAlignedDimension
   0
 LWPOLYLINE
   5
-326
+31C
 100
 AcDbEntity
   8
@@ -27915,7 +27619,7 @@ AcDbPolyline
   0
 DIMENSION
   5
-327
+31D
 100
 AcDbEntity
   8
@@ -27975,6 +27679,358 @@ AcDbAlignedDimension
   0
 LWPOLYLINE
   5
+31E
+100
+AcDbEntity
+  8
+Light Barrier2
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    1
+ 43
+0
+ 10
+410
+ 20
+75
+ 10
+413
+ 20
+75
+ 10
+413
+ 20
+-123
+ 10
+410
+ 20
+-123
+  0
+LWPOLYLINE
+  5
+31F
+100
+AcDbEntity
+  8
+Acrylic front
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    1
+ 43
+0
+ 10
+413
+ 20
+73
+ 10
+415
+ 20
+73
+ 10
+415
+ 20
+-121
+ 10
+413
+ 20
+-121
+  0
+LWPOLYLINE
+  5
+320
+100
+AcDbEntity
+  8
+Light Barrier
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    1
+ 43
+0
+ 10
+415
+ 20
+73
+ 10
+418
+ 20
+73
+ 10
+418
+ 20
+-121
+ 10
+415
+ 20
+-121
+  0
+LWPOLYLINE
+  5
+321
+100
+AcDbEntity
+  8
+Light Barrier2
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    1
+ 43
+0
+ 10
+418
+ 20
+-109
+ 10
+421
+ 20
+-109
+ 10
+421
+ 20
+61
+ 10
+418
+ 20
+61
+  0
+LWPOLYLINE
+  5
+322
+100
+AcDbEntity
+  8
+Acrylic front
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    1
+ 43
+0
+ 10
+421
+ 20
+73
+ 10
+423
+ 20
+73
+ 10
+423
+ 20
+-121
+ 10
+421
+ 20
+-121
+  0
+LINE
+  5
+323
+100
+AcDbEntity
+  8
+Acrylic front
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+423
+ 20
+-115
+ 11
+410
+ 21
+-115
+  0
+LINE
+  5
+324
+100
+AcDbEntity
+  8
+Acrylic front
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+423
+ 20
+67
+ 11
+410
+ 21
+67
+  0
+LWPOLYLINE
+  5
+325
+100
+AcDbEntity
+  8
+Light Barrier2
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    1
+ 43
+0
+ 10
+348
+ 20
+-190
+ 10
+-15
+ 20
+-190
+ 10
+-15
+ 20
+-193
+ 10
+348
+ 20
+-193
+  0
+LWPOLYLINE
+  5
+326
+100
+AcDbEntity
+  8
+Acrylic front
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    1
+ 43
+0
+ 10
+-13
+ 20
+-193
+ 10
+346
+ 20
+-193
+ 10
+346
+ 20
+-195
+ 10
+-13
+ 20
+-195
+  0
+LWPOLYLINE
+  5
+327
+100
+AcDbEntity
+  8
+Light Barrier
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    1
+ 43
+0
+ 10
+-13
+ 20
+-195
+ 10
+346
+ 20
+-195
+ 10
+346
+ 20
+-198
+ 10
+-13
+ 20
+-198
+  0
+LWPOLYLINE
+  5
 328
 100
 AcDbEntity
@@ -27995,21 +28051,21 @@ AcDbPolyline
  43
 0
  10
-410
+333.9999999999999
  20
-75
+-198
  10
-413
+-1
  20
-75
+-198
  10
-413
+-1
  20
--123
+-201
  10
-410
+333.9999999999999
  20
--123
+-201
   0
 LWPOLYLINE
   5
@@ -28017,7 +28073,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Aluminium Plate
+Acrylic front
   6
 ByLayer
  62
@@ -28033,29 +28089,29 @@ AcDbPolyline
  43
 0
  10
-413
+-13
  20
-73
+-201
  10
-415
+346
  20
-73
+-201
  10
-415
+346
  20
--121
+-203
  10
-413
+-13
  20
--121
+-203
   0
-LWPOLYLINE
+LINE
   5
 32A
 100
 AcDbEntity
   8
-Light Barrier
+Acrylic front
   6
 ByLayer
  62
@@ -28063,37 +28119,23 @@ ByLayer
 370
    -1
 100
-AcDbPolyline
- 90
-    4
- 70
-    1
- 43
-0
+AcDbLine
  10
-415
+338
  20
-73
- 10
-418
- 20
-73
- 10
-418
- 20
--121
- 10
-415
- 20
--121
+-203
+ 11
+338
+ 21
+-190
   0
-LWPOLYLINE
+LINE
   5
 32B
 100
 AcDbEntity
   8
-Light Barrier2
+Acrylic front
   6
 ByLayer
  62
@@ -28101,361 +28143,23 @@ ByLayer
 370
    -1
 100
-AcDbPolyline
- 90
-    4
- 70
-    1
- 43
-0
+AcDbLine
  10
-418
+-5
  20
--109
- 10
-421
- 20
--109
- 10
-421
- 20
-61
- 10
-418
- 20
-61
+-203
+ 11
+-5
+ 21
+-190
   0
-LWPOLYLINE
+LINE
   5
 32C
 100
 AcDbEntity
   8
-Aluminium Plate
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbPolyline
- 90
-    4
- 70
-    1
- 43
-0
- 10
-421
- 20
-73
- 10
-423
- 20
-73
- 10
-423
- 20
--121
- 10
-421
- 20
--121
-  0
-LINE
-  5
-32D
-100
-AcDbEntity
-  8
-Aluminium Plate
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
-423
- 20
--115
- 11
-410
- 21
--115
-  0
-LINE
-  5
-32E
-100
-AcDbEntity
-  8
-Aluminium Plate
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
-423
- 20
-67
- 11
-410
- 21
-67
-  0
-LWPOLYLINE
-  5
-32F
-100
-AcDbEntity
-  8
-Light Barrier2
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbPolyline
- 90
-    4
- 70
-    1
- 43
-0
- 10
-348
- 20
--190
- 10
--15
- 20
--190
- 10
--15
- 20
--193
- 10
-348
- 20
--193
-  0
-LWPOLYLINE
-  5
-330
-100
-AcDbEntity
-  8
-Aluminium Plate
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbPolyline
- 90
-    4
- 70
-    1
- 43
-0
- 10
--13
- 20
--193
- 10
-346
- 20
--193
- 10
-346
- 20
--195
- 10
--13
- 20
--195
-  0
-LWPOLYLINE
-  5
-331
-100
-AcDbEntity
-  8
-Light Barrier
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbPolyline
- 90
-    4
- 70
-    1
- 43
-0
- 10
--13
- 20
--195
- 10
-346
- 20
--195
- 10
-346
- 20
--198
- 10
--13
- 20
--198
-  0
-LWPOLYLINE
-  5
-332
-100
-AcDbEntity
-  8
-Light Barrier2
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbPolyline
- 90
-    4
- 70
-    1
- 43
-0
- 10
-333.9999999999999
- 20
--198
- 10
--1
- 20
--198
- 10
--1
- 20
--201
- 10
-333.9999999999999
- 20
--201
-  0
-LWPOLYLINE
-  5
-333
-100
-AcDbEntity
-  8
-Aluminium Plate
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbPolyline
- 90
-    4
- 70
-    1
- 43
-0
- 10
--13
- 20
--201
- 10
-346
- 20
--201
- 10
-346
- 20
--203
- 10
--13
- 20
--203
-  0
-LINE
-  5
-334
-100
-AcDbEntity
-  8
-Aluminium Plate
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
-338
- 20
--203
- 11
-338
- 21
--190
-  0
-LINE
-  5
-335
-100
-AcDbEntity
-  8
-Aluminium Plate
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
--5
- 20
--203
- 11
--5
- 21
--190
-  0
-LINE
-  5
-336
-100
-AcDbEntity
-  8
-Aluminium Plate
+Acrylic front
   6
 ByLayer
  62
@@ -28475,7 +28179,7 @@ AcDbLine
   0
 DIMENSION
   5
-337
+32D
 100
 AcDbEntity
   8
@@ -28535,7 +28239,7 @@ AcDbAlignedDimension
   0
 DIMENSION
   5
-338
+32E
 100
 AcDbEntity
   8
@@ -28595,7 +28299,7 @@ AcDbAlignedDimension
   0
 DIMENSION
   5
-339
+32F
 100
 AcDbEntity
   8
@@ -28655,7 +28359,7 @@ AcDbAlignedDimension
   0
 DIMENSION
   5
-33A
+330
 100
 AcDbEntity
   8
@@ -28715,7 +28419,7 @@ AcDbAlignedDimension
   0
 DIMENSION
   5
-33B
+331
 100
 AcDbEntity
   8
@@ -28775,7 +28479,7 @@ AcDbAlignedDimension
   0
 DIMENSION
   5
-33C
+332
 100
 AcDbEntity
   8
@@ -28837,7 +28541,7 @@ AcDbRotatedDimension
   0
 DIMENSION
   5
-33D
+333
 100
 AcDbEntity
   8
@@ -28899,7 +28603,7 @@ AcDbRotatedDimension
   0
 DIMENSION
   5
-33E
+334
 100
 AcDbEntity
   8
@@ -28961,7 +28665,7 @@ AcDbRotatedDimension
   0
 DIMENSION
   5
-33F
+335
 100
 AcDbEntity
   8
@@ -29023,7 +28727,7 @@ AcDbRotatedDimension
   0
 DIMENSION
   5
-340
+336
 100
 AcDbEntity
   8
@@ -29085,7 +28789,7 @@ AcDbRotatedDimension
   0
 DIMENSION
   5
-341
+337
 100
 AcDbEntity
   8
@@ -29147,7 +28851,7 @@ AcDbRotatedDimension
   0
 DIMENSION
   5
-342
+338
 100
 AcDbEntity
   8
@@ -29209,7 +28913,7 @@ AcDbRotatedDimension
   0
 DIMENSION
   5
-343
+339
 100
 AcDbEntity
   8
@@ -29271,7 +28975,7 @@ AcDbRotatedDimension
   0
 DIMENSION
   5
-344
+33A
 100
 AcDbEntity
   8
@@ -29327,51 +29031,7 @@ AcDbDiametricDimension
   0
 CIRCLE
   5
-345
-100
-AcDbEntity
-  8
-Light Barrier2
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
--5.000000000000033
- 20
--115
- 40
-1.6
-  0
-CIRCLE
-  5
-346
-100
-AcDbEntity
-  8
-Light Barrier2
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
-338
- 20
--115.0000000000001
- 40
-1.6
-  0
-CIRCLE
-  5
-347
+33B
 100
 AcDbEntity
   8
@@ -29393,51 +29053,7 @@ AcDbCircle
   0
 CIRCLE
   5
-348
-100
-AcDbEntity
-  8
-Light Barrier2
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
--5
- 20
-67
- 40
-1.6
-  0
-CIRCLE
-  5
-349
-100
-AcDbEntity
-  8
-Light Barrier2
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
-338
- 20
-66.99999999999994
- 40
-1.6
-  0
-CIRCLE
-  5
-34A
+33C
 100
 AcDbEntity
   8
@@ -29459,7 +29075,7 @@ AcDbCircle
   0
 CIRCLE
   5
-34B
+33D
 100
 AcDbEntity
   8
@@ -29481,7 +29097,7 @@ AcDbCircle
   0
 CIRCLE
   5
-34C
+33E
 100
 AcDbEntity
   8
@@ -29503,7 +29119,7 @@ AcDbCircle
   0
 CIRCLE
   5
-34D
+33F
 100
 AcDbEntity
   8
@@ -29525,7 +29141,7 @@ AcDbCircle
   0
 CIRCLE
   5
-34E
+340
 100
 AcDbEntity
   8
@@ -29547,7 +29163,7 @@ AcDbCircle
   0
 CIRCLE
   5
-34F
+341
 100
 AcDbEntity
   8
@@ -29569,7 +29185,7 @@ AcDbCircle
   0
 CIRCLE
   5
-350
+342
 100
 AcDbEntity
   8
@@ -29591,7 +29207,7 @@ AcDbCircle
   0
 CIRCLE
   5
-351
+343
 100
 AcDbEntity
   8
@@ -29613,7 +29229,7 @@ AcDbCircle
   0
 CIRCLE
   5
-352
+344
 100
 AcDbEntity
   8
@@ -29635,7 +29251,7 @@ AcDbCircle
   0
 CIRCLE
   5
-353
+345
 100
 AcDbEntity
   8
@@ -29657,7 +29273,7 @@ AcDbCircle
   0
 CIRCLE
   5
-354
+346
 100
 AcDbEntity
   8
@@ -29679,7 +29295,7 @@ AcDbCircle
   0
 DIMENSION
   5
-355
+347
 100
 AcDbEntity
   8
@@ -29737,7 +29353,7 @@ AcDbAlignedDimension
   0
 DIMENSION
   5
-356
+348
 100
 AcDbEntity
   8
@@ -29795,7 +29411,7 @@ AcDbAlignedDimension
   0
 LINE
   5
-357
+349
 100
 AcDbEntity
   8
@@ -29819,7 +29435,7 @@ AcDbLine
   0
 LINE
   5
-358
+34A
 100
 AcDbEntity
   8
@@ -29840,6 +29456,818 @@ AcDbLine
 -8
  21
 71
+  0
+INSERT
+  5
+34B
+100
+AcDbEntity
+  8
+Hardware
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+M3-Screw
+ 10
+0.999999999999968
+ 20
+-115
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+0
+ 70
+    1
+ 71
+    1
+ 44
+0
+ 45
+0
+  0
+CIRCLE
+  5
+34C
+100
+AcDbEntity
+  8
+Light Barrier
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+0.9999999999999671
+ 20
+-115
+ 40
+1.6
+  0
+INSERT
+  5
+34D
+100
+AcDbEntity
+  8
+Hardware
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+M3-Screw
+ 10
+1.000000000000001
+ 20
+67
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+0
+ 70
+    1
+ 71
+    1
+ 44
+0
+ 45
+0
+  0
+CIRCLE
+  5
+34E
+100
+AcDbEntity
+  8
+Light Barrier
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+1
+ 20
+67
+ 40
+1.6
+  0
+CIRCLE
+  5
+34F
+100
+AcDbEntity
+  8
+Acrylic front
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+0.999999999999968
+ 20
+-115
+ 40
+1.6
+  0
+CIRCLE
+  5
+350
+100
+AcDbEntity
+  8
+Acrylic front
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+1
+ 20
+67
+ 40
+1.6
+  0
+CIRCLE
+  5
+351
+100
+AcDbEntity
+  8
+Light Barrier2
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+0.9999999999999671
+ 20
+-115
+ 40
+1.6
+  0
+CIRCLE
+  5
+352
+100
+AcDbEntity
+  8
+Light Barrier2
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+1
+ 20
+67
+ 40
+1.6
+  0
+INSERT
+  5
+353
+100
+AcDbEntity
+  8
+Hardware
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+M3-Screw
+ 10
+332
+ 20
+-115.0000000000001
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+0
+ 70
+    1
+ 71
+    1
+ 44
+0
+ 45
+0
+  0
+CIRCLE
+  5
+354
+100
+AcDbEntity
+  8
+Light Barrier
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+332
+ 20
+-115.0000000000001
+ 40
+1.6
+  0
+INSERT
+  5
+355
+100
+AcDbEntity
+  8
+Hardware
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbBlockReference
+  2
+M3-Screw
+ 10
+332
+ 20
+66.99999999999994
+ 30
+0
+ 41
+1
+ 42
+1
+ 43
+0
+ 50
+0
+ 70
+    1
+ 71
+    1
+ 44
+0
+ 45
+0
+  0
+CIRCLE
+  5
+356
+100
+AcDbEntity
+  8
+Light Barrier
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+332
+ 20
+66.99999999999994
+ 40
+1.6
+  0
+CIRCLE
+  5
+357
+100
+AcDbEntity
+  8
+Acrylic front
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+332
+ 20
+-115.0000000000001
+ 40
+1.6
+  0
+CIRCLE
+  5
+358
+100
+AcDbEntity
+  8
+Acrylic front
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+332
+ 20
+66.99999999999994
+ 40
+1.6
+  0
+CIRCLE
+  5
+359
+100
+AcDbEntity
+  8
+Light Barrier2
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+332
+ 20
+-115.0000000000001
+ 40
+1.6
+  0
+CIRCLE
+  5
+35A
+100
+AcDbEntity
+  8
+Light Barrier2
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+332
+ 20
+66.99999999999994
+ 40
+1.6
+  0
+CIRCLE
+  5
+35B
+100
+AcDbEntity
+  8
+Aluminium plate
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+166.5
+ 20
+-115
+ 40
+1.6
+  0
+CIRCLE
+  5
+35C
+100
+AcDbEntity
+  8
+Aluminium plate
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+166.5
+ 20
+67
+ 40
+1.6
+  0
+CIRCLE
+  5
+35D
+100
+AcDbEntity
+  8
+Aluminium plate
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+0.999999999999968
+ 20
+-115
+ 40
+1.6
+  0
+CIRCLE
+  5
+35E
+100
+AcDbEntity
+  8
+Aluminium plate
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+1
+ 20
+67
+ 40
+1.6
+  0
+CIRCLE
+  5
+35F
+100
+AcDbEntity
+  8
+Aluminium plate
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+332
+ 20
+-115.0000000000001
+ 40
+1.6
+  0
+CIRCLE
+  5
+360
+100
+AcDbEntity
+  8
+Aluminium plate
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+332
+ 20
+66.99999999999994
+ 40
+1.6
+  0
+LINE
+  5
+361
+100
+AcDbEntity
+  8
+Aluminium plate
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+346
+ 20
+73
+ 11
+346
+ 21
+-121
+  0
+LINE
+  5
+362
+100
+AcDbEntity
+  8
+Aluminium plate
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+-7
+ 20
+-121
+ 11
+-7
+ 21
+73
+  0
+LINE
+  5
+363
+100
+AcDbEntity
+  8
+Aluminium plate
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+346
+ 20
+-121
+ 11
+-7
+ 21
+-121
+  0
+LINE
+  5
+364
+100
+AcDbEntity
+  8
+Aluminium plate
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+-7
+ 20
+73
+ 11
+346
+ 21
+73
+  0
+ARC
+  5
+365
+100
+AcDbEntity
+  8
+Light Barrier2
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+330
+ 20
+-105
+ 40
+4
+100
+AcDbArc
+ 50
+270
+ 51
+0
+  0
+ARC
+  5
+366
+100
+AcDbEntity
+  8
+Light Barrier2
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+3
+ 20
+-105
+ 40
+4
+100
+AcDbArc
+ 50
+180
+ 51
+270
+  0
+ARC
+  5
+367
+100
+AcDbEntity
+  8
+Light Barrier2
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+3
+ 20
+57
+ 40
+4
+100
+AcDbArc
+ 50
+90
+ 51
+180
+  0
+ARC
+  5
+368
+100
+AcDbEntity
+  8
+Light Barrier2
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+330
+ 20
+57
+ 40
+4
+100
+AcDbArc
+ 50
+0
+ 51
+90
+  0
+LINE
+  5
+369
+100
+AcDbEntity
+  8
+Light Barrier2
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+-1
+ 20
+-105
+ 11
+-1
+ 21
+57
+  0
+LINE
+  5
+36A
+100
+AcDbEntity
+  8
+Light Barrier2
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+334
+ 20
+57
+ 11
+334
+ 21
+-105
   0
 ENDSEC
   0
