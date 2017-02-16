@@ -14,14 +14,7 @@ end
 -- Begin program
 emu.message("Script Started")
 
-local portName = '/dev/ttyACM0'
-local port = io.open(portName, 'wb')
-
-if port ~= nil then
-	os.execute('stty -F'..portName..' 1000000')
-else
-	port = io.open('fifo', 'wb')
-end
+port = io.open('fifo', 'wb')
 
 -- Skip 50 frames
 for i=1,50 do
@@ -61,9 +54,9 @@ while true do
 				if b == 0 then
 					b = 20
 				end
-				r = r/5
-				g = g/5
-				b = b/5
+				r = r
+				g = g
+				b = b
 				port:write(string.char(r,g,b))
 
 				--gui.text(x, y, palette)

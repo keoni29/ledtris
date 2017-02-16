@@ -1,6 +1,5 @@
 import sys
 import pygame
-import nescolors
 from pygame.locals import *
 
 C_BLACK = (0,0,0)
@@ -21,12 +20,25 @@ while True:
 
 	window.fill(C_BLACK)
 
-	for row in range(0, 20):
-		for col in range(0, 10):
-			cval = ord(fifo.read(1))
-			color = nescolors.color[cval]
+	# Wait for synchronization byte
+	while True:
+		if ord(fifo.read(1)) == 255:
+			break
+
+	for col in range(0, 10):
+		for row in range(0, 20):
+			r = ord(fifo.read(1))
+			g = ord(fifo.read(1))
+			b = ord(fifo.read(1))
+
+			color = [r,g,b]
+
+			y = row
+			if col%2 == 0:
+				y = (19 - y)
+
 			rect = (col * (SIZE + SPACING) + OFFSET_X, 
-				row * (SIZE + SPACING) + OFFSET_Y, 
+				y * (SIZE + SPACING) + OFFSET_Y, 
 				SIZE, 
 				SIZE)
 
