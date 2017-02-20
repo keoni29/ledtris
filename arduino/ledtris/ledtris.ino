@@ -1,26 +1,32 @@
-// NeoPixel Ring simple sketch (c) 2013 Shae Erisson
-// released under the GPLv3 license to match the rest of the AdaFruit NeoPixel library
-
+/* Filename: ledtris.ino
+ * Project: NES ledtris
+ * Author: Koen van Vliet
+ * 
+ * This sketch uses the Adafruit Neopixel library
+ * which can be found here: 
+ *   https://github.com/adafruit/Adafruit_NeoPixel
+ *
+ * Max frame rate is 30 Hz (limitation of the WS2812B)
+ *
+ */
 #include <Adafruit_NeoPixel.h>
 #ifdef __AVR__
   #include <avr/power.h>
 #endif
 
-// Which pin on the Arduino is connected to the NeoPixels?
-// On a Trinket or Gemma we suggest changing this to 1
+/* User defined data pin for driving the WS2812B */
 #define PIN            A0
-
-// How many NeoPixels are attached to the Arduino?
+/* Amount of pixels in the display */
 #define NUMPIXELS      200
 
-// When we setup the NeoPixel library, we tell it how many pixels, and which pin to use to send signals.
-// Note that for older NeoPixel strips you might need to change the third parameter--see the strandtest
-// example for more information on possible values.
+/* Create a new neopixel object specifying the 
+ * amount of pixels, data pin, data format and frequency */
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
 void setup()
 {
-  pixels.begin(); // This initializes the NeoPixel library.
+  /* Initialize the library and clear the display. */
+  pixels.begin();
   pixels.show();
   
   /* Begin serial with maximum baudrate for uno. */
@@ -40,22 +46,26 @@ void loop()
   
   /* Frame synchronization */
   do{
-  while(!Serial.available());
+    while(!Serial.available());
     r = Serial.read();
   } while (r != 0xFF);
   
-  /* Receive a frame */
-  for(i = 0; i<NUMPIXELS; i++)
+  /* Receive a frame. */
+  for(i = 0; i < NUMPIXELS; ++i)
   {
     while(!Serial.available());
     r = Serial.read();
+
     while(!Serial.available());
     g = Serial.read();
+
     while(!Serial.available());
     b = Serial.read();
     
     pixels.setPixelColor(i, pixels.Color(r, g, b));
-  }  
+  }
+
+  /* Push pixels to the display */
   pixels.show();
   
 }
