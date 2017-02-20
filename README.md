@@ -34,7 +34,7 @@ Archlinux:
 Start FCEUX using the `start_fceux.sh` script.
 Usage:
 ```
-	./start_fceux.sh sendall.lua tetris.nes
+	./start_ledtris.sh tetris.nes
 ```
 
 # Troubleshooting
