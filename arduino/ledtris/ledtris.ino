@@ -17,7 +17,7 @@
 /* User defined data pin for driving the WS2812B */
 #define PIN            A0
 /* Amount of pixels in the display */
-#define NUMPIXELS      200
+#define NUMPIXELS      208
 
 /* Create a new neopixel object specifying the 
  * amount of pixels, data pin, data format and frequency */

@@ -6,6 +6,17 @@
 -- Stream pixel data from game to LED matrix display trough serial port
 --
 
+shape = {
+ [8]={0, 1, 1, 0, 1, 1, 0, 0}, -- -_
+ [11]={0, 1, 1, 0, 0, 0, 1, 1}, -- _-
+ [10]={0, 1, 1, 0, 0, 1, 1, 0}, -- {}
+ [18]={1, 1, 1, 1, 0, 0, 0, 0}, -- ----
+ [7]={1, 0, 0, 0, 0, 1, 1, 1}, -- ,--
+ [14]={0, 0, 0, 1, 1, 1, 1, 0}, -- --,
+ [2]={0, 1, 0, 0, 0, 1, 1, 1},  -- _|_
+ [0]={0, 0, 0, 0, 0, 0, 0, 0}
+}
+
 function memoryBcd(address, count)
 	val = 0
 
@@ -49,6 +60,21 @@ while true do
 	if frame == 0 and port ~= nil then
 		-- Send synchronization token
 		port:write(string.char(255))
+
+		for i = 1, 8, 1 do
+
+			if shape[nextID][i] == 1 then
+				r = 22
+				g = 22
+				b = 22
+			else
+				r = 0
+				g = 0
+				b = 0
+			end
+
+			port:write(string.char(r,g,b))
+		end
 
 		for col = 0, 9, 1 do
 			for row = 0, 19, 1 do
