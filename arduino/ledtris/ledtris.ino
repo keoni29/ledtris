@@ -10,29 +10,87 @@
  *
  */
 #include <Adafruit_NeoPixel.h>
+#include <SPI.h>
 #ifdef __AVR__
   #include <avr/power.h>
 #endif
 
-/* User defined data pin for driving the WS2812B */
-#define PIN            A0
+/* WS2812B DATA pin */
+#define PIN A0
+/* MAX7219 LOAD/CS pin */
+#define SS_PIN 9
+
 /* Amount of pixels in the display */
-#define NUMPIXELS      208
+#define NUMPIXELS 208
+
+/* Seven segment display driver MAX7219 register addresses */
+#define DIG 0x1
+#define DECODE 0x9
+#define INTENSITY 0xA
+#define SCAN_LIMIT 0x0B
+#define SHDN 0xC
 
 /* Create a new neopixel object specifying the 
  * amount of pixels, data pin, data format and frequency */
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
+void max7219_write(int address, int data)
+{
+  digitalWrite(SS_PIN, LOW);
+  SPI.transfer(address);
+  SPI.transfer(data);
+  digitalWrite(SS_PIN, HIGH);
+}
+
+void max7219_init()
+{
+  int i;
+  max7219_write(DECODE, 0xFF);  /* Decode all digits */
+  max7219_write(SCAN_LIMIT, 5);  /* Limit scan digits 0..5 */
+  max7219_write(INTENSITY, 0x7); /* Half intensity */
+  max7219_write(SHDN, 0x1);  /* Turn ON display */ 
+
+  /* Turn all segments off */  
+  for(i = 0; i < 6; i++)
+  {
+    max7219_write(DIG + i, 0xF);
+  }
+}
+
+void max7219_display(uint16_t number)
+{
+  for(int i = 0; i < 6; i++)
+  {
+      max7219_write(DIG + i, number % 10);
+      number /= 10;
+  }
+}
+
 void setup()
 {
   /* Initialize the library and clear the display. */
   pixels.begin();
+  
+  for (int i = 0; i < NUMPIXELS; ++i)
+  {
+    pixels.setPixelColor(i, 0);
+  }
+  
   pixels.show();
+  
+  /* Set up SPI and initialize sevseg display driver  */
+  SPI.begin();
+  SPI.setDataMode(SPI_MODE1);
+  SPI.setClockDivider(SPI_CLOCK_DIV16);  // TODO make this a higher clock rate
+  SPI.setBitOrder(MSBFIRST);
+  digitalWrite(SS_PIN, HIGH);
+  pinMode(SS_PIN, OUTPUT);
+  max7219_init();
   
   /* Begin serial with maximum baudrate for uno. */
   Serial.begin(1000000);
   
-  /* Flush input */
+  /* Flush serial receive buffer */
   while(Serial.available())
   {
     Serial.read();
@@ -41,17 +99,19 @@ void setup()
 
 void loop()
 {
-  uint8_t r, g, b;
-  uint16_t i;
+  uint8_t r, g, b, s1, s2;
+  uint16_t score;
+  static uint16_t prevscore = -1;
   
   /* Frame synchronization */
-  do{
+  do
+  {
     while(!Serial.available());
     r = Serial.read();
   } while (r != 0xFF);
   
   /* Receive a frame. */
-  for(i = 0; i < NUMPIXELS; ++i)
+  for(int i = 0; i < NUMPIXELS; ++i)
   {
     while(!Serial.available());
     r = Serial.read();
@@ -64,8 +124,21 @@ void loop()
     
     pixels.setPixelColor(i, pixels.Color(r, g, b));
   }
+  
+  /* Receive current score and write to sevseg display if it has changed since the last frame. */
+  while(!Serial.available());
+  s1 = Serial.read();
+  while(!Serial.available());
+  s2 = Serial.read();
+  
+  score = (uint16_t)s1 * 256 + s2;
+  
+  if (score != prevscore)
+  {
+    max7219_display(score);
+  }
+  prevscore = score;
 
   /* Push pixels to the display */
   pixels.show();
-  
 }
