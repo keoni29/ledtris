@@ -38,6 +38,11 @@ emu.message("Script Started")
 local portName = '/dev/ttyACM0'
 local port = io.open(portName, 'wb')
 
+if port == nil then
+	portName = '/dev/ttyACM1'
+	port = io.open(portName, 'wb')
+end
+
 os.execute('stty -F'..portName..' 1000000')
 
 -- Skip 50 frames
@@ -114,6 +119,13 @@ while true do
 			-- Flush buffer to serial port
 			port:flush()
 		end
+
+		-- Send current score in two bytes
+		port:write(string.char(score / 256))
+		port:write(string.char(score % 256))
+
+		port:flush()
+
 	end
 
 	-- Screen overlay for showing which pixels are sampled
