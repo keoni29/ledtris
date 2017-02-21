@@ -7,6 +7,7 @@
  *   https://github.com/adafruit/Adafruit_NeoPixel
  *
  * Max frame rate is 30 Hz (limitation of the WS2812B)
+ * Display size is 10x20 pixels
  *
  */
 #include <Adafruit_NeoPixel.h>
@@ -14,10 +15,18 @@
   #include <avr/power.h>
 #endif
 
+/* If you do not have this extra 4x2 pixel display set it to 0. */
+#define NEXT_BLOCK_DISPLAY_ENABLED 1
+
 /* User defined data pin for driving the WS2812B */
 #define PIN            A0
+
 /* Amount of pixels in the display */
+#if NEXT_BLOCK_DISPLAY_ENABLED
+#define NUMPIXELS      208
+#else
 #define NUMPIXELS      200
+#endif
 
 /* Create a new neopixel object specifying the 
  * amount of pixels, data pin, data format and frequency */
