@@ -16,9 +16,16 @@ shape = {
  [18]={1, 1, 1, 1, 0, 0, 0, 0}, -- ----
  [7]={1, 0, 0, 0, 0, 1, 1, 1}, -- ,--
  [14]={0, 0, 0, 1, 1, 1, 1, 0}, -- --,
- [2]={0, 1, 0, 0, 0, 1, 1, 1},  -- _|_
- [0]={0, 0, 0, 0, 0, 0, 0, 0}
+ [2]={0, 1, 0, 0, 0, 1, 1, 1}  -- _|_
 }
+
+function setDefault (t, d)
+  local mt = {__index = function () return d end}
+  setmetatable(t, mt)
+end
+
+setDefault(shape, {0, 0, 0, 0, 0, 0, 0, 0})
+
 
 function memoryBcd(address, count)
 	val = 0
@@ -71,7 +78,6 @@ while true do
 
 		if next_block_display_enabled then
 			for i = 1, 8, 1 do
-
 				if shape[nextID][i] == 1 then
 					r = 22
 					g = 22
