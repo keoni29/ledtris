@@ -47,7 +47,12 @@ if port == nil then
 	port = io.open(portName, 'wb')
 end
 
-os.execute('stty -F'..portName..' 1000000')
+if port == nil then
+	portName = '/dev/ttyUSB0'
+	port = io.open(portName, 'wb')
+end
+
+os.execute('stty -F'..portName..' 500000')
 
 -- Skip 50 frames
 for i=1,50 do
