@@ -15,39 +15,58 @@
 #define UB_L (UB & 0xFF)
 #define UB_H (UB >> 8)
 
+#define PORT_SPI PORTB
+#define DDR_SPI DDRB
+#define DD_MOSI 5
+#define DD_SCK 7
+#define DD_SS 4
+
+/* Seven segment display driver MAX7219 register addresses */
+#define DIG 0x1
+#define DECODE 0x9
+#define INTENSITY 0xA
+#define SCAN_LIMIT 0x0B
+#define SHDN 0xC
+
+
 struct cRGB led[NUMLEDS];
 
-// void max7219_write(int address, int data)
-// {
-// 	digitalWrite(SS_PIN, LOW);
-// 	SPI.transfer(address);
-// 	SPI.transfer(data);
-// 	digitalWrite(SS_PIN, HIGH);
-// }
+void max7219_write(int address, int data)
+{
+	PORT_SPI &= ~(1<<DD_SS);
 
-// void max7219_init()
-// {
-// 	int i;
-// 	max7219_write(DECODE, 0xFF);  /* Decode all digits */
-// 	max7219_write(SCAN_LIMIT, 5);  /* Limit scan digits 0..5 */
-// 	max7219_write(INTENSITY, 0x7); /* Half intensity */
-// 	max7219_write(SHDN, 0x1);  /* Turn ON display */ 
+	SPDR = address;
+	while(!(SPSR & (1<<SPIF)));
+	SPDR = data;
+	while(!(SPSR & (1<<SPIF)));
 
-// 	/* Turn all segments off */  
-// 	for(i = 0; i < 6; i++)
-// 	{
-// 		max7219_write(DIG + i, 0xF);
-// 	}
-// }
+	PORT_SPI |= (1<<DD_SS);
+}
 
-// void max7219_display(uint16_t number)
-// {
-// 	for(int i = 0; i < 6; i++)
-// 	{
-// 		max7219_write(DIG + i, number % 10);
-// 		number /= 10;
-// 	}
-// }
+void max7219_init()
+{
+	int i;
+	max7219_write(DECODE, 0xFF);  /* Decode all digits */
+	max7219_write(SCAN_LIMIT, 5);  /* Limit scan digits 0..5 */
+	max7219_write(INTENSITY, 0x7); /* Half intensity */
+	max7219_write(SHDN, 0x1);  /* Turn ON display */ 
+
+	/* Turn all segments off */  
+	for(i = 0; i < 6; i++)
+	{
+		max7219_write(DIG + i, 0xF);
+	}
+}
+
+void max7219_display(uint16_t number)
+{
+	int i;
+	for(i = 0; i < 6; i++)
+	{
+		max7219_write(DIG + i, number % 10);
+		number /= 10;
+	}
+}
 
 /** Blocking uart send string */
 void putstr(const char *str)
@@ -64,8 +83,8 @@ void putstr(const char *str)
 int main(void)
 {
 	const char hello[] = "LEDTRIS - kv 2017";
-	uint8_t i;
-	char c;
+	uint8_t i, s1, s2;
+	uint16_t score;
 
 	UBRRL = UB_L;
 	UBRRH = UB_H;
@@ -74,13 +93,12 @@ int main(void)
 
 	putstr(hello);
 
-	// SPI.begin();
-	// SPI.setDataMode(SPI_MODE1);
-	// SPI.setClockDivider(SPI_CLOCK_DIV16);  // TODO make this a higher clock rate
-	// SPI.setBitOrder(MSBFIRST);
-	// digitalWrite(SS_PIN, HIGH);
-	// pinMode(SS_PIN, OUTPUT);
-	// max7219_init();
+	PORT_SPI = (1<<DD_SS);
+	DDR_SPI = (1<<DD_MOSI)|(1<<DD_SCK)|(1<<DD_SS);
+	/* Master SPI mode enabled clk/16 */
+	SPCR = (1<<SPE)|(1<<MSTR)|(1<<SPR0);
+
+	max7219_init();
 
 	while(1)
 	{
@@ -99,6 +117,14 @@ int main(void)
 			while(!(UCSRA & (1 << RXC)));
 			led[i].b = UDR;
 		}
+
+		while(!(UCSRA & (1 << RXC)));
+		s1 = UDR;
+		while(!(UCSRA & (1 << RXC)));
+		s2 = UDR;
+
+		score = (uint16_t)s1 * 256 + s2;
+		max7219_display(score);
 
 		/* Push frame to display. */
 		ws2812_setleds(led, NUMLEDS);

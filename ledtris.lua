@@ -70,7 +70,7 @@ while true do
 	local mouse = input.get()
 	local topx = 99
 	local topy = 51
-	frame = (frame + 1) % 2
+	frame = (frame + 1) % 3
 
 	local flag = 0 -- go up
 	-- Refresh the LED display at 60FPS
