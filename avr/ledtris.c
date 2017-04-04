@@ -17,9 +17,13 @@
 
 #define PORT_SPI PORTB
 #define DDR_SPI DDRB
-#define DD_MOSI 5
-#define DD_SCK 7
-#define DD_SS 4
+#define DD_MOSI 3
+#define DD_SCK 5
+#define DD_SS 2
+
+#define PORT_ALIVE PORTD
+#define DDR_ALIVE DDRD
+#define DD_ALIVE 5
 
 /* Seven segment display driver MAX7219 register addresses */
 #define DIG 0x1
@@ -33,14 +37,14 @@ struct cRGB led[NUMLEDS];
 
 void max7219_write(int address, int data)
 {
-	PORT_SPI &= ~(1<<DD_SS);
+	PORT_SPI |= (1<<DD_SS);
 
 	SPDR = address;
 	while(!(SPSR & (1<<SPIF)));
 	SPDR = data;
 	while(!(SPSR & (1<<SPIF)));
 
-	PORT_SPI |= (1<<DD_SS);
+	PORT_SPI &= ~(1<<DD_SS);
 }
 
 void max7219_init()
@@ -58,14 +62,21 @@ void max7219_init()
 	}
 }
 
-void max7219_display(uint16_t number)
+void max7219_display(uint32_t number)
 {
 	int i;
-	for(i = 0; i < 6; i++)
+	for(i = 0; i < 3; i++)
+	{
+		max7219_write(DIG + i + 3, number % 10);
+		number /= 10;
+	}
+
+	for(i = 0; i < 4; i++)
 	{
 		max7219_write(DIG + i, number % 10);
 		number /= 10;
 	}
+
 }
 
 /** Blocking uart send string */
@@ -93,12 +104,18 @@ int main(void)
 
 	putstr(hello);
 
-	PORT_SPI = (1<<DD_SS);
+	//PORT_SPI = (1<<DD_SS);
 	DDR_SPI = (1<<DD_MOSI)|(1<<DD_SCK)|(1<<DD_SS);
-	/* Master SPI mode enabled clk/16 */
-	SPCR = (1<<SPE)|(1<<MSTR)|(1<<SPR0);
+	/* Master SPI mode enabled clk/64 */
+	SPCR = (1<<SPE)|(1<<MSTR)|(1<<SPR1);
+
+	DDR_ALIVE |= (1 << DD_ALIVE);
 
 	max7219_init();
+	max7219_display(123456);
+
+	_delay_ms(100);
+
 
 	while(1)
 	{

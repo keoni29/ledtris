@@ -1,7 +1,8 @@
 # TODO Fix this makefile
 
-F_CPU = 8000000UL
-DEVICE = atmega16
+F_CPU = 16000000UL
+DEVICE = atmega8
+AVRDUDE_DEV = m8
 
 # Tools:
 CC = avr-gcc
@@ -30,11 +31,11 @@ $(EXAMPLES): $(LIB)
 	@avr-objdump -d -S Objects/$@.o >Objects/$@.lss
 
 flash:
-	avrdude -cusbasp -pm16 -U flash:w:ledtris.hex
+	avrdude -cusbasp -p$(AVRDUDE_DEV) -U flash:w:ledtris.hex
 reset:
-	avrdude -cusbasp -pm16
+	avrdude -cusbasp -p$(AVRDUDE_DEV)
 fuses:
-	avrdude -cusbasp -pm16 -U lfuse:w:0xff:m -U hfuse:w:0x94:m 
+	avrdude -cusbasp -p$(AVRDUDE_DEV) -U lfuse:w:0xff:m -U hfuse:w:0x94:m 
 
 .PHONY:	clean
 
