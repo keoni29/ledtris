@@ -26,11 +26,12 @@
 #define DD_ALIVE 5
 
 /* Seven segment display driver MAX7219 register addresses */
-#define DIG 0x1
-#define DECODE 0x9
-#define INTENSITY 0xA
+#define DIG 0x01
+#define DECODE 0x09
+#define INTENSITY 0x0A
 #define SCAN_LIMIT 0x0B
-#define SHDN 0xC
+#define SHDN 0x0C
+#define DISPLAY_TEST 0x0F
 
 
 struct cRGB led[NUMLEDS];
@@ -53,7 +54,8 @@ void max7219_init()
 	max7219_write(DECODE, 0xFF);  /* Decode all digits */
 	max7219_write(SCAN_LIMIT, 5);  /* Limit scan digits 0..5 */
 	max7219_write(INTENSITY, 0x7); /* Half intensity */
-	max7219_write(SHDN, 0x1);  /* Turn ON display */ 
+	max7219_write(SHDN, 0x1);  /* Turn ON display */
+	max7219_write(DISPLAY_TEST, 0x0); /* Disable display test mode! */
 
 	/* Turn all segments off */  
 	for(i = 0; i < 6; i++)
@@ -95,27 +97,25 @@ int main(void)
 {
 	const char hello[] = "LEDTRIS - kv 2017";
 	uint8_t i, s1, s2;
-	uint16_t score;
+	uint32_t score, score_prev = 0;
 
 	UBRRL = UB_L;
 	UBRRH = UB_H;
 
 	UCSRB = (1<<RXEN)|(1<<TXEN);
 
-	putstr(hello);
-
 	//PORT_SPI = (1<<DD_SS);
 	DDR_SPI = (1<<DD_MOSI)|(1<<DD_SCK)|(1<<DD_SS);
-	/* Master SPI mode enabled clk/64 */
-	SPCR = (1<<SPE)|(1<<MSTR)|(1<<SPR1);
+	/* Master SPI mode enabled clk/16 */
+	SPCR = (1<<SPE)|(1<<MSTR)|(1<<SPR0);
 
 	DDR_ALIVE |= (1 << DD_ALIVE);
 
+	//_delay_ms(100);
 	max7219_init();
-	max7219_display(123456);
+	max7219_display(0);
 
-	_delay_ms(100);
-
+	putstr(hello);
 
 	while(1)
 	{
@@ -141,9 +141,17 @@ int main(void)
 		s2 = UDR;
 
 		score = (uint16_t)s1 * 256 + s2;
-		max7219_display(score);
+
+		if (score != score_prev)
+		{
+			
+			max7219_display(score);
+		}
+		score_prev = score;
 
 		/* Push frame to display. */
 		ws2812_setleds(led, NUMLEDS);
+
+		PORT_ALIVE ^= (1 << DD_ALIVE);
 	}
 }
