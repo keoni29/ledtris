@@ -55,6 +55,11 @@ if port == nil then
 	port = io.open(portName, 'wb')
 end
 
+if port == nil then
+	portName = '/dev/ttyUSB1'
+	port = io.open(portName, 'wb')
+end
+
 os.execute('stty -F'..portName..' 500000')
 
 -- Skip 50 frames
@@ -73,6 +78,7 @@ while true do
 	local mouse = input.get()
 	local topx = 99
 	local topy = 51
+	local pixcount = 0
 	frame = (frame + 1) % 3
 
 	local flag = 0 -- go up
@@ -93,8 +99,9 @@ while true do
 					b = 0
 				end
 
-				port:write(string.char(r,g,b))
-			end
+                port:write(string.char(r,g,b))
+                pixcount = pixcount + 1
+            end
 		end
 
 		for col = 0, 9, 1 do
@@ -113,17 +120,18 @@ while true do
 				r,g,b,palette = emu.getscreenpixel(x, y, true)
 
 				-- Black pixels converted to dark blue
-				if b == 0 then
-					b = 20
-				end
+				-- if b == 0 then
+				-- 	b = 20
+				-- end
 
 				-- Reduce brightness
-				r = r/5
-				g = g/5
-				b = b/5
+				r = r/10
+				g = g/10
+				b = b/10
 
 				-- Send RGB value of pixel to display
 				port:write(string.char(r,g,b))
+				pixcount = pixcount + 1
 				--gui.text(x, y, palette)
 			end
 
@@ -155,6 +163,7 @@ while true do
 	gui.text(1,yy*4,"score="..score)
 	gui.text(1,yy*5,"mx="..mouse.xmouse)
 	gui.text(1,yy*6,"my="..mouse.ymouse)
+	gui.text(1,yy*7,"pixcount="..pixcount)
 
 	-- Skip to next frame
 	emu.frameadvance()
