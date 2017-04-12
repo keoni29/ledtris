@@ -10,7 +10,7 @@
 #define NUMLEDS 208
 
 /* Highest possible baudrate @ 16MHz */
-#define BAUDRATE 500000UL
+#define BAUDRATE 1000000UL
 #define UB ((F_CPU / (BAUDRATE * 16UL)) - 1)
 #define UB_L (UB & 0xFF)
 #define UB_H (UB >> 8)
@@ -96,7 +96,7 @@ void putstr(const char *str)
 int main(void)
 {
 	const char hello[] = "LEDTRIS - kv 2017";
-	uint8_t i, s1, s2;
+	uint8_t i, s1, s2, s3;
 	uint32_t score, score_prev = 0;
 
 	UBRRL = UB_L;
@@ -139,8 +139,10 @@ int main(void)
 		s1 = UDR;
 		while(!(UCSRA & (1 << RXC)));
 		s2 = UDR;
+		while(!(UCSRA & (1 << RXC)));
+		s3 = UDR;
 
-		score = (uint16_t)s1 * 256 + s2;
+		score = ((uint32_t)s1 << 16) + ((uint32_t)s2 << 8)  + s3;
 
 		if (score != score_prev)
 		{
