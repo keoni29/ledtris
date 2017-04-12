@@ -57,7 +57,7 @@ if port == nil then
 	port = io.open(portName, 'wb')
 end
 
-os.execute('stty -F'..portName..' 500000')
+os.execute('stty -F'..portName..' 1000000')
 
 -- Skip 50 frames
 for i=1,50 do
@@ -76,7 +76,7 @@ while true do
 	local topx = 99
 	local topy = 51
 	local pixcount = 0
-	frame = (frame + 1) % 3
+	frame = (frame + 1) % 2
 
 	local flag = 0 -- go up
 	-- Refresh the LED display at 60FPS
@@ -134,9 +134,10 @@ while true do
 			port:flush()
 		end
 
-		-- Send current score in two bytes
-		port:write(string.char(score / 256))
-		port:write(string.char(score % 256))
+		-- Send current score in three bytes
+		port:write(string.char(bit.band(bit.rshift(score,16), 0xFF)))
+		port:write(string.char(bit.band(bit.rshift(score,8), 0xFF)))
+		port:write(string.char(bit.band(score, 0xFF)))
 
 		port:flush()
 
