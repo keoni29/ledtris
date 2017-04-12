@@ -35,7 +35,7 @@ flash:
 reset:
 	avrdude -cusbasp -p$(AVRDUDE_DEV)
 fuses:
-	avrdude -cusbasp -p$(AVRDUDE_DEV) -U lfuse:w:0xff:m -U hfuse:w:0x94:m 
+	avrdude -cusbasp -p$(AVRDUDE_DEV) -U lfuse:w:0xff:m -U hfuse:w:0xD9:m 
 
 .PHONY:	clean
 
