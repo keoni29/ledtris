@@ -1,9 +1,9 @@
 /* Filename: ledtris.ino
  * Project: NES ledtris
  * Author: Koen van Vliet
- * 
+ *
  * This sketch uses the Adafruit Neopixel library
- * which can be found here: 
+ * which can be found here:
  *   https://github.com/adafruit/Adafruit_NeoPixel
  *
  * Max frame rate is 30 Hz (limitation of the WS2812B)
@@ -38,8 +38,7 @@
 #define SCAN_LIMIT 0x0B
 #define SHDN 0xC
 
-
-/* Create a new neopixel object specifying the 
+/* Create a new neopixel object specifying the
  * amount of pixels, data pin, data format and frequency */
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
@@ -57,9 +56,9 @@ void max7219_init()
   max7219_write(DECODE, 0xFF);  /* Decode all digits */
   max7219_write(SCAN_LIMIT, 5);  /* Limit scan digits 0..5 */
   max7219_write(INTENSITY, 0x7); /* Half intensity */
-  max7219_write(SHDN, 0x1);  /* Turn ON display */ 
+  max7219_write(SHDN, 0x1);  /* Turn ON display */
 
-  /* Turn all segments off */  
+  /* Turn all segments off */
   for(i = 0; i < 6; i++)
   {
     max7219_write(DIG + i, 0xF);
@@ -79,14 +78,14 @@ void setup()
 {
   /* Initialize the library and clear the display. */
   pixels.begin();
-  
+
   for (int i = 0; i < NUMPIXELS; ++i)
   {
     pixels.setPixelColor(i, 0);
   }
-  
+
   pixels.show();
-  
+
   /* Set up SPI and initialize sevseg display driver  */
   SPI.begin();
   SPI.setDataMode(SPI_MODE1);
@@ -95,10 +94,10 @@ void setup()
   digitalWrite(SS_PIN, HIGH);
   pinMode(SS_PIN, OUTPUT);
   max7219_init();
-  
+
   /* Begin serial with maximum baudrate for uno. */
   Serial.begin(1000000);
-  
+
   /* Flush serial receive buffer */
   while(Serial.available())
   {
@@ -108,17 +107,17 @@ void setup()
 
 void loop()
 {
-  uint8_t r, g, b, s1, s2;
-  uint16_t score;
-  static uint16_t prevscore = -1;
-  
+  uint8_t r, g, b, s1, s2, s3;
+  uint32_t score;
+  static uint32_t prevscore = -1;
+
   /* Frame synchronization */
   do
   {
     while(!Serial.available());
     r = Serial.read();
   } while (r != 0xFF);
-  
+
   /* Receive a frame. */
   for(int i = 0; i < NUMPIXELS; ++i)
   {
@@ -130,18 +129,20 @@ void loop()
 
     while(!Serial.available());
     b = Serial.read();
-    
+
     pixels.setPixelColor(i, pixels.Color(r, g, b));
   }
-  
+
   /* Receive current score and write to sevseg display if it has changed since the last frame. */
   while(!Serial.available());
   s1 = Serial.read();
   while(!Serial.available());
   s2 = Serial.read();
-  
-  score = (uint16_t)s1 * 256 + s2;
-  
+  while(!Serial.available());
+  s3 = Serial.read();
+
+  score = ((uint32_t)s1 << 16)  + ((uint16_t)s2 << 8) + s3;
+
   if (score != prevscore)
   {
     max7219_display(score);
