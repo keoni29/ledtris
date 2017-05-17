@@ -6,6 +6,9 @@
 -- Stream pixel data from game to LED matrix display trough serial port
 --
 
+-- If you do not have the extra 4x2 display set this to 0.
+next_block_display_enabled = 1
+
 shape = {
  [8]={0, 1, 1, 0, 1, 1, 0, 0}, -- -_
  [11]={0, 1, 1, 0, 0, 0, 1, 1}, -- _-
@@ -84,19 +87,20 @@ while true do
 		-- Send synchronization token
 		port:write(string.char(255))
 
-		for i = 1, 8, 1 do
-			if shape[nextID][i] == 1 then
-				r = 22
-				g = 22
-				b = 22
-			else
-				r = 0
-				g = 0
-				b = 0
-			end
+		if next_block_display_enabled then
+			for i = 1, 8, 1 do
+				if shape[nextID][i] == 1 then
+					r = 22
+					g = 22
+					b = 22
+				else
+					r = 0
+					g = 0
+					b = 0
+				end
 
-			port:write(string.char(r,g,b))
-			pixcount = pixcount + 1
+				port:write(string.char(r,g,b))
+			end
 		end
 
 		for col = 0, 9, 1 do

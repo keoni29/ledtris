@@ -7,6 +7,7 @@
  *   https://github.com/adafruit/Adafruit_NeoPixel
  *
  * Max frame rate is 30 Hz (limitation of the WS2812B)
+ * Display size is 10x20 pixels
  *
  */
 #include <Adafruit_NeoPixel.h>
