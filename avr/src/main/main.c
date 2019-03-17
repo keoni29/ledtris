@@ -111,7 +111,7 @@ int main(void)
 
 	DDR_ALIVE |= (1 << DD_ALIVE);
 
-	//_delay_ms(100);
+    //_delay_ms(100);
 	max7219_init();
 	max7219_display(0);
 
