@@ -1,4 +1,4 @@
--- Filename: ledtris.ino
+-- Filename: ledtris.lua
 -- Project: NES Ledtris
 -- Author: Koen van Vliet <8by8mail@gmail.com>
 --
