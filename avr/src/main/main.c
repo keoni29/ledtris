@@ -1,5 +1,12 @@
-/* AVR version of ledtris display driver using the light_ws2812 library.
- * TODO give credit and clean up stuff.
+/* 
+ * Filename: main.c
+ * Project: NES Ledtris
+ * Author: Koen van Vliet <8by8mail@gmail.com>
+ * 
+ * AVR version of ledtris display driver
+ *
+ * Uses the light_ws2812 library, which can be found here:
+ * https://github.com/cpldcpu/light_ws2812
  */
 
 #include <util/delay.h>
