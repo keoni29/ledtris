@@ -7,7 +7,10 @@
 --
 
 -- If you do not have the extra 4x2 display set this to 0.
-next_block_display_enabled = 1
+next_block_display_enabled = true
+
+-- If you do not have the score display set this to false.
+score_display_enabled = true
 
 shape = {
  [8]={0, 1, 1, 0, 1, 1, 0, 0}, -- -_
@@ -45,6 +48,7 @@ emu.message("Script Started")
 local portName = '/dev/ttyACM0'
 local port = io.open(portName, 'wb')
 
+-- Try other serial ports
 if port == nil then
 	portName = '/dev/ttyACM1'
 	port = io.open(portName, 'wb')
@@ -82,26 +86,10 @@ while true do
 	frame = (frame + 1) % 2
 
 	local flag = 0 -- go up
-	-- Refresh the LED display at 60FPS
+	-- Refresh the LED display at 30FPS
 	if frame == 0 and port ~= nil then
 		-- Send synchronization token
 		port:write(string.char(255))
-
-		if next_block_display_enabled then
-			for i = 1, 8, 1 do
-				if shape[nextID][i] == 1 then
-					r = 22
-					g = 22
-					b = 22
-				else
-					r = 0
-					g = 0
-					b = 0
-				end
-
-				port:write(string.char(r,g,b))
-			end
-		end
 
 		for col = 0, 9, 1 do
 			for row = 0, 19, 1 do
@@ -133,15 +121,32 @@ while true do
 				pixcount = pixcount + 1
 				--gui.text(x, y, palette)
 			end
-
 			-- Flush buffer to serial port
 			port:flush()
 		end
 
-		-- Send current score in three bytes
-		port:write(string.char(bit.band(bit.rshift(score,16), 0xFF)))
-		port:write(string.char(bit.band(bit.rshift(score,8), 0xFF)))
-		port:write(string.char(bit.band(score, 0xFF)))
+        if next_block_display_enabled then
+			for i = 1, 8, 1 do
+				if shape[nextID][i] == 1 then
+					r = 22
+					g = 22
+					b = 22
+				else
+					r = 0
+					g = 0
+					b = 0
+				end
+
+				port:write(string.char(r,g,b))
+			end
+		end
+
+        if score_display_enabled then
+            -- Send current score in three bytes
+            port:write(string.char(bit.band(bit.rshift(score,16), 0xFF)))
+            port:write(string.char(bit.band(bit.rshift(score,8), 0xFF)))
+            port:write(string.char(bit.band(score, 0xFF)))
+        end
 
 		port:flush()
 
