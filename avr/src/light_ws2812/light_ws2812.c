@@ -9,7 +9,7 @@
 *
 * License: GNU GPL v2 (see License.txt)
 */
-
+#include "system_config.h"
 #include "light_ws2812.h"
 #include <avr/interrupt.h>
 #include <avr/io.h>

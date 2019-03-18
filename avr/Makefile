@@ -6,7 +6,6 @@ CC = avr-gcc
 OBJDIR = build
 SRCDIR = src
 OUTDIR = dist
-INCDIR = inc
 
 SRC = $(shell find $(SRCDIR)/ -type f -name '*.c')
 OBJ = $(patsubst $(SRCDIR)/%.c,$(OBJDIR)/%.o,$(SRC))
@@ -15,10 +14,9 @@ HEX = $(OUTDIR)/$(NAME).hex
 
 DEVICE = atmega8
 AVRDUDE_DEV = m8
-F_CPU = 16000000UL
 
 CFLAGS = -Wall -Wextra -pedantic -Wall -Wno-pointer-to-int-cast
-CFLAGS += -I$(INCDIR) -mmcu=$(DEVICE) -DF_CPU=$(F_CPU) 
+CFLAGS += -Iinc/io -Iinc/light_ws2812 -Iinc/main -mmcu=$(DEVICE)
 CFLAGS+= -g2 -Os -ffunction-sections -fdata-sections -fpack-struct -fno-move-loop-invariants -fno-tree-scev-cprop -fno-inline-small-functions  
 
 LDFLAGS = 
