@@ -9,6 +9,9 @@
 -- If you do not have the extra 4x2 display set this to 0.
 next_block_display_enabled = true
 
+-- Send pixels for the next block display first, then pixels for the main display
+next_block_display_first = true
+
 -- If you do not have the score display set this to false.
 score_display_enabled = true
 
@@ -39,6 +42,24 @@ function memoryBcd(address, count)
 	end
 
 	return val
+end
+
+function showNextBlock(port, nextID)
+    local i
+
+    for i = 1, 8, 1 do
+        if shape[nextID][i] == 1 then
+            r = 22
+            g = 22
+            b = 22
+        else
+            r = 0
+            g = 0
+            b = 0
+        end
+
+        port:write(string.char(r,g,b))
+    end
 end
 
 -- Begin program
@@ -82,7 +103,6 @@ while true do
 	local mouse = input.get()
 	local topx = 99
 	local topy = 51
-	local pixcount = 0
 	frame = (frame + 1) % 2
 
 	local flag = 0 -- go up
@@ -90,6 +110,10 @@ while true do
 	if frame == 0 and port ~= nil then
 		-- Send synchronization token
 		port:write(string.char(255))
+
+        if next_block_display_enabled and next_block_display_first then
+			showNextBlock(port, nextID)
+		end
 
 		for col = 0, 9, 1 do
 			for row = 0, 19, 1 do
@@ -118,27 +142,14 @@ while true do
 
 				-- Send RGB value of pixel to display
 				port:write(string.char(r,g,b))
-				pixcount = pixcount + 1
 				--gui.text(x, y, palette)
 			end
 			-- Flush buffer to serial port
 			port:flush()
 		end
 
-        if next_block_display_enabled then
-			for i = 1, 8, 1 do
-				if shape[nextID][i] == 1 then
-					r = 22
-					g = 22
-					b = 22
-				else
-					r = 0
-					g = 0
-					b = 0
-				end
-
-				port:write(string.char(r,g,b))
-			end
+        if next_block_display_enabled and not next_block_display_first then
+			showNextBlock(port, nextID)
 		end
 
         if score_display_enabled then
@@ -168,7 +179,6 @@ while true do
 	gui.text(1,yy*4,"score="..score)
 	gui.text(1,yy*5,"mx="..mouse.xmouse)
 	gui.text(1,yy*6,"my="..mouse.ymouse)
-	gui.text(1,yy*7,"pixcount="..pixcount)
 
 	-- Skip to next frame
 	emu.frameadvance()
