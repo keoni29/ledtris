@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "light_ws2812.h": "c",
+        "io.h": "c",
+        "sstream": "c",
+        "chrono": "cpp",
+        "score_display.h": "c",
+        "system_config.h": "c"
+    }
+}
