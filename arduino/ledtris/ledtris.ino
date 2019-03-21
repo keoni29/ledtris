@@ -7,7 +7,7 @@
  *   https://github.com/adafruit/Adafruit_NeoPixel
  *
  * Max frame rate is 30 Hz (limitation of the WS2812B)
- *
+ * 
  */
 #include <Adafruit_NeoPixel.h>
 #include <SPI.h>
@@ -15,21 +15,14 @@
   #include <avr/power.h>
 #endif
 
-/* If you do not have this extra 4x2 pixel display set it to 0. */
-#define NEXT_BLOCK_DISPLAY_ENABLED 1
-
 /* User defined data pin for driving the WS2812B */
 #define PIN            A0
 
 /* User defined LOAD/CS pin for driving the MAX7219 */
 #define SS_PIN          9
 
-/* Amount of pixels in the display */
-#if NEXT_BLOCK_DISPLAY_ENABLED
-#define NUMPIXELS      208
-#else
-#define NUMPIXELS      200
-#endif
+/* The number of LEDs in the display(s) combined */
+#define NOF_PIXELS      208
 
 /* Seven segment display driver MAX7219 register addresses */
 #define DIG 0x1
@@ -40,7 +33,7 @@
 
 /* Create a new neopixel object specifying the
  * amount of pixels, data pin, data format and frequency */
-Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NOF_PIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
 void max7219_write(int address, int data)
 {
@@ -79,7 +72,7 @@ void setup()
   /* Initialize the library and clear the display. */
   pixels.begin();
 
-  for (int i = 0; i < NUMPIXELS; ++i)
+  for (int i = 0; i < NOF_PIXELS; ++i)
   {
     pixels.setPixelColor(i, 0);
   }
@@ -119,7 +112,7 @@ void loop()
   } while (r != 0xFF);
 
   /* Receive a frame. */
-  for(int i = 0; i < NUMPIXELS; ++i)
+  for(int i = 0; i < NOF_PIXELS; ++i)
   {
     while(!Serial.available());
     r = Serial.read();

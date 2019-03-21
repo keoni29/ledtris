@@ -14,7 +14,7 @@
  *          It is advised to reserve the FRAME_SYNC character for synchronization
  *      
  *      2. Send the pixel RGB data. Each pixel is 3 bytes in order 
- *          red, green, blue. In total 3 x NOF_LEDS bytes are sent.
+ *          red, green, blue. In total 3 x NOF_PIXELS bytes are sent.
  *      
  *      3. Only if score display is enabled using ENABLE_SCORE_DISPLAY
  *          Send 3 bytes for the score display MSB first.
@@ -31,7 +31,7 @@
 /**
  * The number of LEDs in the display(s) combined.
  */
-#define NOF_LEDS 208
+#define NOF_PIXELS 208
 
 /**
  * Enables the seven segment score display.
@@ -42,7 +42,7 @@
 #define FRAME_SYNC 0xFF
 
 /** Framebuffer */
-struct cRGB led[NOF_LEDS];
+struct cRGB led[NOF_PIXELS];
 
 
 void update_score_display(void);
@@ -70,7 +70,7 @@ int main(void)
         }
 
 		/* Receive pixel RGB data and store frame in framebuffer. */
-		for (i = 0; i < NOF_LEDS; ++i)
+		for (i = 0; i < NOF_PIXELS; ++i)
 		{
 			led[i].r = uart_read();
 			led[i].g = uart_read();
@@ -80,7 +80,7 @@ int main(void)
         update_score_display();
 
 		/* Push frame to display(s). */
-		ws2812_setleds(led, NOF_LEDS);
+		ws2812_setleds(led, NOF_PIXELS);
 
         /** 
          * Toggle 'alive' LED to indicate the frame was 
@@ -100,9 +100,9 @@ inline void update_score_display(void)
     static uint32_t score_prev = 0;
 
     /* Read score bytes */ 
-    s1 = uart_read();;  
-    s2 = uart_read();;
-    s3 = uart_read();;
+    s1 = uart_read();
+    s2 = uart_read();
+    s3 = uart_read();
 
     /* Pack score bytes into a single 32 bit value */
     score = ((uint32_t)s1 << 16) + ((uint32_t)s2 << 8)  + s3;

@@ -14,6 +14,7 @@ HEX = $(OUTDIR)/$(NAME).hex
 
 DEVICE = atmega8
 AVRDUDE_DEV = m8
+AVRDUDE_TOOL = usbasp
 
 CFLAGS = -Wall -Wextra -pedantic -Wall -Wno-pointer-to-int-cast
 CFLAGS += -Iinc/io -Iinc/light_ws2812 -Iinc/main -mmcu=$(DEVICE)
@@ -44,8 +45,8 @@ purge:
 	@rm -rf $(OBJDIR) $(OUTDIR) && echo "purge succesful" || echo "purge failed"
 
 flash:
-	avrdude -cusbasp -p$(AVRDUDE_DEV) -U flash:w:$(HEX)
+	avrdude -c$(AVRDUDE_TOOL) -p$(AVRDUDE_DEV) -U flash:w:$(HEX)
 reset:
-	avrdude -cusbasp -p$(AVRDUDE_DEV)
+	avrdude -c$(AVRDUDE_TOOL) -p$(AVRDUDE_DEV)
 fuses:
-	avrdude -cusbasp -p$(AVRDUDE_DEV) -U lfuse:w:0xff:m -U hfuse:w:0xD9:m 
+	avrdude -c$(AVRDUDE_TOOL) -p$(AVRDUDE_DEV) -U lfuse:w:0xff:m -U hfuse:w:0xD9:m 

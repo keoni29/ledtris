@@ -6,14 +6,11 @@
 -- Stream pixel data from game to LED matrix display trough serial port
 --
 
--- If you do not have the extra 4x2 display set this to 0.
-next_block_display_enabled = true
-
+-- USER CONFIGURATION --
 -- Send pixels for the next block display first, then pixels for the main display
 next_block_display_first = true
+---------------------------------------------
 
--- If you do not have the score display set this to false.
-score_display_enabled = true
 
 shape = {
  [8]={0, 1, 1, 0, 1, 1, 0, 0}, -- -_
@@ -111,7 +108,7 @@ while true do
 		-- Send synchronization token
 		port:write(string.char(255))
 
-        if next_block_display_enabled and next_block_display_first then
+        if next_block_display_first then
 			showNextBlock(port, nextID)
 		end
 
@@ -148,17 +145,16 @@ while true do
 			port:flush()
 		end
 
-        if next_block_display_enabled and not next_block_display_first then
+        if not next_block_display_first then
 			showNextBlock(port, nextID)
 		end
 
-        if score_display_enabled then
-            -- Send current score in three bytes
-            port:write(string.char(bit.band(bit.rshift(score,16), 0xFF)))
-            port:write(string.char(bit.band(bit.rshift(score,8), 0xFF)))
-            port:write(string.char(bit.band(score, 0xFF)))
-        end
+        -- Send current score in three bytes
+        port:write(string.char(bit.band(bit.rshift(score,16), 0xFF)))
+        port:write(string.char(bit.band(bit.rshift(score,8), 0xFF)))
+        port:write(string.char(bit.band(score, 0xFF)))
 
+        -- Flush buffer to serial port
 		port:flush()
 
 	end
