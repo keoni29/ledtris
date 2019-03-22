@@ -5,9 +5,10 @@ These are instructions for making a LED display driver for Ledtris using the ATM
 
 # Building and uploading
 Install the following packages using your favorite package manager.
- * `avr-gcc` - AVR GNU C compiler
- * `avr-libc` - AVR Standard C Library
- * `avrdude` - Driver program for "simple" Atmel AVR MCU programmer
+
+- `avr-gcc` - AVR GNU C compiler
+- `avr-libc` - AVR Standard C Library
+- `avrdude` - Driver program for "simple" Atmel AVR MCU programmer
 
 The makefile has targets for programming the
 fuse bits and the flash memory. The fuse bits have to be programmed once to set up the oscillator.
@@ -23,8 +24,9 @@ fuse bits and the flash memory. The fuse bits have to be programmed once to set 
 >    AVRDUDE_DEV = m8
 >```
 >Both DEVICE and AVRDUDE_DEV need to be changed if you are using a different microcontroller.
-> * DEVICE is passed to `avr-gcc` using the `-mmcu` option.
-> * AVRDUDE_DEV is passed to `avrdude` using the `-p` option.
+>
+>- DEVICE is passed to `avr-gcc` using the `-mmcu` option.
+>- AVRDUDE_DEV is passed to `avrdude` using the `-p` option.
 >
 >If you wish to use a programmer other than usbasp, please change the following line in of the Makefile.
 >```
