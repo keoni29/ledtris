@@ -20,8 +20,9 @@ You will need the following items
 __Playfield display__ measuring 20x10 pixels. Build instructions can be found in `cad/`
 
 __LED display driver__ using an Arduino board or an AVR microcontroller.
- * Arduino - See `arduino/README.md` - Tested on Arduino UNO rev3
- * AVR - See `avr/README.md` - Tested on ATMega8A
+
+- Arduino - See `arduino/README.md` - Tested on Arduino UNO rev3
+- AVR - See `avr/README.md` - Tested on ATMega8A
 
 __5 V power supply__ that can deliver at least 12 A. This is the minimum rated current required to drive all LEDs at full intensity.
 
