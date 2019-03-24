@@ -46,9 +46,7 @@ function showNextBlock(port, nextID)
 
     for i = 1, 8, 1 do
         if shape[nextID][i] == 1 then
-            r = 22
-            g = 22
-            b = 22
+            r,g,b,palette = emu.getscreenpixel(209,125, true)
         else
             r = 0
             g = 0
