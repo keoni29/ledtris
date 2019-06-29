@@ -85,7 +85,3 @@ the serial port in ledtris.lua
 ```
 	local portName = '/dev/ttyACM0'
 ```
-
-# Contact
-If you have any questions regarding this project please contact me: 
-Koen van Vliet - <8by8mail@gmail.com>
