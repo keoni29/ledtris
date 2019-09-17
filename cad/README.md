@@ -26,7 +26,7 @@ This part makes the pixels look nice and square. The light barrier should be mad
 ## Light Diffuser
 The diffuser should be made using a semi-transparent plastic. I used 2mm white polycarbonate. Make sure your plastic can be used with a lasercutter.
 
-# Wireing
+# Wiring
 Wire the LED strip power rails in parallel on the bottom of the display ( the bottom diffuser has a cutout to accommodate for this! ) The power rails of the LEDS are wired in parallel to reduce voltage drop across the strips. Wire the data out to the next strip's data in pin creating a zig-zag pattern starting from the bottom left. You can leave the data-out pin of the last strip unconnected. Attach a wire to the data-in pin of the first led-strip. This will later be used to drive the display. Attach a wire for 5 V and gnd for the power supply.
 
 Be careful when soldering to the led strips on top of the painted aluminium. If the paint melts the copper contact will short out trough the aluminium. I placed kapton tape below the strips at the ends to prevent this.
