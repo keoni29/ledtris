@@ -30,6 +30,7 @@
 #define INTENSITY 0xA
 #define SCAN_LIMIT 0x0B
 #define SHDN 0xC
+#define DISPLAY_TEST 0x0F
 
 /* Create a new neopixel object specifying the
  * amount of pixels, data pin, data format and frequency */
@@ -50,6 +51,7 @@ void max7219_init()
   max7219_write(SCAN_LIMIT, 5);  /* Limit scan digits 0..5 */
   max7219_write(INTENSITY, 0x7); /* Half intensity */
   max7219_write(SHDN, 0x1);  /* Turn ON display */
+  max7219_write(DISPLAY_TEST, 0x0); /* Disable display test mode! */
 
   /* Turn all segments off */
   for(i = 0; i < 6; i++)
@@ -58,7 +60,7 @@ void max7219_init()
   }
 }
 
-void max7219_display(uint16_t number)
+void max7219_display(uint32_t number)
 {
   for(int i = 0; i < 6; i++)
   {
@@ -81,7 +83,7 @@ void setup()
 
   /* Set up SPI and initialize sevseg display driver  */
   SPI.begin();
-  SPI.setDataMode(SPI_MODE1);
+  SPI.setDataMode(SPI_MODE0);
   SPI.setClockDivider(SPI_CLOCK_DIV16);  // TODO make this a higher clock rate
   SPI.setBitOrder(MSBFIRST);
   digitalWrite(SS_PIN, HIGH);
