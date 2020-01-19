@@ -1,6 +1,8 @@
 ﻿# LED Matrix Display using WS2812B
 This is a guide for building an LED matrix display using the popular WS2812B LED strips.
 
+![Matrix](pictures/matrix.jpg "LED matrix display")
+
 # Parts
 See the drawings for dimensions. The following parts are required:
 - WS2812B self-adhesive LED strip (300 LED / 5M)
