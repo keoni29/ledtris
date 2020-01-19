@@ -3,14 +3,12 @@ This is a guide for building an LED matrix display using the popular WS2812B LED
 
 # Parts
 See the drawings for dimensions. The following parts are required:
-- 300 LED / 5M WS2812B self-adhesive LED strips
+- WS2812B self-adhesive LED strip (300 LED / 5M)
 - M3 bolts and nuts (6x)
 - 4mm birch plywood sheet
 - 2mm white cast acrylic sheet
 - 2mm painted aluminium sheet
 - 5mm / 24 AWG solid copper wire
-
-In addition to this you will need a 5 V power supply capable of delivering 12 A and a microcontroller for sending data to the LEDS. 
 
 # Construction
 The display consists of 3 sub assemblies: A painted aluminium plate with the LED strips, a light barrier and a light diffuser. Please refer to the drawings.
@@ -22,6 +20,7 @@ The LED strips are placed in a zig-zag pattern so the data-out can feed into the
 
 ## Light Barrier
 This part makes the pixels look nice and square. The light barrier should be made out of an opaque material. I used 4mm birch plywood. The barrier consists of two halves. The pieces are almost identical, except the bottom piece has some room for cable management.
+![Barrier](pictures/barrier.jpg "Light barrier")
 
 ## Light Diffuser
 The diffuser should be made using a semi-transparent plastic. I used 2mm white polycarbonate. Make sure your plastic can be used with a lasercutter.
@@ -31,11 +30,13 @@ Wire the LED strip power rails in parallel on the bottom of the display ( the bo
 
 Be careful when soldering to the led strips on top of the painted aluminium. If the paint melts the copper contact will short out trough the aluminium. I placed kapton tape below the strips at the ends to prevent this.
 
+![Wiring](pictures/ledstrips.jpg "Ledstrip wiring")
+
 # Final Assembly
 Stack the layers on top of eachother and secure them in place using M3 bolts.
 
 # Software Used
-I used LibreCAD to make these drawings. It is available at [their website.](http://librecad.org/cms/home.html “LibreCAD Website”)
+I used LibreCAD to make the dxf drawings. It is available at http://librecad.org/cms/home.html “LibreCAD Website”
 
 # Contact
 If you have any questions regarding this guide please contact me:
