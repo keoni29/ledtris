@@ -32,7 +32,7 @@ __Next Block display__ measuring 4x2 pixel. (optional)
 
 __Score display__ used to show the player's score. Contains six 7-segment display digits.(optional)
 
-> Both the Arduino and AVR firmware support the __Score display__, however I only made schematics for the AVR version. See `avr/schematic.png`
+> Both the Arduino and AVR firmware support the __Score display__, however I only made schematics for the AVR version. See `avr/schematic.png` You may need to connect to different pins for your Arduino board.
 
 # Software
 You need the FCEUX NES emulator, the `ledtris.lua` script and a Tetris (USA version) ROM.
@@ -85,7 +85,3 @@ the serial port in ledtris.lua
 ```
 	local portName = '/dev/ttyACM0'
 ```
-
-# Contact
-If you have any questions regarding this project please contact me: 
-Koen van Vliet - <8by8mail@gmail.com>
