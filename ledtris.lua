@@ -52,6 +52,10 @@ function showNextBlock(port, nextID)
             g = 0
             b = 0
         end
+		
+		r = r/2
+		g = g/2
+		b = b/2
 
         port:write(string.char(r,g,b))
     end
@@ -131,9 +135,9 @@ while true do
 				-- end
 
 				-- Reduce brightness
-				r = r/10
-				g = g/10
-				b = b/10
+				r = r/2
+				g = g/2
+				b = b/2
 
 				-- Send RGB value of pixel to display
 				port:write(string.char(r,g,b))
